@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.5.2",
+    "axios": "^1.6.7",
+    "axios-http": "^0.0.1-security",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "pinia": "^2.1.7",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "ts": "^0.2.2",
+    "ts-loader": "^9.5.1"
+  }
+}
