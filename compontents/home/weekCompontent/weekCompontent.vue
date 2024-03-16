@@ -27,11 +27,11 @@
 
 <script setup lang="ts">
 	import {ref} from 'vue';
-	import {today} from '../../api/index';
+	import {today} from '../../../api/index';
 	import {onLoad} from '@dcloudio/uni-app';
-	import {itemI} from '../../interface/itemInterface/itemInterface';
-	import {getToday} from '../../utils/time';
-	import itemCompontent from '../itemCompontent/itemCompontent';
+	import {itemI} from '../../../interface/itemInterface/itemInterface';
+	import {getToday} from '../../../utils/time';
+	import itemCompontent from '../../itemCompontent/itemCompontent';
 	
 	//星期数
 	const dayInit=['周一','周二','周三','周四','周五','周六','周日'];

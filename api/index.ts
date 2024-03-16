@@ -1,4 +1,5 @@
 import { http } from '../utils/http.ts';
+import {itemI} from '../interface/itemInterface/itemInterface';
 
 //根据指定id获取视频数据
 export const selectVideoById = async (vId : number) => {
@@ -13,10 +14,9 @@ export const selectVideoById = async (vId : number) => {
 };
 
 //获取今日数据
-export const today = async (day : number) => {
+export const today = async (day : number):itemI => {
 	try {
-		let res = await http("/weekNew", "get", { day });
-		console.log("weekNew:", res);
+		let res:itemI = await http("/weekNew", "get", { day });
 		return res;
 	} catch (err) {
 		throw err;
@@ -28,11 +28,29 @@ export const picUtils = async (vpic : string) => {
 	await http("/picUtils", "get", { vpic })
 		//如果请求过来的数据是存在的那么直接返回访问数据，否则就返回空
 		.then(res => {
-			if(!res)
-			console.log("图片验证失败", vpic);
 			return res ? vpic : '';
 		})
 		.catch(error => {
 			console.log("请求失败 ", error);
 		})
+}
+
+//获取随机数据
+export const randomVideo=async ():itemI =>{
+	try{
+		const res:itemI=await http("/randomVideo","get");
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//根据名称获取模糊数据
+export const selectVideoByName=async (name:string):itemI=>{
+	try{
+		const res:itemI=await http("/selectVideoByName","get",{name});
+		return res;
+	}catch(error){
+		throw error;
+	}
 }

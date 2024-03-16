@@ -1,5 +1,6 @@
 // 网络请求封装函数  
 const baseUrl="https://8.130.75.115:8080";
+declare var uni: any;
 export const http=(url, method, data, headers = {}) =>{  
   // 在这里处理请求参数、设置请求头等  
   const requestConfig = {  

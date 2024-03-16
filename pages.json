@@ -36,7 +36,23 @@
 			}
 		},
 		{
-			"path" : "compontents/week/week",
+			"path" : "compontents/home/weekCompontent/weekCompontent",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "compontents/home/randomCompontent/randomCompontent",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "compontents/home/Re0Compontent/Re0Compontent",
 			"style" : 
 			{
 				"navigationBarTitleText" : "",

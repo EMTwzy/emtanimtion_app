@@ -32,6 +32,7 @@ if (uni.restoreGlobal) {
 (function(vue, shared) {
   "use strict";
   const ON_LOAD = "onLoad";
+  const ON_PULL_DOWN_REFRESH = "onPullDownRefresh";
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
       uni.__log__(type, filename, ...args);
@@ -46,6 +47,7 @@ if (uni.restoreGlobal) {
     !vue.isInSSRComponentSetup && vue.injectHook(lifecycle, hook, target);
   };
   const onLoad = /* @__PURE__ */ createHook(ON_LOAD);
+  const onPullDownRefresh = /* @__PURE__ */ createHook(ON_PULL_DOWN_REFRESH);
   const _export_sfc = (sfc, props) => {
     const target = sfc.__vccOpts || sfc;
     for (const [key, val] of props) {
@@ -54,7 +56,7 @@ if (uni.restoreGlobal) {
     return target;
   };
   const ComponentClass$1 = "uni-col";
-  const _sfc_main$a = {
+  const _sfc_main$c = {
     name: "uniCol",
     props: {
       span: {
@@ -175,7 +177,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$5], ["__scopeId", "data-v-6ad5e460"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-col/uni-col.vue"]]);
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$5], ["__scopeId", "data-v-6ad5e460"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-col/uni-col.vue"]]);
   const fontData = [
     {
       "font_class": "arrow-down",
@@ -826,7 +828,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$9 = {
+  const _sfc_main$b = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -895,7 +897,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$4], ["__scopeId", "data-v-946bce22"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue"]]);
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$4], ["__scopeId", "data-v-946bce22"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue"]]);
   const isObject = (val) => val !== null && typeof val === "object";
   const defaultDelimiters = ["{", "}"];
   class BaseFormatter {
@@ -1200,7 +1202,7 @@ if (uni.restoreGlobal) {
   const {
     t
   } = initVueI18n(messages);
-  const _sfc_main$8 = {
+  const _sfc_main$a = {
     name: "UniSearchBar",
     emits: ["input", "update:modelValue", "clear", "cancel", "confirm", "blur", "focus"],
     props: {
@@ -1413,10 +1415,10 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$3], ["__scopeId", "data-v-a149a6be"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$3], ["__scopeId", "data-v-a149a6be"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
   const ComponentClass = "uni-row";
   const modifierSeparator = "--";
-  const _sfc_main$7 = {
+  const _sfc_main$9 = {
     name: "uniRow",
     componentName: "uniRow",
     props: {
@@ -1473,8 +1475,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$2], ["__scopeId", "data-v-86edfd37"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-row/uni-row.vue"]]);
-  const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$2], ["__scopeId", "data-v-86edfd37"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-row/uni-row.vue"]]);
+  const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
     __name: "topCompontent",
     setup(__props) {
       function search(e) {
@@ -1523,8 +1525,8 @@ if (uni.restoreGlobal) {
       };
     }
   });
-  const CompontentsTopCompontentTopCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-ce76fffc"], ["__file", "E:/程序夹/emtanimation_app/compontents/topCompontent/topCompontent.vue"]]);
-  const _sfc_main$5 = {};
+  const CompontentsTopCompontentTopCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-ce76fffc"], ["__file", "E:/程序夹/emtanimation_app/compontents/topCompontent/topCompontent.vue"]]);
+  const _sfc_main$7 = {};
   function _sfc_render$1(_ctx, _cache) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "footer" }, [
       vue.createElementVNode("view", { class: "content" }, [
@@ -1540,7 +1542,7 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  const CompontentsFooterCompontentFooterCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$1], ["__scopeId", "data-v-63a16b71"], ["__file", "E:/程序夹/emtanimation_app/compontents/footerCompontent/footerCompontent.vue"]]);
+  const CompontentsFooterCompontentFooterCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$1], ["__scopeId", "data-v-63a16b71"], ["__file", "E:/程序夹/emtanimation_app/compontents/footerCompontent/footerCompontent.vue"]]);
   const baseUrl = "https://8.130.75.115:8080";
   const http = (url, method, data, headers = {}) => {
     const requestConfig = {
@@ -1569,7 +1571,6 @@ if (uni.restoreGlobal) {
   const today = async (day) => {
     try {
       let res = await http("/weekNew", "get", { day });
-      formatAppLog("log", "at api/index.ts:19", "weekNew:", res);
       return res;
     } catch (err) {
       throw err;
@@ -1577,12 +1578,26 @@ if (uni.restoreGlobal) {
   };
   const picUtils = async (vpic) => {
     await http("/picUtils", "get", { vpic }).then((res) => {
-      if (!res)
-        formatAppLog("log", "at api/index.ts:32", "图片验证失败", vpic);
       return res ? vpic : "";
     }).catch((error) => {
-      formatAppLog("log", "at api/index.ts:36", "请求失败 ", error);
+      formatAppLog("log", "at api/index.ts:34", "请求失败 ", error);
     });
+  };
+  const randomVideo = async () => {
+    try {
+      const res = await http("/randomVideo", "get");
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  };
+  const selectVideoByName = async (name) => {
+    try {
+      const res = await http("/selectVideoByName", "get", { name });
+      return res;
+    } catch (error) {
+      throw error;
+    }
   };
   const getToday = () => {
     let nowDay = (/* @__PURE__ */ new Date()).getDay();
@@ -1602,7 +1617,7 @@ if (uni.restoreGlobal) {
     else
       return false;
   };
-  const _sfc_main$4 = {
+  const _sfc_main$6 = {
     name: "UniBadge",
     emits: ["click"],
     props: {
@@ -1742,7 +1757,7 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-92d7b819"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue"]]);
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render], ["__scopeId", "data-v-92d7b819"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue"]]);
   var isVue2 = false;
   function set(target, key, val) {
     if (Array.isArray(target)) {
@@ -3188,7 +3203,7 @@ This will fail in production.`);
     },
     getters: {}
   });
-  const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
     __name: "itemCompontent",
     props: {
       obj: { type: null, required: true }
@@ -3230,15 +3245,15 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsItemCompontentItemCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0752f4c2"], ["__file", "E:/程序夹/emtanimation_app/compontents/itemCompontent/itemCompontent.vue"]]);
-  const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsItemCompontentItemCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-0752f4c2"], ["__file", "E:/程序夹/emtanimation_app/compontents/itemCompontent/itemCompontent.vue"]]);
+  const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
     __name: "weekCompontent",
     setup(__props) {
       const dayInit = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
       const daySelect = vue.ref("");
       daySelect.value = dayInit[getToday()];
       function selectDay(day) {
-        formatAppLog("log", "at compontents/weekCompontent/weekCompontent.vue:42", "selectDay :", day);
+        formatAppLog("log", "at compontents/home/weekCompontent/weekCompontent.vue:42", "selectDay :", day);
         daySelect.value = day;
         getTodyData();
       }
@@ -3249,7 +3264,7 @@ This will fail in production.`);
         items.value = res;
       }
       onLoad(() => {
-        formatAppLog("log", "at compontents/weekCompontent/weekCompontent.vue:59", "weekDay");
+        formatAppLog("log", "at compontents/home/weekCompontent/weekCompontent.vue:59", "weekDay");
         getTodyData();
       });
       return (_ctx, _cache) => {
@@ -3321,7 +3336,108 @@ This will fail in production.`);
       };
     }
   });
-  const weekCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-69785d9e"], ["__file", "E:/程序夹/emtanimation_app/compontents/weekCompontent/weekCompontent.vue"]]);
+  const CompontentsHomeWeekCompontentWeekCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-ddfca9bc"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/weekCompontent/weekCompontent.vue"]]);
+  const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
+    __name: "randomCompontent",
+    setup(__props) {
+      const items = vue.ref([]);
+      async function getRandom() {
+        let random = await randomVideo();
+        items.value = random;
+        formatAppLog("log", "at compontents/home/randomCompontent/randomCompontent.vue:38", "随机", random);
+      }
+      onLoad(() => {
+        getRandom();
+      });
+      return (_ctx, _cache) => {
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$2);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_1);
+        return vue.openBlock(), vue.createElementBlock("view", { class: "random" }, [
+          vue.createCommentVNode(" 标题 "),
+          vue.createVNode(_component_uni_row, { class: "demo-uni-row random_title" }, {
+            default: vue.withCtx(() => [
+              vue.createVNode(_component_uni_col, { span: 5 }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("text", null, "随机推荐")
+                ]),
+                _: 1
+                /* STABLE */
+              }),
+              vue.createVNode(_component_uni_col, { span: 14 }, {
+                default: vue.withCtx(() => [
+                  vue.createTextVNode("   ")
+                ]),
+                _: 1
+                /* STABLE */
+              }),
+              vue.createVNode(_component_uni_col, { span: 5 }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode("text", null, "more")
+                ]),
+                _: 1
+                /* STABLE */
+              })
+            ]),
+            _: 1
+            /* STABLE */
+          }),
+          vue.createCommentVNode(" 内容 "),
+          vue.createElementVNode("view", { class: "random_content" }, [
+            (vue.openBlock(true), vue.createElementBlock(
+              vue.Fragment,
+              null,
+              vue.renderList(items.value, (item) => {
+                return vue.openBlock(), vue.createBlock(CompontentsItemCompontentItemCompontent, {
+                  key: item.vodId,
+                  obj: item,
+                  class: "items"
+                }, null, 8, ["obj"]);
+              }),
+              128
+              /* KEYED_FRAGMENT */
+            ))
+          ])
+        ]);
+      };
+    }
+  });
+  const CompontentsHomeRandomCompontentRandomCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-6cf98f20"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/randomCompontent/randomCompontent.vue"]]);
+  const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+    __name: "Re0Compontent",
+    setup(__props) {
+      const items = vue.ref([]);
+      async function getItems() {
+        let res = await selectVideoByName("从零开始的异世界生活");
+        items.value = res;
+      }
+      onLoad(() => {
+        getItems();
+      });
+      return (_ctx, _cache) => {
+        return vue.openBlock(), vue.createElementBlock("view", { class: "reTheme" }, [
+          vue.createCommentVNode(" 标题 "),
+          vue.createElementVNode("view", { class: "theme_title" }, " Re:ゼロから始める異世界生活 "),
+          vue.createCommentVNode(" 内容 "),
+          vue.createElementVNode("view", { class: "theme_content" }, [
+            (vue.openBlock(true), vue.createElementBlock(
+              vue.Fragment,
+              null,
+              vue.renderList(items.value, (item) => {
+                return vue.openBlock(), vue.createBlock(CompontentsItemCompontentItemCompontent, {
+                  key: item.vodId,
+                  class: "items",
+                  obj: item
+                }, null, 8, ["obj"]);
+              }),
+              128
+              /* KEYED_FRAGMENT */
+            ))
+          ])
+        ]);
+      };
+    }
+  });
+  const CompontentsHomeRe0CompontentRe0Compontent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-c8cf1775"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/Re0Compontent/Re0Compontent.vue"]]);
   const useSettingStore = defineStore("setting", {
     //定义参数
     state: () => ({
@@ -3348,6 +3464,14 @@ This will fail in production.`);
     setup(__props) {
       const set2 = useSettingStore();
       const theme = vue.computed(() => set2.theme);
+      onPullDownRefresh(() => {
+        setTimeout(() => {
+          uni.reLaunch({
+            url: "/pages/index/index"
+          });
+          uni.stopPullDownRefresh();
+        }, 500);
+      });
       return (_ctx, _cache) => {
         return vue.openBlock(), vue.createElementBlock(
           "view",
@@ -3359,9 +3483,13 @@ This will fail in production.`);
             vue.createVNode(CompontentsTopCompontentTopCompontent),
             vue.createCommentVNode(" 主要内容区 "),
             vue.createCommentVNode(" 每周更新内容 "),
-            vue.createVNode(weekCompontent),
+            vue.createVNode(CompontentsHomeWeekCompontentWeekCompontent),
+            vue.createCommentVNode(" 随机推荐 "),
+            vue.createVNode(CompontentsHomeRandomCompontentRandomCompontent, { class: "alltop" }),
+            vue.createCommentVNode(" 从零主题 "),
+            vue.createVNode(CompontentsHomeRe0CompontentRe0Compontent, { class: "alltop" }),
             vue.createCommentVNode(" 底部 "),
-            vue.createVNode(CompontentsFooterCompontentFooterCompontent)
+            vue.createVNode(CompontentsFooterCompontentFooterCompontent, { class: "alltop" })
           ],
           2
           /* CLASS */
@@ -3374,6 +3502,9 @@ This will fail in production.`);
   __definePage("compontents/topCompontent/topCompontent", CompontentsTopCompontentTopCompontent);
   __definePage("compontents/footerCompontent/footerCompontent", CompontentsFooterCompontentFooterCompontent);
   __definePage("compontents/itemCompontent/itemCompontent", CompontentsItemCompontentItemCompontent);
+  __definePage("compontents/home/weekCompontent/weekCompontent", CompontentsHomeWeekCompontentWeekCompontent);
+  __definePage("compontents/home/randomCompontent/randomCompontent", CompontentsHomeRandomCompontentRandomCompontent);
+  __definePage("compontents/home/Re0Compontent/Re0Compontent", CompontentsHomeRe0CompontentRe0Compontent);
   const _sfc_main = {
     onLaunch: function() {
       formatAppLog("log", "at App.vue:4", "App Launch");

@@ -80,6 +80,7 @@
       "style": "dark",
       "background": "@navigationBarBackgroundColor"
     },
+    "arguments": "{\"path\":\"pages/index/index\"}",
     "uniStatistics": {
       "enable": false
     },
