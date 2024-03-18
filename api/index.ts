@@ -67,7 +67,7 @@ export const totalVideo=async ():Promise<number>=>{
 	}
 }
 //获取指定条件的总额
-export const selectVideoNum=async(lang:string,publishyear:number,publishare:string,letter:string):Promise<number>=>{
+export const selectVideoNum=async(lang:string,publishyear:number|string,publishare:string,letter:string):Promise<number>=>{
 	try{
 		const res:number=await http("/selectVideoNum","get",{
 			lang,
@@ -81,7 +81,7 @@ export const selectVideoNum=async(lang:string,publishyear:number,publishare:stri
 	}
 }
 //分页 获取指定条件的数据
-export const selectVideo=async(lang:string,publishyear:number,publishare:string,letter:string,pageNum:number):itemI=>{
+export const selectVideo=async(lang:string,publishyear:number|string,publishare:string,letter:string,pageNum:number):itemI=>{
 	try{
 		const res:itemI=await http("/selectVideo","get",{
 			lang,

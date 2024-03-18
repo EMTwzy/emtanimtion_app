@@ -1,12 +1,17 @@
 //处理all界面的内容
 import {defineStore} from 'pinia';
 
-export const useAll=defineStore('all',{
+export const useAllStore=defineStore('all',{
 	state:()=>({
 		lang:[],
+		langSelected:'',
 		letter:[],
+		letterSelected:'',
 		publishare:[],
+		publishareSelected:'',
 		publishyear:[],
+		publishyearSelected:'',
+		pageNum:1,
 	}),
 	getters:{
 		//获取语种

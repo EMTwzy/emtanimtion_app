@@ -8,13 +8,6 @@
 				{{item}}
 			</uni-col>
 		</uni-row>
-		<!-- <view class="days">
-			<view class="day" v-for="item in dayInit" :key="item" 
-			:class="{'daySelected':item==daySelect}" 
-			@click="selectDay(item)">
-				{{item}}
-			</view>
-		</view> -->
 		<!-- 内容 -->
 		<view class="weekContent" v-if="items.length>0">
 			<itemCompontent v-for="item in items" :key="item" :obj="item" class="itemContent"></itemCompontent>

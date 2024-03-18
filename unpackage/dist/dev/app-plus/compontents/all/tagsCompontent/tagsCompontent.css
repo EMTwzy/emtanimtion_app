@@ -2235,3 +2235,6 @@
 .allContent .tags .row .tags_content .tag[data-v-e4b22507] {
   margin-left: 0.46875rem;
 }
+.allContent .tags .row .tags_content .selected[data-v-e4b22507] {
+  color: rgba(198, 98, 255, 0.6);
+}

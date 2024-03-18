@@ -13,6 +13,7 @@
 	import { picUtils } from '../../api/index.ts';
 	import { useApiStore } from '../../pinia/api';
 	import { IsToday } from '../../utils/time';
+	import {onLoad} from '@dcloudio/uni-app';
 
 	//使用iteminterface来对接收的数据进行限制
 	const data : itemI = defineProps<{
@@ -30,6 +31,11 @@
 	function trunTo(vodId) {
 		useApiStore().turnTo(vodId);
 	}
+	
+	//一加载就向list传数据
+	onLoad(()=>{
+		
+	})
 </script>
 
 <style lang="less" scoped>

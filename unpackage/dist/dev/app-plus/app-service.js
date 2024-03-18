@@ -56,7 +56,7 @@ if (uni.restoreGlobal) {
     return target;
   };
   const ComponentClass$1 = "uni-col";
-  const _sfc_main$e = {
+  const _sfc_main$f = {
     name: "uniCol",
     props: {
       span: {
@@ -177,7 +177,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$5], ["__scopeId", "data-v-6ad5e460"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-col/uni-col.vue"]]);
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$5], ["__scopeId", "data-v-6ad5e460"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-col/uni-col.vue"]]);
   const fontData = [
     {
       "font_class": "arrow-down",
@@ -828,7 +828,7 @@ if (uni.restoreGlobal) {
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$d = {
+  const _sfc_main$e = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -897,7 +897,7 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$4], ["__scopeId", "data-v-946bce22"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue"]]);
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$4], ["__scopeId", "data-v-946bce22"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue"]]);
   const isObject = (val) => val !== null && typeof val === "object";
   const defaultDelimiters = ["{", "}"];
   class BaseFormatter {
@@ -1202,7 +1202,7 @@ if (uni.restoreGlobal) {
   const {
     t
   } = initVueI18n(messages);
-  const _sfc_main$c = {
+  const _sfc_main$d = {
     name: "UniSearchBar",
     emits: ["input", "update:modelValue", "clear", "cancel", "confirm", "blur", "focus"],
     props: {
@@ -1415,10 +1415,10 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$3], ["__scopeId", "data-v-a149a6be"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$3], ["__scopeId", "data-v-a149a6be"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
   const ComponentClass = "uni-row";
   const modifierSeparator = "--";
-  const _sfc_main$b = {
+  const _sfc_main$c = {
     name: "uniRow",
     componentName: "uniRow",
     props: {
@@ -1475,8 +1475,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$2], ["__scopeId", "data-v-86edfd37"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-row/uni-row.vue"]]);
-  const _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$2], ["__scopeId", "data-v-86edfd37"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-row/uni-row.vue"]]);
+  const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
     __name: "topCompontent",
     setup(__props) {
       function search(e) {
@@ -1525,8 +1525,8 @@ if (uni.restoreGlobal) {
       };
     }
   });
-  const CompontentsTopCompontentTopCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-ce76fffc"], ["__file", "E:/程序夹/emtanimation_app/compontents/topCompontent/topCompontent.vue"]]);
-  const _sfc_main$9 = {};
+  const CompontentsTopCompontentTopCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-ce76fffc"], ["__file", "E:/程序夹/emtanimation_app/compontents/topCompontent/topCompontent.vue"]]);
+  const _sfc_main$a = {};
   function _sfc_render$1(_ctx, _cache) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "footer" }, [
       vue.createElementVNode("view", { class: "content" }, [
@@ -1542,7 +1542,7 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  const CompontentsFooterCompontentFooterCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$1], ["__scopeId", "data-v-63a16b71"], ["__file", "E:/程序夹/emtanimation_app/compontents/footerCompontent/footerCompontent.vue"]]);
+  const CompontentsFooterCompontentFooterCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$1], ["__scopeId", "data-v-63a16b71"], ["__file", "E:/程序夹/emtanimation_app/compontents/footerCompontent/footerCompontent.vue"]]);
   const baseUrl = "https://8.130.75.115:8080";
   const http = (url, method, data, headers = {}) => {
     const requestConfig = {
@@ -1607,6 +1607,33 @@ if (uni.restoreGlobal) {
       throw error;
     }
   };
+  const selectVideoNum = async (lang, publishyear, publishare, letter) => {
+    try {
+      const res = await http("/selectVideoNum", "get", {
+        lang,
+        publishyear,
+        publishare,
+        letter
+      });
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  };
+  const selectVideo = async (lang, publishyear, publishare, letter, pageNum) => {
+    try {
+      const res = await http("/selectVideo", "get", {
+        lang,
+        publishyear,
+        publishare,
+        letter,
+        pageNum
+      });
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  };
   const getToday = () => {
     let nowDay = (/* @__PURE__ */ new Date()).getDay();
     if (nowDay - 1 < 0)
@@ -1625,7 +1652,7 @@ if (uni.restoreGlobal) {
     else
       return false;
   };
-  const _sfc_main$8 = {
+  const _sfc_main$9 = {
     name: "UniBadge",
     emits: ["click"],
     props: {
@@ -1765,7 +1792,7 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render], ["__scopeId", "data-v-92d7b819"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue"]]);
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render], ["__scopeId", "data-v-92d7b819"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue"]]);
   var isVue2 = false;
   function set(target, key, val) {
     if (Array.isArray(target)) {
@@ -3211,7 +3238,7 @@ This will fail in production.`);
     },
     getters: {}
   });
-  const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
     __name: "itemCompontent",
     props: {
       obj: { type: null, required: true }
@@ -3224,6 +3251,8 @@ This will fail in production.`);
       function trunTo(vodId) {
         useApiStore().turnTo(vodId);
       }
+      onLoad(() => {
+      });
       return (_ctx, _cache) => {
         const _component_uni_badge = resolveEasycom(vue.resolveDynamicComponent("uni-badge"), __easycom_0);
         return vue.openBlock(), vue.createElementBlock("view", { class: "item" }, [
@@ -3253,15 +3282,15 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsItemCompontentItemCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-0752f4c2"], ["__file", "E:/程序夹/emtanimation_app/compontents/itemCompontent/itemCompontent.vue"]]);
-  const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsItemCompontentItemCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-0752f4c2"], ["__file", "E:/程序夹/emtanimation_app/compontents/itemCompontent/itemCompontent.vue"]]);
+  const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
     __name: "weekCompontent",
     setup(__props) {
       const dayInit = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
       const daySelect = vue.ref("");
       daySelect.value = dayInit[getToday()];
       function selectDay(day) {
-        formatAppLog("log", "at compontents/home/weekCompontent/weekCompontent.vue:42", "selectDay :", day);
+        formatAppLog("log", "at compontents/home/weekCompontent/weekCompontent.vue:35", "selectDay :", day);
         daySelect.value = day;
         getTodyData();
       }
@@ -3272,7 +3301,7 @@ This will fail in production.`);
         items.value = res;
       }
       onLoad(() => {
-        formatAppLog("log", "at compontents/home/weekCompontent/weekCompontent.vue:59", "weekDay");
+        formatAppLog("log", "at compontents/home/weekCompontent/weekCompontent.vue:52", "weekDay");
         getTodyData();
       });
       return (_ctx, _cache) => {
@@ -3311,13 +3340,6 @@ This will fail in production.`);
             _: 1
             /* STABLE */
           }),
-          vue.createCommentVNode(` <view class="days">\r
-			<view class="day" v-for="item in dayInit" :key="item" \r
-			:class="{'daySelected':item==daySelect}" \r
-			@click="selectDay(item)">\r
-				{{item}}\r
-			</view>\r
-		</view> `),
           vue.createCommentVNode(" 内容 "),
           items.value.length > 0 ? (vue.openBlock(), vue.createElementBlock("view", {
             key: 0,
@@ -3344,8 +3366,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsHomeWeekCompontentWeekCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-ddfca9bc"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/weekCompontent/weekCompontent.vue"]]);
-  const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsHomeWeekCompontentWeekCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-ddfca9bc"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/weekCompontent/weekCompontent.vue"]]);
+  const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
     __name: "randomCompontent",
     setup(__props) {
       const items = vue.ref([]);
@@ -3409,8 +3431,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsHomeRandomCompontentRandomCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-6cf98f20"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/randomCompontent/randomCompontent.vue"]]);
-  const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsHomeRandomCompontentRandomCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-6cf98f20"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/randomCompontent/randomCompontent.vue"]]);
+  const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
     __name: "Re0Compontent",
     setup(__props) {
       const items = vue.ref([]);
@@ -3445,7 +3467,7 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsHomeRe0CompontentRe0Compontent = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-c8cf1775"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/Re0Compontent/Re0Compontent.vue"]]);
+  const CompontentsHomeRe0CompontentRe0Compontent = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-c8cf1775"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/Re0Compontent/Re0Compontent.vue"]]);
   const useSettingStore = defineStore("setting", {
     //定义参数
     state: () => ({
@@ -3467,7 +3489,7 @@ This will fail in production.`);
       }
     }
   });
-  const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
     __name: "index",
     setup(__props) {
       const set2 = useSettingStore();
@@ -3505,13 +3527,18 @@ This will fail in production.`);
       };
     }
   });
-  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/程序夹/emtanimation_app/pages/index/index.vue"]]);
-  const useAll = defineStore("all", {
+  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/程序夹/emtanimation_app/pages/index/index.vue"]]);
+  const useAllStore = defineStore("all", {
     state: () => ({
       lang: [],
+      langSelected: "",
       letter: [],
+      letterSelected: "",
       publishare: [],
-      publishyear: []
+      publishareSelected: "",
+      publishyear: [],
+      publishyearSelected: "",
+      pageNum: 1
     }),
     getters: {
       //获取语种
@@ -3545,18 +3572,50 @@ This will fail in production.`);
       }
     }
   });
-  const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
     __name: "tagsCompontent",
     setup(__props) {
-      const allStore = useAll();
+      const allStore = useAllStore();
       const lang = vue.ref([]);
       lang.value = allStore.getLang;
+      var langSelected = vue.ref(vue.computed(() => allStore.langSelected));
       const publishare = vue.ref([]);
       publishare.value = allStore.getPublishare;
+      var publishareSelected = vue.ref(vue.computed(() => allStore.publishareSelected));
       const letter = vue.ref([]);
       letter.value = allStore.getLetter;
+      var letterSelected = vue.ref(vue.computed(() => allStore.letterSelected));
       const publishyear = vue.ref([]);
       publishyear.value = allStore.getPublishyear;
+      var publishyearSelected = vue.ref(vue.computed(() => allStore.publishyearSelected));
+      function selected(item, tag) {
+        switch (tag) {
+          case "publishyear":
+            if (allStore.publishyearSelected != item)
+              allStore.publishyearSelected = item;
+            else
+              allStore.publishyearSelected = "";
+            break;
+          case "publishare":
+            if (allStore.publishareSelected != item)
+              allStore.publishareSelected = item;
+            else
+              allStore.publishareSelected = "";
+            break;
+          case "letter":
+            if (allStore.letterSelected != item)
+              allStore.letterSelected = item;
+            else
+              allStore.letterSelected = "";
+            break;
+          case "lang":
+            if (allStore.langSelected != item)
+              allStore.langSelected = item;
+            else
+              allStore.langSelected = "";
+            break;
+        }
+      }
       return (_ctx, _cache) => {
         const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$2);
         const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_1);
@@ -3585,16 +3644,11 @@ This will fail in production.`);
                       vue.Fragment,
                       null,
                       vue.renderList(publishyear.value, (item) => {
-                        return vue.openBlock(), vue.createElementBlock(
-                          "view",
-                          {
-                            class: "tag",
-                            key: item
-                          },
-                          vue.toDisplayString(item),
-                          1
-                          /* TEXT */
-                        );
+                        return vue.openBlock(), vue.createElementBlock("view", {
+                          class: vue.normalizeClass(["tag", { selected: item == vue.unref(publishyearSelected) }]),
+                          key: item,
+                          onClick: ($event) => selected(item, "publishyear")
+                        }, vue.toDisplayString(item), 11, ["onClick"]);
                       }),
                       128
                       /* KEYED_FRAGMENT */
@@ -3629,16 +3683,11 @@ This will fail in production.`);
                       vue.Fragment,
                       null,
                       vue.renderList(lang.value, (item) => {
-                        return vue.openBlock(), vue.createElementBlock(
-                          "view",
-                          {
-                            class: "tag",
-                            key: item
-                          },
-                          vue.toDisplayString(item),
-                          1
-                          /* TEXT */
-                        );
+                        return vue.openBlock(), vue.createElementBlock("view", {
+                          class: vue.normalizeClass(["tag", { selected: item == vue.unref(langSelected) }]),
+                          key: item,
+                          onClick: ($event) => selected(item, "lang")
+                        }, vue.toDisplayString(item), 11, ["onClick"]);
                       }),
                       128
                       /* KEYED_FRAGMENT */
@@ -3673,16 +3722,11 @@ This will fail in production.`);
                       vue.Fragment,
                       null,
                       vue.renderList(publishare.value, (item) => {
-                        return vue.openBlock(), vue.createElementBlock(
-                          "view",
-                          {
-                            class: "tag",
-                            key: item
-                          },
-                          vue.toDisplayString(item),
-                          1
-                          /* TEXT */
-                        );
+                        return vue.openBlock(), vue.createElementBlock("view", {
+                          class: vue.normalizeClass(["tag", { selected: item == vue.unref(publishareSelected) }]),
+                          key: item,
+                          onClick: ($event) => selected(item, "publishare")
+                        }, vue.toDisplayString(item), 11, ["onClick"]);
                       }),
                       128
                       /* KEYED_FRAGMENT */
@@ -3717,16 +3761,11 @@ This will fail in production.`);
                       vue.Fragment,
                       null,
                       vue.renderList(letter.value, (item) => {
-                        return vue.openBlock(), vue.createElementBlock(
-                          "view",
-                          {
-                            class: "tag",
-                            key: item
-                          },
-                          vue.toDisplayString(item),
-                          1
-                          /* TEXT */
-                        );
+                        return vue.openBlock(), vue.createElementBlock("view", {
+                          class: vue.normalizeClass(["tag", { selected: item == vue.unref(letterSelected) }]),
+                          key: item,
+                          onClick: ($event) => selected(item, "letter")
+                        }, vue.toDisplayString(item), 11, ["onClick"]);
                       }),
                       128
                       /* KEYED_FRAGMENT */
@@ -3744,10 +3783,139 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsAllTagsCompontentTagsCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-e4b22507"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/tagsCompontent/tagsCompontent.vue"]]);
+  const CompontentsAllTagsCompontentTagsCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-e4b22507"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/tagsCompontent/tagsCompontent.vue"]]);
+  const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+    __name: "listCompontent",
+    setup(__props) {
+      const pageNum = vue.ref(1);
+      const totalNum = vue.ref();
+      const runPage = vue.ref();
+      const useAll = useAllStore();
+      const publishyear = vue.ref(vue.computed(() => useAll.publishyearSelected));
+      const publishare = vue.ref(vue.computed(() => useAll.publishareSelected));
+      const lang = vue.ref(vue.computed(() => useAll.langSelected));
+      const letter = vue.ref(vue.computed(() => useAll.letterSelected));
+      const options = vue.reactive([
+        publishyear,
+        lang,
+        publishare,
+        letter,
+        pageNum
+      ]);
+      const items = vue.ref([]);
+      async function initItems() {
+        let res = await selectVideo(lang.value, publishyear.value, publishare.value, letter.value, pageNum.value);
+        items.value = res;
+      }
+      async function initTotalNum() {
+        let res = await selectVideoNum(lang.value, publishyear.value, publishare.value, letter.value);
+        totalNum.value = res % 20 == 0 ? res / 20 : Math.ceil(res / 20);
+      }
+      function createWatch(item) {
+        vue.watch(item, () => {
+          initItems();
+          initTotalNum();
+        });
+      }
+      function showToast(content) {
+        uni.showToast({
+          title: content,
+          duration: 1500,
+          icon: "none"
+          //image:'../../../static/toast.jpg'
+        });
+      }
+      function pageTo(model) {
+        switch (model) {
+          case "prePage":
+            if (pageNum.value - 1 == 0)
+              showToast("前面是地狱啊");
+            else
+              pageNum.value--;
+            break;
+          case "nextPage":
+            if (pageNum.value + 1 > totalNum.value)
+              showToast("空气墙似乎是存在的");
+            else
+              pageNum.value++;
+            break;
+          case "runPage":
+            formatAppLog("log", "at compontents/all/listCompontent/listCompontent.vue:98", "runPage is ", runPage.value);
+            if (runPage.value < 1 || runPage.value > totalNum.value)
+              showToast("异世界可不是这么好去的");
+            else
+              pageNum.value = runPage.value;
+            runPage.value = null;
+            break;
+        }
+      }
+      onLoad(() => {
+        initItems();
+        initTotalNum();
+        for (let i = 0; i < options.length; i++)
+          createWatch(options[i]);
+      });
+      return (_ctx, _cache) => {
+        return vue.openBlock(), vue.createElementBlock("view", { class: "list" }, [
+          vue.createCommentVNode(" 列表内容 "),
+          (vue.openBlock(true), vue.createElementBlock(
+            vue.Fragment,
+            null,
+            vue.renderList(items.value, (item) => {
+              return vue.openBlock(), vue.createBlock(CompontentsItemCompontentItemCompontent, {
+                key: item.vodId,
+                obj: item,
+                class: "item"
+              }, null, 8, ["obj"]);
+            }),
+            128
+            /* KEYED_FRAGMENT */
+          )),
+          vue.createCommentVNode(" 页数控制器 "),
+          vue.createElementVNode("view", { class: "pageController" }, [
+            vue.createElementVNode("view", {
+              class: "prePage",
+              onClick: _cache[0] || (_cache[0] = ($event) => pageTo("prePage"))
+            }, " 上一页 "),
+            vue.createElementVNode(
+              "view",
+              { class: "pageNum" },
+              vue.toDisplayString(pageNum.value) + "/" + vue.toDisplayString(totalNum.value),
+              1
+              /* TEXT */
+            ),
+            vue.createElementVNode("view", {
+              class: "nextPage",
+              onClick: _cache[1] || (_cache[1] = ($event) => pageTo("nextPage"))
+            }, " 下一页 "),
+            vue.createElementVNode("view", { class: "runPage" }, [
+              vue.withDirectives(vue.createElementVNode(
+                "input",
+                {
+                  type: "number",
+                  "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => runPage.value = $event)
+                },
+                null,
+                512
+                /* NEED_PATCH */
+              ), [
+                [vue.vModelText, runPage.value]
+              ]),
+              vue.createElementVNode("button", {
+                onClick: _cache[3] || (_cache[3] = ($event) => pageTo("runPage"))
+              }, "GO")
+            ])
+          ])
+        ]);
+      };
+    }
+  });
+  const CompontentsAllListCompontentListCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-342b8925"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/listCompontent/listCompontent.vue"]]);
   const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
     __name: "all",
     setup(__props) {
+      const setting = useSettingStore();
+      const theme = vue.computed(() => setting.theme);
       const total = vue.ref(0);
       async function getTotalVideo() {
         total.value = await totalVideo();
@@ -3756,14 +3924,25 @@ This will fail in production.`);
         getTotalVideo();
       });
       return (_ctx, _cache) => {
-        return vue.openBlock(), vue.createElementBlock("view", { class: "all" }, [
-          vue.createCommentVNode(" 头部 "),
-          vue.createVNode(CompontentsTopCompontentTopCompontent),
-          vue.createCommentVNode(" 内容区 "),
-          vue.createVNode(CompontentsAllTagsCompontentTagsCompontent, { class: "alltop" }),
-          vue.createCommentVNode(" 底部 "),
-          vue.createVNode(CompontentsFooterCompontentFooterCompontent)
-        ]);
+        return vue.openBlock(), vue.createElementBlock(
+          "view",
+          {
+            class: vue.normalizeClass(["all", vue.unref(theme) == "dark" ? "dark" : "light"])
+          },
+          [
+            vue.createCommentVNode(" 头部 "),
+            vue.createVNode(CompontentsTopCompontentTopCompontent),
+            vue.createCommentVNode(" 内容区 "),
+            vue.createCommentVNode(" tags "),
+            vue.createVNode(CompontentsAllTagsCompontentTagsCompontent, { class: "alltop" }),
+            vue.createCommentVNode(" list "),
+            vue.createVNode(CompontentsAllListCompontentListCompontent, { class: "alltop" }),
+            vue.createCommentVNode(" 底部 "),
+            vue.createVNode(CompontentsFooterCompontentFooterCompontent)
+          ],
+          2
+          /* CLASS */
+        );
       };
     }
   });
@@ -3777,6 +3956,7 @@ This will fail in production.`);
   __definePage("compontents/home/Re0Compontent/Re0Compontent", CompontentsHomeRe0CompontentRe0Compontent);
   __definePage("pages/all/all", PagesAllAll);
   __definePage("compontents/all/tagsCompontent/tagsCompontent", CompontentsAllTagsCompontentTagsCompontent);
+  __definePage("compontents/all/listCompontent/listCompontent", CompontentsAllListCompontentListCompontent);
   const _sfc_main = {
     onLaunch: function() {
       formatAppLog("log", "at App.vue:4", "App Launch");
