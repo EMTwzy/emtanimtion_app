@@ -31,23 +31,6 @@ if (uni.restoreGlobal) {
 }
 (function(vue, shared) {
   "use strict";
-  const ON_LOAD = "onLoad";
-  const ON_PULL_DOWN_REFRESH = "onPullDownRefresh";
-  function formatAppLog(type, filename, ...args) {
-    if (uni.__log__) {
-      uni.__log__(type, filename, ...args);
-    } else {
-      console[type].apply(console, [...args, filename]);
-    }
-  }
-  function resolveEasycom(component, easycom) {
-    return shared.isString(component) ? easycom : component;
-  }
-  const createHook = (lifecycle) => (hook, target = vue.getCurrentInstance()) => {
-    !vue.isInSSRComponentSetup && vue.injectHook(lifecycle, hook, target);
-  };
-  const onLoad = /* @__PURE__ */ createHook(ON_LOAD);
-  const onPullDownRefresh = /* @__PURE__ */ createHook(ON_PULL_DOWN_REFRESH);
   const _export_sfc = (sfc, props) => {
     const target = sfc.__vccOpts || sfc;
     for (const [key, val] of props) {
@@ -160,7 +143,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -177,1248 +160,27 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$5], ["__scopeId", "data-v-6ad5e460"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-col/uni-col.vue"]]);
-  const fontData = [
-    {
-      "font_class": "arrow-down",
-      "unicode": ""
-    },
-    {
-      "font_class": "arrow-left",
-      "unicode": ""
-    },
-    {
-      "font_class": "arrow-right",
-      "unicode": ""
-    },
-    {
-      "font_class": "arrow-up",
-      "unicode": ""
-    },
-    {
-      "font_class": "auth",
-      "unicode": ""
-    },
-    {
-      "font_class": "auth-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "back",
-      "unicode": ""
-    },
-    {
-      "font_class": "bars",
-      "unicode": ""
-    },
-    {
-      "font_class": "calendar",
-      "unicode": ""
-    },
-    {
-      "font_class": "calendar-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "camera",
-      "unicode": ""
-    },
-    {
-      "font_class": "camera-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "cart",
-      "unicode": ""
-    },
-    {
-      "font_class": "cart-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "chat",
-      "unicode": ""
-    },
-    {
-      "font_class": "chat-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "chatboxes",
-      "unicode": ""
-    },
-    {
-      "font_class": "chatboxes-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "chatbubble",
-      "unicode": ""
-    },
-    {
-      "font_class": "chatbubble-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "checkbox",
-      "unicode": ""
-    },
-    {
-      "font_class": "checkbox-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "checkmarkempty",
-      "unicode": ""
-    },
-    {
-      "font_class": "circle",
-      "unicode": ""
-    },
-    {
-      "font_class": "circle-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "clear",
-      "unicode": ""
-    },
-    {
-      "font_class": "close",
-      "unicode": ""
-    },
-    {
-      "font_class": "closeempty",
-      "unicode": ""
-    },
-    {
-      "font_class": "cloud-download",
-      "unicode": ""
-    },
-    {
-      "font_class": "cloud-download-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "cloud-upload",
-      "unicode": ""
-    },
-    {
-      "font_class": "cloud-upload-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "color",
-      "unicode": ""
-    },
-    {
-      "font_class": "color-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "compose",
-      "unicode": ""
-    },
-    {
-      "font_class": "contact",
-      "unicode": ""
-    },
-    {
-      "font_class": "contact-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "down",
-      "unicode": ""
-    },
-    {
-      "font_class": "bottom",
-      "unicode": ""
-    },
-    {
-      "font_class": "download",
-      "unicode": ""
-    },
-    {
-      "font_class": "download-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "email",
-      "unicode": ""
-    },
-    {
-      "font_class": "email-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "eye",
-      "unicode": ""
-    },
-    {
-      "font_class": "eye-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "eye-slash",
-      "unicode": ""
-    },
-    {
-      "font_class": "eye-slash-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "fire",
-      "unicode": ""
-    },
-    {
-      "font_class": "fire-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "flag",
-      "unicode": ""
-    },
-    {
-      "font_class": "flag-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "folder-add",
-      "unicode": ""
-    },
-    {
-      "font_class": "folder-add-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "font",
-      "unicode": ""
-    },
-    {
-      "font_class": "forward",
-      "unicode": ""
-    },
-    {
-      "font_class": "gear",
-      "unicode": ""
-    },
-    {
-      "font_class": "gear-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "gift",
-      "unicode": ""
-    },
-    {
-      "font_class": "gift-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "hand-down",
-      "unicode": ""
-    },
-    {
-      "font_class": "hand-down-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "hand-up",
-      "unicode": ""
-    },
-    {
-      "font_class": "hand-up-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "headphones",
-      "unicode": ""
-    },
-    {
-      "font_class": "heart",
-      "unicode": ""
-    },
-    {
-      "font_class": "heart-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "help",
-      "unicode": ""
-    },
-    {
-      "font_class": "help-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "home",
-      "unicode": ""
-    },
-    {
-      "font_class": "home-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "image",
-      "unicode": ""
-    },
-    {
-      "font_class": "image-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "images",
-      "unicode": ""
-    },
-    {
-      "font_class": "images-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "info",
-      "unicode": ""
-    },
-    {
-      "font_class": "info-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "left",
-      "unicode": ""
-    },
-    {
-      "font_class": "link",
-      "unicode": ""
-    },
-    {
-      "font_class": "list",
-      "unicode": ""
-    },
-    {
-      "font_class": "location",
-      "unicode": ""
-    },
-    {
-      "font_class": "location-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "locked",
-      "unicode": ""
-    },
-    {
-      "font_class": "locked-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "loop",
-      "unicode": ""
-    },
-    {
-      "font_class": "mail-open",
-      "unicode": ""
-    },
-    {
-      "font_class": "mail-open-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "map",
-      "unicode": ""
-    },
-    {
-      "font_class": "map-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "map-pin",
-      "unicode": ""
-    },
-    {
-      "font_class": "map-pin-ellipse",
-      "unicode": ""
-    },
-    {
-      "font_class": "medal",
-      "unicode": ""
-    },
-    {
-      "font_class": "medal-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "mic",
-      "unicode": ""
-    },
-    {
-      "font_class": "mic-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "micoff",
-      "unicode": ""
-    },
-    {
-      "font_class": "micoff-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "minus",
-      "unicode": ""
-    },
-    {
-      "font_class": "minus-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "more",
-      "unicode": ""
-    },
-    {
-      "font_class": "more-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "navigate",
-      "unicode": ""
-    },
-    {
-      "font_class": "navigate-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "notification",
-      "unicode": ""
-    },
-    {
-      "font_class": "notification-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "paperclip",
-      "unicode": ""
-    },
-    {
-      "font_class": "paperplane",
-      "unicode": ""
-    },
-    {
-      "font_class": "paperplane-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "person",
-      "unicode": ""
-    },
-    {
-      "font_class": "person-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "personadd",
-      "unicode": ""
-    },
-    {
-      "font_class": "personadd-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "personadd-filled-copy",
-      "unicode": ""
-    },
-    {
-      "font_class": "phone",
-      "unicode": ""
-    },
-    {
-      "font_class": "phone-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "plus",
-      "unicode": ""
-    },
-    {
-      "font_class": "plus-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "plusempty",
-      "unicode": ""
-    },
-    {
-      "font_class": "pulldown",
-      "unicode": ""
-    },
-    {
-      "font_class": "pyq",
-      "unicode": ""
-    },
-    {
-      "font_class": "qq",
-      "unicode": ""
-    },
-    {
-      "font_class": "redo",
-      "unicode": ""
-    },
-    {
-      "font_class": "redo-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "refresh",
-      "unicode": ""
-    },
-    {
-      "font_class": "refresh-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "refreshempty",
-      "unicode": ""
-    },
-    {
-      "font_class": "reload",
-      "unicode": ""
-    },
-    {
-      "font_class": "right",
-      "unicode": ""
-    },
-    {
-      "font_class": "scan",
-      "unicode": ""
-    },
-    {
-      "font_class": "search",
-      "unicode": ""
-    },
-    {
-      "font_class": "settings",
-      "unicode": ""
-    },
-    {
-      "font_class": "settings-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "shop",
-      "unicode": ""
-    },
-    {
-      "font_class": "shop-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "smallcircle",
-      "unicode": ""
-    },
-    {
-      "font_class": "smallcircle-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "sound",
-      "unicode": ""
-    },
-    {
-      "font_class": "sound-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "spinner-cycle",
-      "unicode": ""
-    },
-    {
-      "font_class": "staff",
-      "unicode": ""
-    },
-    {
-      "font_class": "staff-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "star",
-      "unicode": ""
-    },
-    {
-      "font_class": "star-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "starhalf",
-      "unicode": ""
-    },
-    {
-      "font_class": "trash",
-      "unicode": ""
-    },
-    {
-      "font_class": "trash-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "tune",
-      "unicode": ""
-    },
-    {
-      "font_class": "tune-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "undo",
-      "unicode": ""
-    },
-    {
-      "font_class": "undo-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "up",
-      "unicode": ""
-    },
-    {
-      "font_class": "top",
-      "unicode": ""
-    },
-    {
-      "font_class": "upload",
-      "unicode": ""
-    },
-    {
-      "font_class": "upload-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "videocam",
-      "unicode": ""
-    },
-    {
-      "font_class": "videocam-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "vip",
-      "unicode": ""
-    },
-    {
-      "font_class": "vip-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "wallet",
-      "unicode": ""
-    },
-    {
-      "font_class": "wallet-filled",
-      "unicode": ""
-    },
-    {
-      "font_class": "weibo",
-      "unicode": ""
-    },
-    {
-      "font_class": "weixin",
-      "unicode": ""
-    }
-  ];
-  const getVal = (val) => {
-    const reg = /^[0-9]*$/g;
-    return typeof val === "number" || reg.test(val) ? val + "px" : val;
-  };
-  const _sfc_main$e = {
-    name: "UniIcons",
-    emits: ["click"],
-    props: {
-      type: {
-        type: String,
-        default: ""
-      },
-      color: {
-        type: String,
-        default: "#333333"
-      },
-      size: {
-        type: [Number, String],
-        default: 16
-      },
-      customPrefix: {
-        type: String,
-        default: ""
-      },
-      fontFamily: {
-        type: String,
-        default: ""
-      }
-    },
-    data() {
-      return {
-        icons: fontData
-      };
-    },
-    computed: {
-      unicode() {
-        let code = this.icons.find((v) => v.font_class === this.type);
-        if (code) {
-          return code.unicode;
-        }
-        return "";
-      },
-      iconSize() {
-        return getVal(this.size);
-      },
-      styleObj() {
-        if (this.fontFamily !== "") {
-          return `color: ${this.color}; font-size: ${this.iconSize}; font-family: ${this.fontFamily};`;
-        }
-        return `color: ${this.color}; font-size: ${this.iconSize};`;
-      }
-    },
-    methods: {
-      _onClick() {
-        this.$emit("click");
-      }
-    }
-  };
-  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock(
-      "text",
-      {
-        style: vue.normalizeStyle($options.styleObj),
-        class: vue.normalizeClass(["uni-icons", ["uniui-" + $props.type, $props.customPrefix, $props.customPrefix ? $props.type : ""]]),
-        onClick: _cache[0] || (_cache[0] = (...args) => $options._onClick && $options._onClick(...args))
-      },
-      [
-        vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
-      ],
-      6
-      /* CLASS, STYLE */
-    );
-  }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$4], ["__scopeId", "data-v-946bce22"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue"]]);
-  const isObject = (val) => val !== null && typeof val === "object";
-  const defaultDelimiters = ["{", "}"];
-  class BaseFormatter {
-    constructor() {
-      this._caches = /* @__PURE__ */ Object.create(null);
-    }
-    interpolate(message, values, delimiters = defaultDelimiters) {
-      if (!values) {
-        return [message];
-      }
-      let tokens = this._caches[message];
-      if (!tokens) {
-        tokens = parse(message, delimiters);
-        this._caches[message] = tokens;
-      }
-      return compile(tokens, values);
-    }
-  }
-  const RE_TOKEN_LIST_VALUE = /^(?:\d)+/;
-  const RE_TOKEN_NAMED_VALUE = /^(?:\w)+/;
-  function parse(format, [startDelimiter, endDelimiter]) {
-    const tokens = [];
-    let position = 0;
-    let text = "";
-    while (position < format.length) {
-      let char = format[position++];
-      if (char === startDelimiter) {
-        if (text) {
-          tokens.push({ type: "text", value: text });
-        }
-        text = "";
-        let sub = "";
-        char = format[position++];
-        while (char !== void 0 && char !== endDelimiter) {
-          sub += char;
-          char = format[position++];
-        }
-        const isClosed = char === endDelimiter;
-        const type = RE_TOKEN_LIST_VALUE.test(sub) ? "list" : isClosed && RE_TOKEN_NAMED_VALUE.test(sub) ? "named" : "unknown";
-        tokens.push({ value: sub, type });
-      } else {
-        text += char;
-      }
-    }
-    text && tokens.push({ type: "text", value: text });
-    return tokens;
-  }
-  function compile(tokens, values) {
-    const compiled = [];
-    let index = 0;
-    const mode = Array.isArray(values) ? "list" : isObject(values) ? "named" : "unknown";
-    if (mode === "unknown") {
-      return compiled;
-    }
-    while (index < tokens.length) {
-      const token = tokens[index];
-      switch (token.type) {
-        case "text":
-          compiled.push(token.value);
-          break;
-        case "list":
-          compiled.push(values[parseInt(token.value, 10)]);
-          break;
-        case "named":
-          if (mode === "named") {
-            compiled.push(values[token.value]);
-          } else {
-            {
-              console.warn(`Type of token '${token.type}' and format of value '${mode}' don't match!`);
-            }
-          }
-          break;
-        case "unknown":
-          {
-            console.warn(`Detect 'unknown' type of token!`);
-          }
-          break;
-      }
-      index++;
-    }
-    return compiled;
-  }
-  const LOCALE_ZH_HANS = "zh-Hans";
-  const LOCALE_ZH_HANT = "zh-Hant";
-  const LOCALE_EN = "en";
-  const LOCALE_FR = "fr";
-  const LOCALE_ES = "es";
-  const hasOwnProperty = Object.prototype.hasOwnProperty;
-  const hasOwn = (val, key) => hasOwnProperty.call(val, key);
-  const defaultFormatter = new BaseFormatter();
-  function include(str, parts) {
-    return !!parts.find((part) => str.indexOf(part) !== -1);
-  }
-  function startsWith(str, parts) {
-    return parts.find((part) => str.indexOf(part) === 0);
-  }
-  function normalizeLocale(locale, messages2) {
-    if (!locale) {
-      return;
-    }
-    locale = locale.trim().replace(/_/g, "-");
-    if (messages2 && messages2[locale]) {
-      return locale;
-    }
-    locale = locale.toLowerCase();
-    if (locale === "chinese") {
-      return LOCALE_ZH_HANS;
-    }
-    if (locale.indexOf("zh") === 0) {
-      if (locale.indexOf("-hans") > -1) {
-        return LOCALE_ZH_HANS;
-      }
-      if (locale.indexOf("-hant") > -1) {
-        return LOCALE_ZH_HANT;
-      }
-      if (include(locale, ["-tw", "-hk", "-mo", "-cht"])) {
-        return LOCALE_ZH_HANT;
-      }
-      return LOCALE_ZH_HANS;
-    }
-    let locales = [LOCALE_EN, LOCALE_FR, LOCALE_ES];
-    if (messages2 && Object.keys(messages2).length > 0) {
-      locales = Object.keys(messages2);
-    }
-    const lang = startsWith(locale, locales);
-    if (lang) {
-      return lang;
-    }
-  }
-  class I18n {
-    constructor({ locale, fallbackLocale, messages: messages2, watcher, formater }) {
-      this.locale = LOCALE_EN;
-      this.fallbackLocale = LOCALE_EN;
-      this.message = {};
-      this.messages = {};
-      this.watchers = [];
-      if (fallbackLocale) {
-        this.fallbackLocale = fallbackLocale;
-      }
-      this.formater = formater || defaultFormatter;
-      this.messages = messages2 || {};
-      this.setLocale(locale || LOCALE_EN);
-      if (watcher) {
-        this.watchLocale(watcher);
-      }
-    }
-    setLocale(locale) {
-      const oldLocale = this.locale;
-      this.locale = normalizeLocale(locale, this.messages) || this.fallbackLocale;
-      if (!this.messages[this.locale]) {
-        this.messages[this.locale] = {};
-      }
-      this.message = this.messages[this.locale];
-      if (oldLocale !== this.locale) {
-        this.watchers.forEach((watcher) => {
-          watcher(this.locale, oldLocale);
-        });
-      }
-    }
-    getLocale() {
-      return this.locale;
-    }
-    watchLocale(fn) {
-      const index = this.watchers.push(fn) - 1;
-      return () => {
-        this.watchers.splice(index, 1);
-      };
-    }
-    add(locale, message, override = true) {
-      const curMessages = this.messages[locale];
-      if (curMessages) {
-        if (override) {
-          Object.assign(curMessages, message);
-        } else {
-          Object.keys(message).forEach((key) => {
-            if (!hasOwn(curMessages, key)) {
-              curMessages[key] = message[key];
-            }
-          });
-        }
-      } else {
-        this.messages[locale] = message;
-      }
-    }
-    f(message, values, delimiters) {
-      return this.formater.interpolate(message, values, delimiters).join("");
-    }
-    t(key, locale, values) {
-      let message = this.message;
-      if (typeof locale === "string") {
-        locale = normalizeLocale(locale, this.messages);
-        locale && (message = this.messages[locale]);
-      } else {
-        values = locale;
-      }
-      if (!hasOwn(message, key)) {
-        console.warn(`Cannot translate the value of keypath ${key}. Use the value of keypath as default.`);
-        return key;
-      }
-      return this.formater.interpolate(message[key], values).join("");
-    }
-  }
-  function watchAppLocale(appVm, i18n) {
-    if (appVm.$watchLocale) {
-      appVm.$watchLocale((newLocale) => {
-        i18n.setLocale(newLocale);
-      });
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$3], ["__scopeId", "data-v-6ad5e460"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-col/uni-col.vue"]]);
+  const ON_LOAD = "onLoad";
+  const ON_PULL_DOWN_REFRESH = "onPullDownRefresh";
+  function formatAppLog(type, filename, ...args) {
+    if (uni.__log__) {
+      uni.__log__(type, filename, ...args);
     } else {
-      appVm.$watch(() => appVm.$locale, (newLocale) => {
-        i18n.setLocale(newLocale);
-      });
+      console[type].apply(console, [...args, filename]);
     }
   }
-  function getDefaultLocale() {
-    if (typeof uni !== "undefined" && uni.getLocale) {
-      return uni.getLocale();
-    }
-    if (typeof global !== "undefined" && global.getLocale) {
-      return global.getLocale();
-    }
-    return LOCALE_EN;
+  function resolveEasycom(component, easycom) {
+    return shared.isString(component) ? easycom : component;
   }
-  function initVueI18n(locale, messages2 = {}, fallbackLocale, watcher) {
-    if (typeof locale !== "string") {
-      [locale, messages2] = [
-        messages2,
-        locale
-      ];
-    }
-    if (typeof locale !== "string") {
-      locale = getDefaultLocale();
-    }
-    if (typeof fallbackLocale !== "string") {
-      fallbackLocale = typeof __uniConfig !== "undefined" && __uniConfig.fallbackLocale || LOCALE_EN;
-    }
-    const i18n = new I18n({
-      locale,
-      fallbackLocale,
-      messages: messages2,
-      watcher
-    });
-    let t2 = (key, values) => {
-      if (typeof getApp !== "function") {
-        t2 = function(key2, values2) {
-          return i18n.t(key2, values2);
-        };
-      } else {
-        let isWatchedAppLocale = false;
-        t2 = function(key2, values2) {
-          const appVm = getApp().$vm;
-          if (appVm) {
-            appVm.$locale;
-            if (!isWatchedAppLocale) {
-              isWatchedAppLocale = true;
-              watchAppLocale(appVm, i18n);
-            }
-          }
-          return i18n.t(key2, values2);
-        };
-      }
-      return t2(key, values);
-    };
-    return {
-      i18n,
-      f(message, values, delimiters) {
-        return i18n.f(message, values, delimiters);
-      },
-      t(key, values) {
-        return t2(key, values);
-      },
-      add(locale2, message, override = true) {
-        return i18n.add(locale2, message, override);
-      },
-      watch(fn) {
-        return i18n.watchLocale(fn);
-      },
-      getLocale() {
-        return i18n.getLocale();
-      },
-      setLocale(newLocale) {
-        return i18n.setLocale(newLocale);
-      }
-    };
-  }
-  const en = {
-    "uni-search-bar.cancel": "cancel",
-    "uni-search-bar.placeholder": "Search enter content"
+  const createHook = (lifecycle) => (hook, target = vue.getCurrentInstance()) => {
+    !vue.isInSSRComponentSetup && vue.injectHook(lifecycle, hook, target);
   };
-  const zhHans = {
-    "uni-search-bar.cancel": "取消",
-    "uni-search-bar.placeholder": "请输入搜索内容"
-  };
-  const zhHant = {
-    "uni-search-bar.cancel": "取消",
-    "uni-search-bar.placeholder": "請輸入搜索內容"
-  };
-  const messages = {
-    en,
-    "zh-Hans": zhHans,
-    "zh-Hant": zhHant
-  };
-  const {
-    t
-  } = initVueI18n(messages);
-  const _sfc_main$d = {
-    name: "UniSearchBar",
-    emits: ["input", "update:modelValue", "clear", "cancel", "confirm", "blur", "focus"],
-    props: {
-      placeholder: {
-        type: String,
-        default: ""
-      },
-      radius: {
-        type: [Number, String],
-        default: 5
-      },
-      clearButton: {
-        type: String,
-        default: "auto"
-      },
-      cancelButton: {
-        type: String,
-        default: "auto"
-      },
-      cancelText: {
-        type: String,
-        default: ""
-      },
-      bgColor: {
-        type: String,
-        default: "#F8F8F8"
-      },
-      maxlength: {
-        type: [Number, String],
-        default: 100
-      },
-      value: {
-        type: [Number, String],
-        default: ""
-      },
-      modelValue: {
-        type: [Number, String],
-        default: ""
-      },
-      focus: {
-        type: Boolean,
-        default: false
-      },
-      readonly: {
-        type: Boolean,
-        default: false
-      }
-    },
-    data() {
-      return {
-        show: false,
-        showSync: false,
-        searchVal: ""
-      };
-    },
-    computed: {
-      cancelTextI18n() {
-        return this.cancelText || t("uni-search-bar.cancel");
-      },
-      placeholderText() {
-        return this.placeholder || t("uni-search-bar.placeholder");
-      }
-    },
-    watch: {
-      modelValue: {
-        immediate: true,
-        handler(newVal) {
-          this.searchVal = newVal;
-          if (newVal) {
-            this.show = true;
-          }
-        }
-      },
-      focus: {
-        immediate: true,
-        handler(newVal) {
-          if (newVal) {
-            if (this.readonly)
-              return;
-            this.show = true;
-            this.$nextTick(() => {
-              this.showSync = true;
-            });
-          }
-        }
-      },
-      searchVal(newVal, oldVal) {
-        this.$emit("input", newVal);
-        this.$emit("update:modelValue", newVal);
-      }
-    },
-    methods: {
-      searchClick() {
-        if (this.readonly)
-          return;
-        if (this.show) {
-          return;
-        }
-        this.show = true;
-        this.$nextTick(() => {
-          this.showSync = true;
-        });
-      },
-      clear() {
-        this.$emit("clear", {
-          value: this.searchVal
-        });
-        this.searchVal = "";
-      },
-      cancel() {
-        if (this.readonly)
-          return;
-        this.$emit("cancel", {
-          value: this.searchVal
-        });
-        this.searchVal = "";
-        this.show = false;
-        this.showSync = false;
-        plus.key.hideSoftKeybord();
-      },
-      confirm() {
-        plus.key.hideSoftKeybord();
-        this.$emit("confirm", {
-          value: this.searchVal
-        });
-      },
-      blur() {
-        plus.key.hideSoftKeybord();
-        this.$emit("blur", {
-          value: this.searchVal
-        });
-      },
-      emitFocus(e) {
-        this.$emit("focus", e.detail);
-      }
-    }
-  };
-  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$1);
-    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-searchbar" }, [
-      vue.createElementVNode(
-        "view",
-        {
-          style: vue.normalizeStyle({ borderRadius: $props.radius + "px", backgroundColor: $props.bgColor }),
-          class: "uni-searchbar__box",
-          onClick: _cache[5] || (_cache[5] = (...args) => $options.searchClick && $options.searchClick(...args))
-        },
-        [
-          vue.createElementVNode("view", { class: "uni-searchbar__box-icon-search" }, [
-            vue.renderSlot(_ctx.$slots, "searchIcon", {}, () => [
-              vue.createVNode(_component_uni_icons, {
-                color: "#c0c4cc",
-                size: "18",
-                type: "search"
-              })
-            ], true)
-          ]),
-          $data.show || $data.searchVal ? vue.withDirectives((vue.openBlock(), vue.createElementBlock("input", {
-            key: 0,
-            focus: $data.showSync,
-            disabled: $props.readonly,
-            placeholder: $options.placeholderText,
-            maxlength: $props.maxlength,
-            class: "uni-searchbar__box-search-input",
-            "confirm-type": "search",
-            type: "text",
-            "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.searchVal = $event),
-            onConfirm: _cache[1] || (_cache[1] = (...args) => $options.confirm && $options.confirm(...args)),
-            onBlur: _cache[2] || (_cache[2] = (...args) => $options.blur && $options.blur(...args)),
-            onFocus: _cache[3] || (_cache[3] = (...args) => $options.emitFocus && $options.emitFocus(...args))
-          }, null, 40, ["focus", "disabled", "placeholder", "maxlength"])), [
-            [vue.vModelText, $data.searchVal]
-          ]) : (vue.openBlock(), vue.createElementBlock(
-            "text",
-            {
-              key: 1,
-              class: "uni-searchbar__text-placeholder"
-            },
-            vue.toDisplayString($props.placeholder),
-            1
-            /* TEXT */
-          )),
-          $data.show && ($props.clearButton === "always" || $props.clearButton === "auto" && $data.searchVal !== "") && !$props.readonly ? (vue.openBlock(), vue.createElementBlock("view", {
-            key: 2,
-            class: "uni-searchbar__box-icon-clear",
-            onClick: _cache[4] || (_cache[4] = (...args) => $options.clear && $options.clear(...args))
-          }, [
-            vue.renderSlot(_ctx.$slots, "clearIcon", {}, () => [
-              vue.createVNode(_component_uni_icons, {
-                color: "#c0c4cc",
-                size: "20",
-                type: "clear"
-              })
-            ], true)
-          ])) : vue.createCommentVNode("v-if", true)
-        ],
-        4
-        /* STYLE */
-      ),
-      $props.cancelButton === "always" || $data.show && $props.cancelButton === "auto" ? (vue.openBlock(), vue.createElementBlock(
-        "text",
-        {
-          key: 0,
-          onClick: _cache[6] || (_cache[6] = (...args) => $options.cancel && $options.cancel(...args)),
-          class: "uni-searchbar__cancel"
-        },
-        vue.toDisplayString($options.cancelTextI18n),
-        1
-        /* TEXT */
-      )) : vue.createCommentVNode("v-if", true)
-    ]);
-  }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$3], ["__scopeId", "data-v-a149a6be"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-search-bar/uni-search-bar.vue"]]);
+  const onLoad = /* @__PURE__ */ createHook(ON_LOAD);
+  const onPullDownRefresh = /* @__PURE__ */ createHook(ON_PULL_DOWN_REFRESH);
   const ComponentClass = "uni-row";
   const modifierSeparator = "--";
-  const _sfc_main$c = {
+  const _sfc_main$e = {
     name: "uniRow",
     componentName: "uniRow",
     props: {
@@ -1475,16 +237,17 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$2], ["__scopeId", "data-v-86edfd37"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-row/uni-row.vue"]]);
-  const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$2], ["__scopeId", "data-v-86edfd37"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-row/uni-row.vue"]]);
+  const _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
     __name: "topCompontent",
     setup(__props) {
       function search(e) {
-        formatAppLog("log", "at compontents/topCompontent/topCompontent.vue:16", e);
+        uni.navigateTo({
+          url: "/pages/search/search?name=" + e.detail.value
+        });
       }
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$2);
-        const _component_uni_search_bar = resolveEasycom(vue.resolveDynamicComponent("uni-search-bar"), __easycom_1$1);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
         const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "topCompontent" }, [
           vue.createVNode(_component_uni_row, { class: "titleBar" }, {
@@ -1501,11 +264,17 @@ if (uni.restoreGlobal) {
               }),
               vue.createVNode(_component_uni_col, { span: "11" }, {
                 default: vue.withCtx(() => [
-                  vue.createVNode(_component_uni_search_bar, {
-                    placeholder: "来找一部好番吧~",
-                    bgColor: "#EEEEEE",
-                    onConfirm: search
-                  })
+                  vue.createElementVNode(
+                    "input",
+                    {
+                      placeholder: "来找一部好番吧~",
+                      bgColor: "#EEEEEE",
+                      onConfirm: search
+                    },
+                    null,
+                    32
+                    /* HYDRATE_EVENTS */
+                  )
                 ]),
                 _: 1
                 /* STABLE */
@@ -1525,8 +294,8 @@ if (uni.restoreGlobal) {
       };
     }
   });
-  const CompontentsTopCompontentTopCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-ce76fffc"], ["__file", "E:/程序夹/emtanimation_app/compontents/topCompontent/topCompontent.vue"]]);
-  const _sfc_main$a = {};
+  const CompontentsTopCompontentTopCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["__scopeId", "data-v-ce76fffc"], ["__file", "E:/程序夹/emtanimation_app/compontents/topCompontent/topCompontent.vue"]]);
+  const _sfc_main$c = {};
   function _sfc_render$1(_ctx, _cache) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "footer" }, [
       vue.createElementVNode("view", { class: "content" }, [
@@ -1542,7 +311,7 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  const CompontentsFooterCompontentFooterCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$1], ["__scopeId", "data-v-63a16b71"], ["__file", "E:/程序夹/emtanimation_app/compontents/footerCompontent/footerCompontent.vue"]]);
+  const CompontentsFooterCompontentFooterCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$1], ["__scopeId", "data-v-63a16b71"], ["__file", "E:/程序夹/emtanimation_app/compontents/footerCompontent/footerCompontent.vue"]]);
   const baseUrl = "https://8.130.75.115:8080";
   const http = (url, method, data, headers = {}) => {
     const requestConfig = {
@@ -1599,14 +368,6 @@ if (uni.restoreGlobal) {
       throw error;
     }
   };
-  const totalVideo = async () => {
-    try {
-      const res = await http("/totalVideo", "get");
-      return res;
-    } catch (error) {
-      throw error;
-    }
-  };
   const selectVideoNum = async (lang, publishyear, publishare, letter) => {
     try {
       const res = await http("/selectVideoNum", "get", {
@@ -1652,7 +413,7 @@ if (uni.restoreGlobal) {
     else
       return false;
   };
-  const _sfc_main$9 = {
+  const _sfc_main$b = {
     name: "UniBadge",
     emits: ["click"],
     props: {
@@ -1792,7 +553,7 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render], ["__scopeId", "data-v-92d7b819"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue"]]);
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render], ["__scopeId", "data-v-92d7b819"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue"]]);
   var isVue2 = false;
   function set(target, key, val) {
     if (Array.isArray(target)) {
@@ -3238,7 +1999,7 @@ This will fail in production.`);
     },
     getters: {}
   });
-  const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
     __name: "itemCompontent",
     props: {
       obj: { type: null, required: true }
@@ -3282,8 +2043,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsItemCompontentItemCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-0752f4c2"], ["__file", "E:/程序夹/emtanimation_app/compontents/itemCompontent/itemCompontent.vue"]]);
-  const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsItemCompontentItemCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-0752f4c2"], ["__file", "E:/程序夹/emtanimation_app/compontents/itemCompontent/itemCompontent.vue"]]);
+  const _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
     __name: "weekCompontent",
     setup(__props) {
       const dayInit = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
@@ -3305,7 +2066,7 @@ This will fail in production.`);
         getTodyData();
       });
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
         const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "week" }, [
           vue.createCommentVNode(" 星期数 "),
@@ -3366,8 +2127,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsHomeWeekCompontentWeekCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-ddfca9bc"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/weekCompontent/weekCompontent.vue"]]);
-  const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsHomeWeekCompontentWeekCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-ddfca9bc"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/weekCompontent/weekCompontent.vue"]]);
+  const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
     __name: "randomCompontent",
     setup(__props) {
       const items = vue.ref([]);
@@ -3380,7 +2141,7 @@ This will fail in production.`);
         getRandom();
       });
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
         const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "random" }, [
           vue.createCommentVNode(" 标题 "),
@@ -3431,8 +2192,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsHomeRandomCompontentRandomCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-6cf98f20"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/randomCompontent/randomCompontent.vue"]]);
-  const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsHomeRandomCompontentRandomCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-6cf98f20"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/randomCompontent/randomCompontent.vue"]]);
+  const _sfc_main$7 = /* @__PURE__ */ vue.defineComponent({
     __name: "Re0Compontent",
     setup(__props) {
       const items = vue.ref([]);
@@ -3467,7 +2228,7 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsHomeRe0CompontentRe0Compontent = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-c8cf1775"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/Re0Compontent/Re0Compontent.vue"]]);
+  const CompontentsHomeRe0CompontentRe0Compontent = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-c8cf1775"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/Re0Compontent/Re0Compontent.vue"]]);
   const useSettingStore = defineStore("setting", {
     //定义参数
     state: () => ({
@@ -3489,7 +2250,7 @@ This will fail in production.`);
       }
     }
   });
-  const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
     __name: "index",
     setup(__props) {
       const set2 = useSettingStore();
@@ -3527,7 +2288,7 @@ This will fail in production.`);
       };
     }
   });
-  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/程序夹/emtanimation_app/pages/index/index.vue"]]);
+  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/程序夹/emtanimation_app/pages/index/index.vue"]]);
   const useAllStore = defineStore("all", {
     state: () => ({
       lang: [],
@@ -3572,7 +2333,7 @@ This will fail in production.`);
       }
     }
   });
-  const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
     __name: "tagsCompontent",
     setup(__props) {
       const allStore = useAllStore();
@@ -3617,7 +2378,7 @@ This will fail in production.`);
         }
       }
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
         const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "allContent" }, [
           vue.createCommentVNode(" tag标签区 "),
@@ -3783,8 +2544,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsAllTagsCompontentTagsCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-e4b22507"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/tagsCompontent/tagsCompontent.vue"]]);
-  const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsAllTagsCompontentTagsCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-e4b22507"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/tagsCompontent/tagsCompontent.vue"]]);
+  const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
     __name: "listCompontent",
     setup(__props) {
       const pageNum = vue.ref(1);
@@ -3910,18 +2671,13 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsAllListCompontentListCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-342b8925"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/listCompontent/listCompontent.vue"]]);
-  const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsAllListCompontentListCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-342b8925"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/listCompontent/listCompontent.vue"]]);
+  const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
     __name: "all",
     setup(__props) {
       const setting = useSettingStore();
       const theme = vue.computed(() => setting.theme);
-      const total = vue.ref(0);
-      async function getTotalVideo() {
-        total.value = await totalVideo();
-      }
       onLoad(() => {
-        getTotalVideo();
       });
       return (_ctx, _cache) => {
         return vue.openBlock(), vue.createElementBlock(
@@ -3946,7 +2702,88 @@ This will fail in production.`);
       };
     }
   });
-  const PagesAllAll = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-445eec53"], ["__file", "E:/程序夹/emtanimation_app/pages/all/all.vue"]]);
+  const PagesAllAll = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-445eec53"], ["__file", "E:/程序夹/emtanimation_app/pages/all/all.vue"]]);
+  const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+    __name: "searchCompontent",
+    setup(__props) {
+      const items = vue.ref([]);
+      const total = vue.ref(0);
+      async function getItems() {
+        const res = await selectVideoByName(name.value);
+        items.value = res;
+        total.value = res.length;
+        formatAppLog("log", "at compontents/search/searchCompontent/searchCompontent.vue:30", "获取到的数据总额：", total.value);
+      }
+      const name = vue.ref("");
+      onLoad((props) => {
+        name.value = props.name;
+        getItems();
+      });
+      return (_ctx, _cache) => {
+        return vue.openBlock(), vue.createElementBlock("view", { class: "searchList" }, [
+          vue.createCommentVNode(" 结果描述 "),
+          vue.createElementVNode(
+            "view",
+            { class: "search_des" },
+            vue.toDisplayString(name.value) + " 的搜索结果为(共" + vue.toDisplayString(total.value) + "条数据): ",
+            1
+            /* TEXT */
+          ),
+          vue.createElementVNode("view", { class: "search_list" }, [
+            (vue.openBlock(true), vue.createElementBlock(
+              vue.Fragment,
+              null,
+              vue.renderList(items.value, (item) => {
+                return vue.openBlock(), vue.createBlock(CompontentsItemCompontentItemCompontent, {
+                  key: item.vodId,
+                  obj: item,
+                  class: "item"
+                }, null, 8, ["obj"]);
+              }),
+              128
+              /* KEYED_FRAGMENT */
+            ))
+          ])
+        ]);
+      };
+    }
+  });
+  const CompontentsSearchSearchCompontentSearchCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-7dbdadd5"], ["__file", "E:/程序夹/emtanimation_app/compontents/search/searchCompontent/searchCompontent.vue"]]);
+  const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
+    __name: "search",
+    setup(__props) {
+      const setting = useSettingStore();
+      const theme = vue.computed(() => setting.theme);
+      return (_ctx, _cache) => {
+        return vue.openBlock(), vue.createElementBlock(
+          vue.Fragment,
+          null,
+          [
+            vue.createCommentVNode(" 搜索界面 "),
+            vue.createElementVNode(
+              "view",
+              {
+                class: vue.normalizeClass(["search", vue.unref(theme) == "dark" ? "dark" : "light"])
+              },
+              [
+                vue.createCommentVNode(" 头部组件 "),
+                vue.createVNode(CompontentsTopCompontentTopCompontent),
+                vue.createCommentVNode(" 内容组件 "),
+                vue.createVNode(CompontentsSearchSearchCompontentSearchCompontent, { style: { "margin-top": "110rpx" } }),
+                vue.createCommentVNode(" 底部组件 "),
+                vue.createVNode(CompontentsFooterCompontentFooterCompontent, { style: { "margin-top": "55rpx" } })
+              ],
+              2
+              /* CLASS */
+            )
+          ],
+          2112
+          /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+        );
+      };
+    }
+  });
+  const PagesSearchSearch = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-c10c040c"], ["__file", "E:/程序夹/emtanimation_app/pages/search/search.vue"]]);
   __definePage("pages/index/index", PagesIndexIndex);
   __definePage("compontents/topCompontent/topCompontent", CompontentsTopCompontentTopCompontent);
   __definePage("compontents/footerCompontent/footerCompontent", CompontentsFooterCompontentFooterCompontent);
@@ -3957,6 +2794,8 @@ This will fail in production.`);
   __definePage("pages/all/all", PagesAllAll);
   __definePage("compontents/all/tagsCompontent/tagsCompontent", CompontentsAllTagsCompontentTagsCompontent);
   __definePage("compontents/all/listCompontent/listCompontent", CompontentsAllListCompontentListCompontent);
+  __definePage("pages/search/search", PagesSearchSearch);
+  __definePage("compontents/search/searchCompontent/searchCompontent", CompontentsSearchSearchCompontentSearchCompontent);
   const _sfc_main = {
     onLaunch: function() {
       formatAppLog("log", "at App.vue:4", "App Launch");

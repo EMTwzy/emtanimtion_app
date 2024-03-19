@@ -57,15 +57,15 @@ export const randomVideo=async ():itemI =>{
 
 /**********************************分类大全 all***********************************************/
 
-//获取所有视频的总数
-export const totalVideo=async ():Promise<number>=>{
-	try{
-		const res:number=await http("/totalVideo","get");
-		return res;
-	}catch(error){
-		throw error;
-	}
-}
+// //获取所有视频的总数
+// export const totalVideo=async ():Promise<number>=>{
+// 	try{
+// 		const res:number=await http("/totalVideo","get");
+// 		return res;
+// 	}catch(error){
+// 		throw error;
+// 	}
+// }
 //获取指定条件的总额
 export const selectVideoNum=async(lang:string,publishyear:number|string,publishare:string,letter:string):Promise<number>=>{
 	try{

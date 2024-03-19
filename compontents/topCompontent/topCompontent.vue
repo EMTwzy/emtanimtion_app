@@ -4,7 +4,7 @@
 			<uni-col span="7">
 				<image src="../../static/emilia.png" mode="aspectFit"></image>
 			</uni-col>
-			<uni-col span="11"><uni-search-bar placeholder="来找一部好番吧~" bgColor="#EEEEEE" @confirm="search" /></uni-col>
+			<uni-col span="11"><input placeholder="来找一部好番吧~" bgColor="#EEEEEE" @confirm="search" /></uni-col>
 			<uni-col span="6"><text class="titleContent">EMT动漫</text></uni-col>
 		</uni-row>
 	</view>
@@ -13,7 +13,9 @@
 <script setup lang="ts">
 	import { ref } from 'vue';
 	function search(e) {
-		console.log(e);
+		uni.navigateTo({
+			url:'/pages/search/search?name='+e.detail.value
+		})
 	}
 </script>
 
@@ -43,6 +45,13 @@
 				font-style: italic;
 				font-weight: bold;
 				box-shadow: 1rpx rebeccapurple;
+			}
+			//输入框
+			input{
+				width: 300rpx;
+				padding: 10rpx;
+				border: 1rpx solid rgba(170, 85, 255, 0.5);
+				border-radius: 10%;
 			}
 		}
 	}

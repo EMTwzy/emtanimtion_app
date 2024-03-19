@@ -21,7 +21,7 @@
 	//导入item组件
 	import itemCompontent from '../../compontents/itemCompontent/itemCompontent.vue';
 	//导入视频总数、指定条件的数据、指定条件的数据总额
-	import {totalVideo,selectVideo,selectVideoNum} from '../../api/index';
+	import {selectVideo,selectVideoNum} from '../../api/index';
 	//导入interface
 	import {itemI} from '../../interface/itemInterface';
 	//导入tags模块、list模块
@@ -34,14 +34,9 @@
 	const setting=useSettingStore();
 	const theme=computed(()=>setting.theme);
 	
-	//记录数据总量
-	const total=ref<number>(0);
-	async function getTotalVideo(){
-		total.value=await totalVideo();
-	}
+
 	onLoad(()=>{
-		//页面一加载就获取默认状态下的所有数据总额
-		getTotalVideo();
+
 	})
 	
 </script>

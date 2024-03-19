@@ -2393,94 +2393,32 @@
   /* 稍微与图片隔开一些 */
 }
 
-.week[data-v-ddfca9bc] {
-  width: 86%;
-  margin-top: 3.4375rem;
-  z-index: 2;
-  border: 0.03125rem solid #ccc;
-  padding: 0.15625rem;
+.searchList[data-v-7dbdadd5] {
+  width: 95%;
+  height: 31.25rem;
+  margin: 0 auto;
+  overflow: auto;
+  border: 0.0625rem solid #ccc;
 }
-.week .days .day[data-v-ddfca9bc] {
-  font-size: 1rem;
-  text-align: center;
-}
-.week .days .daySelected[data-v-ddfca9bc] {
-  color: slateblue;
-}
-.week .weekContent[data-v-ddfca9bc] {
-  margin-top: 0.3125rem;
+.searchList .search_des[data-v-7dbdadd5] {
   width: 100%;
+  margin-left: 4.6875rem;
+  margin-top: 0.3125rem;
+}
+.searchList .search_list[data-v-7dbdadd5] {
   display: flex;
-  justify-items: center;
-  align-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.week .weekContent .itemContent[data-v-ddfca9bc] {
-  margin: 0.15625rem;
-}
-.week .noItems[data-v-ddfca9bc] {
-  margin: 0 auto;
-  text-align: center;
+.searchList .search_list .item[data-v-7dbdadd5] {
+  margin: 0.375rem;
 }
 
-.random[data-v-6cf98f20] {
-  border: 0.03125rem solid #ccc;
-  width: 86%;
-  padding: 0.15625rem;
-  margin: 0 auto;
-}
-.random .random_title[data-v-6cf98f20] {
-  text-align: center;
-  font-style: initial;
-}
-.random .random_content[data-v-6cf98f20] {
-  margin-top: 0.3125rem;
-  width: 100%;
-  display: flex;
-  justify-items: center;
-  align-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.random .random_content .items[data-v-6cf98f20] {
-  margin: 0.15625rem;
-}
-
-.reTheme[data-v-c8cf1775] {
-  width: 86%;
-  margin: 0 auto;
-  border: 0.03125rem solid #ccc;
-  padding: 0.15625rem;
-}
-.reTheme .theme_title[data-v-c8cf1775] {
-  width: 100%;
-  color: rgba(198, 98, 255, 0.8);
-}
-.reTheme .theme_content[data-v-c8cf1775] {
-  display: flex;
-  flex-wrap: wrap;
-  justify-items: center;
-  align-items: center;
-}
-.reTheme .theme_content .items[data-v-c8cf1775] {
-  margin: 0.15625rem;
-}
-
-.dark[data-v-1cf27b2a] {
+.dark[data-v-c10c040c] {
   background-color: #1f1f1f;
   color: #ccc;
 }
-.light[data-v-1cf27b2a] {
+.light[data-v-c10c040c] {
   background-color: aliceblue;
   color: black;
-}
-.content[data-v-1cf27b2a] {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.content .alltop[data-v-1cf27b2a] {
-  margin-top: 1.5625rem;
 }
