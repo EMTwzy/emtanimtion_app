@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-	import { ref, computed } from 'vue';
+	import { computed } from 'vue';
 	//获取头部模块、底部模块
 	import topCompontent from '../../compontents/topCompontent/topCompontent.vue';
 	import footerCompontent from '../../compontents/footerCompontent/footerCompontent.vue';

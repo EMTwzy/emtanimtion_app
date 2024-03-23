@@ -95,3 +95,28 @@ export const selectVideo=async(lang:string,publishyear:number|string,publishare:
 		throw error;
 	}
 }
+
+/**********************************播放界面 play***********************************************/
+//获取视频播放数据
+export const getPlay=async(vodId:number)=>{
+	try{
+		const res=await http("/getPlay","get",{
+			vid:vodId
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//获取视频集数
+export const getScore=async(vodId:number)=>{
+	try{
+		const res=await http("/getScore","get",{
+			vid:vodId
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}

@@ -11,7 +11,7 @@
 	import { defineProps, ref } from 'vue';
 	import itemI from '../../interface/itemInterface/itemInterface';
 	import { picUtils } from '../../api/index.ts';
-	import { useApiStore } from '../../pinia/api';
+	//import { useApiStore } from '../../pinia/api';
 	import { IsToday } from '../../utils/time';
 	import {onLoad} from '@dcloudio/uni-app';
 
@@ -29,7 +29,9 @@
 
 	//使用pinia中的公共方法
 	function trunTo(vodId) {
-		useApiStore().turnTo(vodId);
+		uni.navigateTo({
+			url:'/pages/play/play?vodId='+vodId
+		})
 	}
 	
 	//一加载就向list传数据
