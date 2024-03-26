@@ -67,9 +67,9 @@ export const randomVideo=async ():itemI =>{
 // 	}
 // }
 //获取指定条件的总额
-export const selectVideoNum=async(lang:string,publishyear:number|string,publishare:string,letter:string):Promise<number>=>{
+export const selectVideoNum=async(lang:string,publishyear:number|string,publishare:string,letter:string)=>{
 	try{
-		const res:number=await http("/selectVideoNum","get",{
+		const res=await http("/selectVideoNum","get",{
 			lang,
 			publishyear,
 			publishare,
@@ -98,10 +98,11 @@ export const selectVideo=async(lang:string,publishyear:number|string,publishare:
 
 /**********************************播放界面 play***********************************************/
 //获取视频播放数据
-export const getPlay=async(vodId:number)=>{
+export const getPlay=async(vodId:number,options:number)=>{
 	try{
 		const res=await http("/getPlay","get",{
-			vid:vodId
+			vid:vodId,
+			options
 		});
 		return res;
 	}catch(error){
@@ -110,13 +111,111 @@ export const getPlay=async(vodId:number)=>{
 }
 
 //获取视频集数
-export const getScore=async(vodId:number)=>{
+export const getScore=async(vodId:number,options:number)=>{
 	try{
 		const res=await http("/getScore","get",{
-			vid:vodId
+			vid:vodId,
+			options
 		});
 		return res;
 	}catch(error){
 		throw error;
 	}
 }
+
+//当前是否处于追番状态
+export const isSubscribe=async(userId:number,userSubId:number)=>{
+	try{
+		const res=await http("/isSubscribe","get",{
+			userId,userSubId
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//确认追番
+export const addSubscribe=async(userId:number,userSubId:number)=>{
+	try{
+		const res=await http("/addSubscribe","get",{
+			userId,userSubId
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//取消追番
+export const deleteSubscribe=async(userId:number,userSubId:number)=>{
+	try{
+		const res=await http("/deleteSubscribe","get",{
+			userId,userSubId
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//查看当前视频历史记录是否存在
+export const selectHistory=async(userId:number,vodPerId:number,vodEpisode:string)=>{
+	try{
+		const res=await http("/selectHistory","get",{
+			userId,vodPerId,vodEpisode
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//添加历史记录
+export const addHistory=async(userId:number,vodPerId:number,vodEpisode:string,vodWatchTime:number)=>{
+	try{
+		const res=await http("/addHistory","get",{
+			userId,vodPerId,vodEpisode,vodWatchTime
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+
+/**********************************用户界面 user***********************************************/
+//获取历史记录
+export const getHistory=async(userId:number)=>{
+	try{
+		const res=await http("/getHistory","get",{userId});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//获取追番记录
+export const getSubscribe=async(userId:number)=>{
+	try{
+		const res=await http("/selectSubscribe","get",{userId});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//用户登录 获取用户信息
+export const loginUser=async(userName:string,userPassword:string)=>{
+	try{
+		const res=await http("/loginUser","get",{
+			userName,userPassword
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+
+

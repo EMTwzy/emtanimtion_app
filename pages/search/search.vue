@@ -22,6 +22,10 @@
 	
 	const setting=useSettingStore();
 	const theme=computed(()=>setting.theme);
+	uni.setTabBarStyle({
+		backgroundColor:theme.value=='dark'?'#000000':'#DCDFE6',
+		color:theme.value=='dark'?'#ccc':'#000000'
+	});
 	
 </script>
 

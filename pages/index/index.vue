@@ -26,11 +26,25 @@
 	//获取系统设计参数
 	import { useSettingStore } from '../../pinia/setting';
 	import { onPullDownRefresh } from '@dcloudio/uni-app';
+	
+	import { useUserStore } from '../../pinia/user';
 
 
 	//全局主题样式
 	const set = useSettingStore();
 	const theme = computed(() => set.theme);
+	uni.setTabBarStyle({
+		backgroundColor:theme.value=='dark'?'#000000':'#DCDFE6',
+		color:theme.value=='dark'?'#ccc':'#000000'
+	})
+	
+	//模拟用户登录状态
+	const useUser=useUserStore();
+	useUser.userId=1;
+	useUser.userName="emilia";
+	useUser.userInformation={
+		loginTime:1710988243
+	}
 
 	//允许下拉刷新
 	onPullDownRefresh(() => {
@@ -41,7 +55,7 @@
 			});
 			uni.stopPullDownRefresh(); // 停止下拉刷新动画
 		}, 500);
-	})
+	});
 </script>
 
 <style lang="less" scoped>

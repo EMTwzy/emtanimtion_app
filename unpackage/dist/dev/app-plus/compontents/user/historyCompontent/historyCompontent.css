@@ -2221,22 +2221,19 @@
 .uni-row--flex-align-bottom[data-v-86edfd37] {
   align-items: flex-end;
 }
-.episode[data-v-696d5f51] {
-  width: 100%;
+.historys[data-v-0b3c4578] {
+  border-top: 0.03125rem solid #ccc;
+  border-bottom: 0.03125rem solid #ccc;
+  padding: 0.3125rem;
+  height: 2.5rem;
+  font-size: 0.625rem;
 }
-.episode .episodeTop[data-v-696d5f51] {
+.historys .pic[data-v-0b3c4578] {
+  width: 1.875rem;
+  height: 2.5rem;
+}
+.historys .text[data-v-0b3c4578] {
   text-align: center;
-  margin-top: 0.3125rem;
-}
-.episode .episodeList[data-v-696d5f51] {
-  margin-top: 0.3125rem;
-  height: 1.5625rem;
-}
-.episode .episodeList .episodeOne[data-v-696d5f51] {
-  height: 1.875rem;
-  border: 0.03125rem solid #ccc;
-  text-align: center;
-}
-.episode .episodeList .selected[data-v-696d5f51] {
-  color: #6a99ff;
+  margin-top: 0.625rem;
+  overflow-x: auto;
 }

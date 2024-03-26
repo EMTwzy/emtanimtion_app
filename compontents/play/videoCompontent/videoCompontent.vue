@@ -10,7 +10,7 @@
 	import {usePlayStore} from '../../../pinia/play';
 	
 	const playStore=usePlayStore();
-	const videoPlay='https://v.cdnlz14.com/20231022/30821_dea009bc/index.m3u8';//computed(()=>playStore.selectVideo);
+	const videoPlay=computed(()=>playStore.selectVideo);//测试用/'https://v.cdnlz14.com/20231022/30821_dea009bc/index.m3u8';
 	const selectEpisode=playStore.selectEpisode;
 	
 </script>

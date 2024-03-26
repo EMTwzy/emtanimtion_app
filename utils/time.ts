@@ -22,3 +22,19 @@ export const IsToday=(vodAddtime:string)=>{
 	else 
 	return false;
 };
+
+//现在的时间戳
+export const nowTime=()=>{
+	let time=new Date();
+	console.log("现在时间为",time.getTime()/1000);
+	return time.getTime()/1000;
+}
+
+//时间戳转换为具体日期
+export const changeDate=(time:number)=>{
+	let date=new Date(time*1000);
+	let year=date.getFullYear();
+	let month=date.getMonth()+1;
+	let day=date.getDate();
+	return year+'-'+month+'-'+day;
+}

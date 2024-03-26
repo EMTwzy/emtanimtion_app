@@ -11,7 +11,6 @@
 	import { defineProps, ref } from 'vue';
 	import itemI from '../../interface/itemInterface/itemInterface';
 	import { picUtils } from '../../api/index.ts';
-	//import { useApiStore } from '../../pinia/api';
 	import { IsToday } from '../../utils/time';
 	import {onLoad} from '@dcloudio/uni-app';
 
@@ -27,7 +26,6 @@
 	//是否是今日更新的番剧
 	const todayIs = ref<boolean>(IsToday(data.obj.vodAddtime));
 
-	//使用pinia中的公共方法
 	function trunTo(vodId) {
 		uni.navigateTo({
 			url:'/pages/play/play?vodId='+vodId

@@ -5,16 +5,23 @@
 				<image src="../../static/emilia.png" mode="aspectFit"></image>
 			</uni-col>
 			<uni-col span="11"><input placeholder="来找一部好番吧~" bgColor="#EEEEEE" @confirm="search" /></uni-col>
-			<uni-col span="6"><text class="titleContent">EMT动漫</text></uni-col>
+			<uni-col span="6"><text class="titleContent" @click="goHome">EMT动漫</text></uni-col>
 		</uni-row>
 	</view>
 </template>
 
 <script setup lang="ts">
 	import { ref } from 'vue';
+	// 查询
 	function search(e) {
 		uni.navigateTo({
 			url:'/pages/search/search?name='+e.detail.value
+		})
+	}
+	// 回首页
+	function goHome(){
+		uni.reLaunch({
+			url:'/pages/index/index'
 		})
 	}
 </script>

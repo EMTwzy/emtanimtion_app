@@ -6,7 +6,9 @@
 		<!-- 视频组件 -->
 		<videoCompontent></videoCompontent>
 		<!-- 集数组件 -->
-		<episodeCompontent></episodeCompontent>
+		<episodeCompontent style="margin-bottom: 40rpx;"></episodeCompontent>
+		<!-- 番剧信息组件 -->
+		<informationCompontent></informationCompontent>
 		
 		<!-- 尾部组件 -->
 		<footerCompontent></footerCompontent>
@@ -27,13 +29,18 @@
 	import itemI from '../../interface/itemInterface';
 	//导入 根据id获取视频信息、播放数据、视频集数
 	import {selectVideoById,getPlay,getScore} from '../../api/index';
-	//导入视频组件
+	//导入视频组件 集数控制组件 番剧信息组件
 	import videoCompontent from '../../compontents/play/videoCompontent/videoCompontent.vue';
 	import episodeCompontent from '../../compontents/play/episodeCompontent/episodeCompontent.vue';
+	import informationCompontent from '../../compontents/play/informationCompontent/informationCompontent.vue';
 	
 	
 	const settingStore=useSettingStore();
 	const theme=computed(()=>settingStore.theme);              //主题
+	uni.setTabBarStyle({
+		backgroundColor:theme.value=='dark'?'#000000':'#DCDFE6',
+		color:theme.value=='dark'?'#ccc':'#000000'
+	});
 	
 	const userStore=useUserStore();
 	const playStore=usePlayStore();			//播放pinia
@@ -43,16 +50,17 @@
 		let res:itemI=await selectVideoById(vodId);		//获取番剧信息
 		playStore.videoInfo=res;
 		
-		let res2=await getPlay(vodId);		//获取播放数据
+		let res2=await getPlay(vodId,1);		//获取播放数据
 		playStore.videoList=res2;
 		
-		let res3=await getScore(vodId);		//获取集数
+		let res3=await getScore(vodId,1);		//获取集数
 		playStore.episodeList=res3;
 		
 		console.log("播放这边接收到的数据为",playStore.videoInfo,"\n播放数据为",playStore.videoList,"\n集数组为",playStore.episodeList);
 	}
 	
 	onLoad((param)=>{
+		console.log("播放id",param);
 		getVideo(param.vodId).then(()=>{
 			playStore.initInformation(userStore.userId);
 		});

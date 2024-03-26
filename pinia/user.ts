@@ -3,9 +3,9 @@ import {defineStore} from 'pinia';
 
 export const useUserStore=defineStore('user',{
 	state:()=>({
-		userId:'',
+		userId:0,
 		userName:'',
-		userPassword:'',
+		userInformation:{}
 	}),
 	getters:{
 		getUserId:(state)=>{}

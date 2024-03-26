@@ -122,8 +122,39 @@
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "compontents/play/informationCompontent/informationCompontent",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/user/user",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "compontents/user/historyCompontent/historyCompontent",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "compontents/user/subscribeCompontent/subscribeCompontent",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
 		}
-		
 		
 	],
 	"globalStyle": {
@@ -148,6 +179,24 @@
 				"path": "", //启动页面，必选
 				"query": "" //启动参数，在页面的onLoad函数里面得到
 			}
+		]
+	},
+	//设置底部菜单栏
+	"tabBar": {
+		//底部菜单的背景颜色
+		"backgroundColor": "#ccc",
+		//未选择状态的颜色
+		"color": "#000",
+		//被选中时的颜色
+		"selectedColor": "#c662ff",
+		"fontSize":"16px",
+		//图标宽度
+		"iconWidth": "28px",
+		"list": [
+			//界面地址 标题 图标地址 选择时的图标
+			{"pagePath": "pages/index/index","text": "主页","iconPath": "/static/footer/emilia_Q.png","selectedIconPath": "/static/footer/emilia_Q2.png"},
+			{"pagePath": "pages/all/all","text": "大全","iconPath": "/static/footer/emilia_Q.png","selectedIconPath": "/static/footer/emilia_Q2.png"},
+			{"pagePath": "pages/user/user","text": "我的","iconPath": "/static/footer/emilia_Q.png","selectedIconPath": "/static/footer/emilia_Q2.png"}
 		]
 	}
 }
