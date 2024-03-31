@@ -39,7 +39,7 @@ if (uni.restoreGlobal) {
     return target;
   };
   const ComponentClass$1 = "uni-col";
-  const _sfc_main$o = {
+  const _sfc_main$v = {
     name: "uniCol",
     props: {
       span: {
@@ -143,7 +143,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -160,9 +160,11 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$5], ["__scopeId", "data-v-6ad5e460"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-col/uni-col.vue"]]);
+  const __easycom_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["render", _sfc_render$a], ["__scopeId", "data-v-6ad5e460"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-col/uni-col.vue"]]);
   const ON_SHOW = "onShow";
   const ON_LOAD = "onLoad";
+  const ON_UNLOAD = "onUnload";
+  const ON_BACK_PRESS = "onBackPress";
   const ON_PULL_DOWN_REFRESH = "onPullDownRefresh";
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
@@ -179,10 +181,12 @@ if (uni.restoreGlobal) {
   };
   const onShow = /* @__PURE__ */ createHook(ON_SHOW);
   const onLoad = /* @__PURE__ */ createHook(ON_LOAD);
+  const onUnload = /* @__PURE__ */ createHook(ON_UNLOAD);
+  const onBackPress = /* @__PURE__ */ createHook(ON_BACK_PRESS);
   const onPullDownRefresh = /* @__PURE__ */ createHook(ON_PULL_DOWN_REFRESH);
   const ComponentClass = "uni-row";
   const modifierSeparator = "--";
-  const _sfc_main$n = {
+  const _sfc_main$u = {
     name: "uniRow",
     componentName: "uniRow",
     props: {
@@ -222,7 +226,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -239,8 +243,8 @@ if (uni.restoreGlobal) {
       /* CLASS, STYLE */
     );
   }
-  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$4], ["__scopeId", "data-v-86edfd37"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-row/uni-row.vue"]]);
-  const _sfc_main$m = /* @__PURE__ */ vue.defineComponent({
+  const __easycom_2$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["render", _sfc_render$9], ["__scopeId", "data-v-86edfd37"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-row/uni-row.vue"]]);
+  const _sfc_main$t = /* @__PURE__ */ vue.defineComponent({
     __name: "topCompontent",
     setup(__props) {
       function search(e) {
@@ -254,8 +258,8 @@ if (uni.restoreGlobal) {
         });
       }
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
-        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$4);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "topCompontent" }, [
           vue.createVNode(_component_uni_row, { class: "titleBar" }, {
             default: vue.withCtx(() => [
@@ -304,9 +308,9 @@ if (uni.restoreGlobal) {
       };
     }
   });
-  const CompontentsTopCompontentTopCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["__scopeId", "data-v-ce76fffc"], ["__file", "E:/程序夹/emtanimation_app/compontents/topCompontent/topCompontent.vue"]]);
-  const _sfc_main$l = {};
-  function _sfc_render$3(_ctx, _cache) {
+  const CompontentsTopCompontentTopCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["__scopeId", "data-v-ce76fffc"], ["__file", "E:/程序夹/emtanimation_app/compontents/topCompontent/topCompontent.vue"]]);
+  const _sfc_main$s = {};
+  function _sfc_render$8(_ctx, _cache) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "footer" }, [
       vue.createElementVNode("view", { class: "content" }, [
         vue.createElementVNode("p", null, "请勿相信视频内中的一切广告，如有损失，请恕本人概不负责"),
@@ -321,7 +325,7 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  const CompontentsFooterCompontentFooterCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$3], ["__scopeId", "data-v-63a16b71"], ["__file", "E:/程序夹/emtanimation_app/compontents/footerCompontent/footerCompontent.vue"]]);
+  const CompontentsFooterCompontentFooterCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["render", _sfc_render$8], ["__scopeId", "data-v-63a16b71"], ["__file", "E:/程序夹/emtanimation_app/compontents/footerCompontent/footerCompontent.vue"]]);
   const baseUrl = "https://8.130.75.115:8080";
   const http = (url, method, data, headers = {}) => {
     const requestConfig = {
@@ -414,6 +418,7 @@ if (uni.restoreGlobal) {
     }
   };
   const getPlay = async (vodId, options) => {
+    formatAppLog("log", "at api/index.ts:102", "\n vodId:", vodId, "\n options:", options);
     try {
       const res = await http("/getPlay", "get", {
         vid: vodId,
@@ -468,12 +473,11 @@ if (uni.restoreGlobal) {
       throw error;
     }
   };
-  const selectHistory = async (userId, vodPerId, vodEpisode) => {
+  const selectHistory = async (userId, vodPerId) => {
     try {
       const res = await http("/selectHistory", "get", {
         userId,
-        vodPerId,
-        vodEpisode
+        vodPreId: vodPerId
       });
       return res;
     } catch (error) {
@@ -484,10 +488,25 @@ if (uni.restoreGlobal) {
     try {
       const res = await http("/addHistory", "get", {
         userId,
-        vodPerId,
+        vodPreId: vodPerId,
         vodEpisode,
         vodWatchTime
       });
+      formatAppLog("log", "at api/index.ts:181", userId, vodPerId, vodEpisode, vodWatchTime, "历史记录添加成功", res);
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  };
+  const updateHistory = async (userId, vodPerId, vodEpisode, vodWatchTime) => {
+    try {
+      const res = await http("/updateHistory", "get", {
+        userId,
+        vodPreId: vodPerId,
+        vodEpisode,
+        vodWatchTime
+      });
+      formatAppLog("log", "at api/index.ts:194", "历史记录更新完成");
       return res;
     } catch (error) {
       throw error;
@@ -505,6 +524,66 @@ if (uni.restoreGlobal) {
     try {
       const res = await http("/selectSubscribe", "get", { userId });
       return res;
+    } catch (error) {
+      throw error;
+    }
+  };
+  const loginUser = async (userName, userPassword) => {
+    try {
+      const res = await http("/loginUser", "get", {
+        userName,
+        userPassword
+      });
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  };
+  const deleteHistory = async (userId, vodPreId, vodEpisode) => {
+    try {
+      const res = await http("/deleteHistory", "get", {
+        userId,
+        vodPreId,
+        vodEpisode
+      });
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  };
+  const changeUser = async (user) => {
+    try {
+      const res = await http("/changeUser", "get", {
+        userId: user.userId,
+        userPassword: user.userPassword,
+        loginIp: user.loginIp,
+        loginTime: user.loginTime,
+        loginDevice: user.loginDevice
+      });
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  };
+  const selectUserName = async (userName) => {
+    try {
+      const res = await http("/selectUserName", "get", {
+        userName
+      });
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  };
+  const register = async (user) => {
+    try {
+      const res = await http("/register", "get", {
+        userName: user.userName,
+        userPassword: user.userPassword,
+        loginIp: user.loginIp,
+        loginTime: user.loginTime,
+        loginDevice: user.loginDevice
+      });
     } catch (error) {
       throw error;
     }
@@ -529,8 +608,8 @@ if (uni.restoreGlobal) {
   };
   const nowTime = () => {
     let time = /* @__PURE__ */ new Date();
-    formatAppLog("log", "at utils/time.ts:29", "现在时间为", time.getTime() / 1e3);
-    return time.getTime() / 1e3;
+    formatAppLog("log", "at utils/time.ts:29", "现在时间为", Math.floor(time.getTime() / 1e3));
+    return Math.floor(time.getTime() / 1e3);
   };
   const changeDate = (time) => {
     let date = new Date(time * 1e3);
@@ -539,7 +618,7 @@ if (uni.restoreGlobal) {
     let day = date.getDate();
     return year + "-" + month + "-" + day;
   };
-  const _sfc_main$k = {
+  const _sfc_main$r = {
     name: "UniBadge",
     emits: ["click"],
     props: {
@@ -662,7 +741,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "uni-badge--x" }, [
       vue.renderSlot(_ctx.$slots, "default", {}, void 0, true),
       $props.text ? (vue.openBlock(), vue.createElementBlock(
@@ -679,8 +758,8 @@ if (uni.restoreGlobal) {
       )) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$2], ["__scopeId", "data-v-92d7b819"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue"]]);
-  const _sfc_main$j = /* @__PURE__ */ vue.defineComponent({
+  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["render", _sfc_render$7], ["__scopeId", "data-v-92d7b819"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue"]]);
+  const _sfc_main$q = /* @__PURE__ */ vue.defineComponent({
     __name: "itemCompontent",
     props: {
       obj: { type: null, required: true }
@@ -691,6 +770,7 @@ if (uni.restoreGlobal) {
       data.vodPic = picUtils(data.vodPic);
       const todayIs = vue.ref(IsToday(data.obj.vodAddtime));
       function trunTo(vodId) {
+        formatAppLog("log", "at compontents/itemCompontent/itemCompontent.vue:30", "番剧项目这边指定的id", vodId);
         uni.navigateTo({
           url: "/pages/play/play?vodId=" + vodId
         });
@@ -698,7 +778,7 @@ if (uni.restoreGlobal) {
       onLoad(() => {
       });
       return (_ctx, _cache) => {
-        const _component_uni_badge = resolveEasycom(vue.resolveDynamicComponent("uni-badge"), __easycom_0);
+        const _component_uni_badge = resolveEasycom(vue.resolveDynamicComponent("uni-badge"), __easycom_0$3);
         return vue.openBlock(), vue.createElementBlock("view", { class: "item" }, [
           vue.createElementVNode("image", {
             src: data.obj.vodPic != "" ? data.obj.vodPic : defaultImage.value,
@@ -726,8 +806,8 @@ if (uni.restoreGlobal) {
       };
     }
   });
-  const CompontentsItemCompontentItemCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["__scopeId", "data-v-0752f4c2"], ["__file", "E:/程序夹/emtanimation_app/compontents/itemCompontent/itemCompontent.vue"]]);
-  const _sfc_main$i = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsItemCompontentItemCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["__scopeId", "data-v-0752f4c2"], ["__file", "E:/程序夹/emtanimation_app/compontents/itemCompontent/itemCompontent.vue"]]);
+  const _sfc_main$p = /* @__PURE__ */ vue.defineComponent({
     __name: "weekCompontent",
     setup(__props) {
       const dayInit = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
@@ -749,8 +829,8 @@ if (uni.restoreGlobal) {
         getTodyData();
       });
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
-        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$4);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "week" }, [
           vue.createCommentVNode(" 星期数 "),
           vue.createVNode(_component_uni_row, { class: "demo-uni-row days" }, {
@@ -810,8 +890,8 @@ if (uni.restoreGlobal) {
       };
     }
   });
-  const CompontentsHomeWeekCompontentWeekCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["__scopeId", "data-v-ddfca9bc"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/weekCompontent/weekCompontent.vue"]]);
-  const _sfc_main$h = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsHomeWeekCompontentWeekCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["__scopeId", "data-v-ddfca9bc"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/weekCompontent/weekCompontent.vue"]]);
+  const _sfc_main$o = /* @__PURE__ */ vue.defineComponent({
     __name: "randomCompontent",
     setup(__props) {
       const items = vue.ref([]);
@@ -824,8 +904,8 @@ if (uni.restoreGlobal) {
         getRandom();
       });
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
-        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$4);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "random" }, [
           vue.createCommentVNode(" 标题 "),
           vue.createVNode(_component_uni_row, { class: "demo-uni-row random_title" }, {
@@ -846,7 +926,7 @@ if (uni.restoreGlobal) {
               }),
               vue.createVNode(_component_uni_col, { span: 5 }, {
                 default: vue.withCtx(() => [
-                  vue.createElementVNode("text", null, "more")
+                  vue.createElementVNode("text", null, " ")
                 ]),
                 _: 1
                 /* STABLE */
@@ -875,8 +955,8 @@ if (uni.restoreGlobal) {
       };
     }
   });
-  const CompontentsHomeRandomCompontentRandomCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-6cf98f20"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/randomCompontent/randomCompontent.vue"]]);
-  const _sfc_main$g = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsHomeRandomCompontentRandomCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["__scopeId", "data-v-6cf98f20"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/randomCompontent/randomCompontent.vue"]]);
+  const _sfc_main$n = /* @__PURE__ */ vue.defineComponent({
     __name: "Re0Compontent",
     setup(__props) {
       const items = vue.ref([]);
@@ -911,7 +991,7 @@ if (uni.restoreGlobal) {
       };
     }
   });
-  const CompontentsHomeRe0CompontentRe0Compontent = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-c8cf1775"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/Re0Compontent/Re0Compontent.vue"]]);
+  const CompontentsHomeRe0CompontentRe0Compontent = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["__scopeId", "data-v-c8cf1775"], ["__file", "E:/程序夹/emtanimation_app/compontents/home/Re0Compontent/Re0Compontent.vue"]]);
   var isVue2 = false;
   function set(target, key, val) {
     if (Array.isArray(target)) {
@@ -1437,7 +1517,7 @@ if (uni.restoreGlobal) {
   const INSPECTOR_ID = "pinia";
   const { assign: assign$1 } = Object;
   const getStoreType = (id) => "🍍 " + id;
-  function registerPiniaDevtools(app, pinia) {
+  function registerPiniaDevtools(app2, pinia) {
     setupDevtoolsPlugin({
       id: "dev.esm.pinia",
       label: "Pinia 🍍",
@@ -1445,7 +1525,7 @@ if (uni.restoreGlobal) {
       packageName: "pinia",
       homepage: "https://pinia.vuejs.org",
       componentStateTypes,
-      app
+      app: app2
     }, (api) => {
       if (typeof api.now !== "function") {
         toastMessage("You seem to be using an outdated version of Vue Devtools. Are you still using the Beta release instead of the stable one? You can find the links at https://devtools.vuejs.org/guide/installation.html.");
@@ -1559,14 +1639,14 @@ if (uni.restoreGlobal) {
         }
       });
       api.on.getInspectorTree((payload) => {
-        if (payload.app === app && payload.inspectorId === INSPECTOR_ID) {
+        if (payload.app === app2 && payload.inspectorId === INSPECTOR_ID) {
           let stores = [pinia];
           stores = stores.concat(Array.from(pinia._s.values()));
           payload.rootNodes = (payload.filter ? stores.filter((store) => "$id" in store ? store.$id.toLowerCase().includes(payload.filter.toLowerCase()) : PINIA_ROOT_LABEL.toLowerCase().includes(payload.filter.toLowerCase())) : stores).map(formatStoreForInspectorTree);
         }
       });
       api.on.getInspectorState((payload) => {
-        if (payload.app === app && payload.inspectorId === INSPECTOR_ID) {
+        if (payload.app === app2 && payload.inspectorId === INSPECTOR_ID) {
           const inspectedStore = payload.nodeId === PINIA_ROOT_ID ? pinia : pinia._s.get(payload.nodeId);
           if (!inspectedStore) {
             return;
@@ -1577,7 +1657,7 @@ if (uni.restoreGlobal) {
         }
       });
       api.on.editInspectorState((payload, ctx) => {
-        if (payload.app === app && payload.inspectorId === INSPECTOR_ID) {
+        if (payload.app === app2 && payload.inspectorId === INSPECTOR_ID) {
           const inspectedStore = payload.nodeId === PINIA_ROOT_ID ? pinia : pinia._s.get(payload.nodeId);
           if (!inspectedStore) {
             return toastMessage(`store "${payload.nodeId}" not found`, "error");
@@ -1616,7 +1696,7 @@ Only state can be modified.`);
       });
     });
   }
-  function addStoreToDevtools(app, store) {
+  function addStoreToDevtools(app2, store) {
     if (!componentStateTypes.includes(getStoreType(store.$id))) {
       componentStateTypes.push(getStoreType(store.$id));
     }
@@ -1627,7 +1707,7 @@ Only state can be modified.`);
       packageName: "pinia",
       homepage: "https://pinia.vuejs.org",
       componentStateTypes,
-      app,
+      app: app2,
       settings: {
         logStoreChanges: {
           label: "Notify about new/deleted stores",
@@ -1808,7 +1888,7 @@ Only state can be modified.`);
       };
     }
   }
-  function devtoolsPlugin({ app, store, options }) {
+  function devtoolsPlugin({ app: app2, store, options }) {
     if (store.$id.startsWith("__hot:")) {
       return;
     }
@@ -1828,7 +1908,7 @@ Only state can be modified.`);
       };
     }
     addStoreToDevtools(
-      app,
+      app2,
       // FIXME: is there a way to allow the assignment from Store<Id, S, G, A> to StoreGeneric?
       store
     );
@@ -1839,14 +1919,14 @@ Only state can be modified.`);
     let _p = [];
     let toBeInstalled = [];
     const pinia = vue.markRaw({
-      install(app) {
+      install(app2) {
         setActivePinia(pinia);
         {
-          pinia._a = app;
-          app.provide(piniaSymbol, pinia);
-          app.config.globalProperties.$pinia = pinia;
+          pinia._a = app2;
+          app2.provide(piniaSymbol, pinia);
+          app2.config.globalProperties.$pinia = pinia;
           if (USE_DEVTOOLS) {
-            registerPiniaDevtools(app, pinia);
+            registerPiniaDevtools(app2, pinia);
           }
           toBeInstalled.forEach((plugin) => _p.push(plugin));
           toBeInstalled = [];
@@ -2362,7 +2442,7 @@ This will fail in production.`);
     //方法
     actions: {
       changeTheme(theme) {
-        if (theme == "dark")
+        if (theme == "light")
           this.theme = "light";
         else
           this.theme = "dark";
@@ -2373,14 +2453,32 @@ This will fail in production.`);
     state: () => ({
       userId: 0,
       userName: "",
-      userInformation: {}
+      userInformation: {
+        loginTime: 0,
+        loginIp: "",
+        loginDevice: ""
+      }
     }),
     getters: {
       getUserId: (state) => {
+        let userId = uni.getStorageSync("userId");
+        state.userId = userId != null && userId != void 0 ? userId : 0;
+      },
+      getUserName: (state) => {
+        let userName = uni.getStorageSync("userName");
+        state.userName = userName != null && userName != void 0 ? userName : "";
+      },
+      getUserInformation: (state) => {
+        let loginTime = uni.getStorageSync("loginTime");
+        let loginIp = uni.getStorageSync("loginIp");
+        let loginDevice = uni.getStorageSync("loginDevice");
+        state.userInformation.loginTime = loginTime;
+        state.userInformation.loginIp = loginIp;
+        state.userInformation.loginDevice = loginDevice;
       }
     }
   });
-  const _sfc_main$f = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$m = /* @__PURE__ */ vue.defineComponent({
     __name: "index",
     setup(__props) {
       const set2 = useSettingStore();
@@ -2389,12 +2487,18 @@ This will fail in production.`);
         backgroundColor: theme.value == "dark" ? "#000000" : "#DCDFE6",
         color: theme.value == "dark" ? "#ccc" : "#000000"
       });
-      const useUser = useUserStore();
-      useUser.userId = 1;
-      useUser.userName = "emilia";
-      useUser.userInformation = {
-        loginTime: 1710988243
-      };
+      onLoad(() => {
+        const useUser = useUserStore();
+        useUser.getUserId;
+        useUser.getUserName;
+        useUser.getUserInformation;
+      });
+      onShow(() => {
+        uni.setTabBarStyle({
+          backgroundColor: theme.value == "dark" ? "#000000" : "#DCDFE6",
+          color: theme.value == "dark" ? "#ccc" : "#000000"
+        });
+      });
       onPullDownRefresh(() => {
         setTimeout(() => {
           uni.reLaunch({
@@ -2428,7 +2532,7 @@ This will fail in production.`);
       };
     }
   });
-  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/程序夹/emtanimation_app/pages/index/index.vue"]]);
+  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["__scopeId", "data-v-1cf27b2a"], ["__file", "E:/程序夹/emtanimation_app/pages/index/index.vue"]]);
   const useAllStore = defineStore("all", {
     state: () => ({
       lang: [],
@@ -2473,7 +2577,7 @@ This will fail in production.`);
       }
     }
   });
-  const _sfc_main$e = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$l = /* @__PURE__ */ vue.defineComponent({
     __name: "tagsCompontent",
     setup(__props) {
       const allStore = useAllStore();
@@ -2518,8 +2622,8 @@ This will fail in production.`);
         }
       }
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
-        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$4);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "allContent" }, [
           vue.createCommentVNode(" tag标签区 "),
           vue.createElementVNode("view", { class: "tags" }, [
@@ -2684,8 +2788,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsAllTagsCompontentTagsCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["__scopeId", "data-v-e4b22507"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/tagsCompontent/tagsCompontent.vue"]]);
-  const _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsAllTagsCompontentTagsCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["__scopeId", "data-v-e4b22507"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/tagsCompontent/tagsCompontent.vue"]]);
+  const _sfc_main$k = /* @__PURE__ */ vue.defineComponent({
     __name: "listCompontent",
     setup(__props) {
       const pageNum = vue.ref(1);
@@ -2811,8 +2915,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsAllListCompontentListCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["__scopeId", "data-v-342b8925"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/listCompontent/listCompontent.vue"]]);
-  const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsAllListCompontentListCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["__scopeId", "data-v-342b8925"], ["__file", "E:/程序夹/emtanimation_app/compontents/all/listCompontent/listCompontent.vue"]]);
+  const _sfc_main$j = /* @__PURE__ */ vue.defineComponent({
     __name: "all",
     setup(__props) {
       const setting = useSettingStore();
@@ -2821,7 +2925,11 @@ This will fail in production.`);
         backgroundColor: theme.value == "dark" ? "#000000" : "#DCDFE6",
         color: theme.value == "dark" ? "#ccc" : "#000000"
       });
-      onLoad(() => {
+      onShow(() => {
+        uni.setTabBarStyle({
+          backgroundColor: theme.value == "dark" ? "#000000" : "#DCDFE6",
+          color: theme.value == "dark" ? "#ccc" : "#000000"
+        });
       });
       return (_ctx, _cache) => {
         return vue.openBlock(), vue.createElementBlock(
@@ -2846,8 +2954,8 @@ This will fail in production.`);
       };
     }
   });
-  const PagesAllAll = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-445eec53"], ["__file", "E:/程序夹/emtanimation_app/pages/all/all.vue"]]);
-  const _sfc_main$b = /* @__PURE__ */ vue.defineComponent({
+  const PagesAllAll = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["__scopeId", "data-v-445eec53"], ["__file", "E:/程序夹/emtanimation_app/pages/all/all.vue"]]);
+  const _sfc_main$i = /* @__PURE__ */ vue.defineComponent({
     __name: "searchCompontent",
     setup(__props) {
       const items = vue.ref([]);
@@ -2892,8 +3000,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsSearchSearchCompontentSearchCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-7dbdadd5"], ["__file", "E:/程序夹/emtanimation_app/compontents/search/searchCompontent/searchCompontent.vue"]]);
-  const _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsSearchSearchCompontentSearchCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["__scopeId", "data-v-7dbdadd5"], ["__file", "E:/程序夹/emtanimation_app/compontents/search/searchCompontent/searchCompontent.vue"]]);
+  const _sfc_main$h = /* @__PURE__ */ vue.defineComponent({
     __name: "search",
     setup(__props) {
       const setting = useSettingStore();
@@ -2931,7 +3039,7 @@ This will fail in production.`);
       };
     }
   });
-  const PagesSearchSearch = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-c10c040c"], ["__file", "E:/程序夹/emtanimation_app/pages/search/search.vue"]]);
+  const PagesSearchSearch = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-c10c040c"], ["__file", "E:/程序夹/emtanimation_app/pages/search/search.vue"]]);
   const usePlayStore = defineStore("play", {
     state: () => ({
       //当前视频集数组
@@ -2988,7 +3096,7 @@ This will fail in production.`);
       }
     }
   });
-  const _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$g = /* @__PURE__ */ vue.defineComponent({
     __name: "videoCompontent",
     setup(__props) {
       const playStore = usePlayStore();
@@ -3007,13 +3115,12 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsPlayVideoCompontentVideoCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-3609f8c9"], ["__file", "E:/程序夹/emtanimation_app/compontents/play/videoCompontent/videoCompontent.vue"]]);
-  const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsPlayVideoCompontentVideoCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-3609f8c9"], ["__file", "E:/程序夹/emtanimation_app/compontents/play/videoCompontent/videoCompontent.vue"]]);
+  const _sfc_main$f = /* @__PURE__ */ vue.defineComponent({
     __name: "episodeCompontent",
     setup(__props) {
       const playStore = usePlayStore();
       const episodeList = vue.computed(() => playStore.episodeList);
-      formatAppLog("log", "at compontents/play/episodeCompontent/episodeCompontent.vue:40", "episodeList", episodeList);
       const selectEpisode = vue.computed(() => playStore.selectEpisode);
       const index = vue.computed(() => playStore.episodeList.indexOf(playStore.selectEpisode));
       function episodeRun(options) {
@@ -3023,8 +3130,8 @@ This will fail in production.`);
         playStore.select(item);
       }
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
-        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$4);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "episode" }, [
           vue.createCommentVNode(" 集数控制区 "),
           vue.createElementVNode("view", { class: "episodeTop" }, [
@@ -3095,7 +3202,7 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsPlayEpisodeCompontentEpisodeCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-696d5f51"], ["__file", "E:/程序夹/emtanimation_app/compontents/play/episodeCompontent/episodeCompontent.vue"]]);
+  const CompontentsPlayEpisodeCompontentEpisodeCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-696d5f51"], ["__file", "E:/程序夹/emtanimation_app/compontents/play/episodeCompontent/episodeCompontent.vue"]]);
   const fontData = [
     {
       "font_class": "arrow-down",
@@ -3746,7 +3853,7 @@ This will fail in production.`);
     const reg = /^[0-9]*$/g;
     return typeof val === "number" || reg.test(val) ? val + "px" : val;
   };
-  const _sfc_main$7 = {
+  const _sfc_main$e = {
     name: "UniIcons",
     emits: ["click"],
     props: {
@@ -3800,7 +3907,7 @@ This will fail in production.`);
       }
     }
   };
-  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "text",
       {
@@ -3815,14 +3922,14 @@ This will fail in production.`);
       /* CLASS, STYLE */
     );
   }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$1], ["__scopeId", "data-v-946bce22"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue"]]);
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$6], ["__scopeId", "data-v-946bce22"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue"]]);
   const strFilter = (content) => {
     var decodedString = content.replace(/&lt;\/?(p|br)&gt;/g, "").replace(/&lt;/g, "").replace(/&gt;/g, "").replace(/#/g, "").replace(/&amp;nbsp;/g, " ").replace(/<br\s*\/?>/gi, "").replace(/<\/?p>/g, "");
     decodedString = decodedString.trim().replace(/\s+/g, " ");
     formatAppLog("log", "at utils/strFilter.ts:17", "处理后的结果为：", decodedString.trim());
     return decodedString.trim();
   };
-  const _sfc_main$6 = /* @__PURE__ */ vue.defineComponent({
+  const _sfc_main$d = /* @__PURE__ */ vue.defineComponent({
     __name: "informationCompontent",
     setup(__props) {
       const userStore = useUserStore();
@@ -3833,13 +3940,16 @@ This will fail in production.`);
         res.vodAddtime = changeDate(res.vodAddtime);
         res.vodContent = strFilter(res.vodContent);
         playStore.videoInfo = res;
+        formatAppLog("log", "at compontents/play/informationCompontent/informationCompontent.vue:54", "看看information这边vodId的状态", content.value);
       }
       const sub = vue.computed(() => playStore.isSubscribe);
       async function getSubscribe2(userId, userSubId) {
         let res = await isSubscribe(userId, userSubId);
+        formatAppLog("log", "at compontents/play/informationCompontent/informationCompontent.vue:61", "是否追番了", userId, userSubId, res);
         playStore.isSubscribe = res;
       }
       async function deleteSub(userId, userSubId) {
+        formatAppLog("log", "at compontents/play/informationCompontent/informationCompontent.vue:66", "进行了取消追番操作", userId, userSubId);
         let res = await deleteSubscribe(userId, userSubId);
         if (res) {
           uni.showToast({
@@ -3847,8 +3957,10 @@ This will fail in production.`);
             icon: "none"
           });
         }
+        playStore.isSubscribe = false;
       }
       async function addSub(userId, userSubId) {
+        formatAppLog("log", "at compontents/play/informationCompontent/informationCompontent.vue:78", "进行了追番操作");
         let res = await addSubscribe(userId, userSubId);
         if (res) {
           uni.showToast({
@@ -3856,12 +3968,23 @@ This will fail in production.`);
             icon: "none"
           });
         }
+        playStore.isSubscribe = true;
       }
       async function isHistory(userId, vodPerId, vodEpisode, vodWatchTime) {
-        let res = await selectHistory(userId, vodPerId, vodEpisode);
-        if (!res)
+        let res = await selectHistory(userId, vodPerId);
+        formatAppLog("log", "at compontents/play/informationCompontent/informationCompontent.vue:92", "看看res的状态", res, userId, vodPerId);
+        if (res.vodPreId == null || res.vodPreId == void 0) {
           await addHistory(userId, vodPerId, vodEpisode, vodWatchTime);
+        } else {
+          if (playStore.selectEpisode == "" || playStore.selectEpisode == void 0)
+            playStore.selectEpisode = res.vodEpisode;
+          await updateHistory(userId, vodPerId, vodEpisode, vodWatchTime);
+        }
       }
+      vue.watch(vue.computed(() => playStore.selectEpisode), () => {
+        if (userStore.userId != 0)
+          isHistory(userStore.userId, content.value.vodId, playStore.selectEpisode, nowTime());
+      });
       function subscribe() {
         if (userStore.userId == 0) {
           uni.showToast({
@@ -3869,24 +3992,22 @@ This will fail in production.`);
             icon: "none"
           });
         } else {
-          if (sub) {
-            deleteSub(userStore.userId, content.vodId);
-            playStore.isSubscribe = false;
+          if (sub.value) {
+            deleteSub(userStore.userId, content.value.vodId);
           } else {
-            addSub(userStore.userId, content.vodId);
-            playStore.isSubscribe = true;
+            addSub(userStore.userId, content.value.vodId);
           }
         }
       }
       onLoad((param) => {
         getInformation(param.vodId);
         if (userStore.userId != 0) {
-          getSubscribe2(userStore.userId, content.vodId);
-          isHistory(userStore.userId, content.vodId, playStore.selectEpisode, nowTime());
+          getSubscribe2(userStore.userId, param.vodId);
+          isHistory(userStore.userId, param.vodId, playStore.selectEpisode, nowTime());
         }
       });
       return (_ctx, _cache) => {
-        const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
+        const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
         return vue.openBlock(), vue.createElementBlock("view", { class: "information" }, [
           vue.createCommentVNode(" 图片 "),
           vue.createElementVNode("view", { class: "pic" }, [
@@ -3944,8 +4065,8 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsPlayInformationCompontentInformationCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-86ce6639"], ["__file", "E:/程序夹/emtanimation_app/compontents/play/informationCompontent/informationCompontent.vue"]]);
-  const _sfc_main$5 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsPlayInformationCompontentInformationCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["__scopeId", "data-v-86ce6639"], ["__file", "E:/程序夹/emtanimation_app/compontents/play/informationCompontent/informationCompontent.vue"]]);
+  const _sfc_main$c = /* @__PURE__ */ vue.defineComponent({
     __name: "play",
     setup(__props) {
       const settingStore = useSettingStore();
@@ -3966,10 +4087,22 @@ This will fail in production.`);
         formatAppLog("log", "at pages/play/play.vue:59", "播放这边接收到的数据为", playStore.videoInfo, "\n播放数据为", playStore.videoList, "\n集数组为", playStore.episodeList);
       }
       onLoad((param) => {
-        formatAppLog("log", "at pages/play/play.vue:63", "播放id", param);
         getVideo(param.vodId).then(() => {
           playStore.initInformation(userStore.userId);
         });
+      });
+      function initPlayStore() {
+        playStore.episodeList = [];
+        playStore.videoInfo = "";
+        playStore.videoList = [];
+        playStore.selectEpisode = "";
+        playStore.selectVideo = "";
+      }
+      onUnload(() => {
+        initPlayStore();
+      });
+      onBackPress(() => {
+        initPlayStore();
       });
       return (_ctx, _cache) => {
         return vue.openBlock(), vue.createElementBlock(
@@ -3983,7 +4116,7 @@ This will fail in production.`);
             vue.createCommentVNode(" 视频组件 "),
             vue.createVNode(CompontentsPlayVideoCompontentVideoCompontent),
             vue.createCommentVNode(" 集数组件 "),
-            vue.createVNode(CompontentsPlayEpisodeCompontentEpisodeCompontent, { style: { "margin-bottom": "40rpx" } }),
+            vue.createVNode(CompontentsPlayEpisodeCompontentEpisodeCompontent, { style: { "margin-bottom": "50rpx" } }),
             vue.createCommentVNode(" 番剧信息组件 "),
             vue.createVNode(CompontentsPlayInformationCompontentInformationCompontent),
             vue.createCommentVNode(" 尾部组件 "),
@@ -3995,8 +4128,8 @@ This will fail in production.`);
       };
     }
   });
-  const PagesPlayPlay = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-edf5a525"], ["__file", "E:/程序夹/emtanimation_app/pages/play/play.vue"]]);
-  const _sfc_main$4 = {
+  const PagesPlayPlay = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-edf5a525"], ["__file", "E:/程序夹/emtanimation_app/pages/play/play.vue"]]);
+  const _sfc_main$b = {
     name: "UniSegmentedControl",
     emits: ["clickItem"],
     props: {
@@ -4045,7 +4178,7 @@ This will fail in production.`);
       }
     }
   };
-  function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock(
       "view",
       {
@@ -4090,8 +4223,8 @@ This will fail in production.`);
       /* CLASS, STYLE */
     );
   }
-  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-52668560"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-segmented-control/uni-segmented-control.vue"]]);
-  const _sfc_main$3 = /* @__PURE__ */ vue.defineComponent({
+  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$5], ["__scopeId", "data-v-52668560"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-segmented-control/uni-segmented-control.vue"]]);
+  const _sfc_main$a = /* @__PURE__ */ vue.defineComponent({
     __name: "historyCompontent",
     props: {
       obj: { type: null, required: true }
@@ -4106,82 +4239,114 @@ This will fail in production.`);
       }
       const defaultImage = vue.ref("../../../static/load.jpg");
       items.vodPic = picUtils(items.vodPic);
-      function trunTo() {
-        uni.reLaunch({
-          url: "/pages/play/play?vodId=" + items.vodId
+      async function delHistory(userId, vodPreId, vodEpisode) {
+        let res = await deleteHistory(userId, vodPreId, vodEpisode);
+        return res;
+      }
+      function longTap(e) {
+        formatAppLog("log", "at compontents/user/historyCompontent/historyCompontent.vue:56", "长按了", e);
+        uni.showModal({
+          title: "是否删除",
+          cancelText: "取消",
+          confirmText: "确定",
+          confirmColor: "#ce3c39",
+          content: "番剧:" + e.vodName + "\n观看记录:" + data.obj.vodEpisode,
+          success: (res) => {
+            if (res.confirm) {
+              let res2 = delHistory(data.obj.userId, data.obj.vodPreId, data.obj.vodEpisode);
+              if (res2) {
+                uni.reLaunch({
+                  url: "/pages/user/user?current=1"
+                });
+              }
+            } else if (res.cancel) {
+              formatAppLog("log", "at compontents/user/historyCompontent/historyCompontent.vue:72", "用户点击取消");
+            }
+          }
         });
       }
       onLoad(() => {
         getVideoInfo(data.obj.vodPreId);
       });
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
-        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2);
-        return vue.openBlock(), vue.createElementBlock("view", { class: "historys" }, [
-          vue.createVNode(_component_uni_row, { onClick: trunTo }, {
-            default: vue.withCtx(() => [
-              vue.createVNode(_component_uni_col, { span: 5 }, {
-                default: vue.withCtx(() => [
-                  vue.createElementVNode("image", {
-                    src: items.value.vodPic != "" ? items.value.vodPic : defaultImage.value,
-                    class: "pic"
-                  }, null, 8, ["src"])
-                ]),
-                _: 1
-                /* STABLE */
-              }),
-              vue.createVNode(_component_uni_col, {
-                span: 6,
-                class: "text"
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$4);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
+        return vue.openBlock(), vue.createElementBlock(
+          vue.Fragment,
+          null,
+          [
+            vue.createElementVNode("view", { class: "historys" }, [
+              vue.createVNode(_component_uni_row, {
+                onLongpress: _cache[0] || (_cache[0] = ($event) => longTap(items.value))
               }, {
                 default: vue.withCtx(() => [
-                  vue.createTextVNode(
-                    vue.toDisplayString(items.value.vodName),
-                    1
-                    /* TEXT */
-                  )
-                ]),
-                _: 1
-                /* STABLE */
-              }),
-              vue.createVNode(_component_uni_col, {
-                span: 5,
-                class: "text"
-              }, {
-                default: vue.withCtx(() => [
-                  vue.createTextVNode(
-                    vue.toDisplayString(data.obj.vodEpisode),
-                    1
-                    /* TEXT */
-                  )
-                ]),
-                _: 1
-                /* STABLE */
-              }),
-              vue.createVNode(_component_uni_col, {
-                span: 8,
-                class: "text"
-              }, {
-                default: vue.withCtx(() => [
-                  vue.createTextVNode(
-                    vue.toDisplayString(data.obj.vodWatchTime),
-                    1
-                    /* TEXT */
-                  )
+                  vue.createVNode(_component_uni_col, { span: 5 }, {
+                    default: vue.withCtx(() => [
+                      vue.createElementVNode("image", {
+                        src: items.value.vodPic != "" ? items.value.vodPic : defaultImage.value,
+                        class: "pic"
+                      }, null, 8, ["src"])
+                    ]),
+                    _: 1
+                    /* STABLE */
+                  }),
+                  vue.createVNode(_component_uni_col, {
+                    span: 6,
+                    class: "text"
+                  }, {
+                    default: vue.withCtx(() => [
+                      vue.createTextVNode(
+                        vue.toDisplayString(items.value.vodName),
+                        1
+                        /* TEXT */
+                      )
+                    ]),
+                    _: 1
+                    /* STABLE */
+                  }),
+                  vue.createVNode(_component_uni_col, {
+                    span: 5,
+                    class: "text"
+                  }, {
+                    default: vue.withCtx(() => [
+                      vue.createTextVNode(
+                        vue.toDisplayString(data.obj.vodEpisode),
+                        1
+                        /* TEXT */
+                      )
+                    ]),
+                    _: 1
+                    /* STABLE */
+                  }),
+                  vue.createVNode(_component_uni_col, {
+                    span: 8,
+                    class: "text"
+                  }, {
+                    default: vue.withCtx(() => [
+                      vue.createTextVNode(
+                        vue.toDisplayString(data.obj.vodWatchTime),
+                        1
+                        /* TEXT */
+                      )
+                    ]),
+                    _: 1
+                    /* STABLE */
+                  })
                 ]),
                 _: 1
                 /* STABLE */
               })
             ]),
-            _: 1
-            /* STABLE */
-          })
-        ]);
+            vue.createCommentVNode(' <uni-popup ref="popup" type="dialog">\r\n		<uni-popup-dialog mode="input" message="成功消息" :duration="2000" :before-close="true" @close="close" @confirm="confirm"></uni-popup-dialog>\r\n	</uni-popup> ')
+          ],
+          2112
+          /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+        );
       };
     }
   });
-  const CompontentsUserHistoryCompontentHistoryCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0b3c4578"], ["__file", "E:/程序夹/emtanimation_app/compontents/user/historyCompontent/historyCompontent.vue"]]);
-  const _sfc_main$2 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsUserHistoryCompontentHistoryCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-0b3c4578"], ["__file", "E:/程序夹/emtanimation_app/compontents/user/historyCompontent/historyCompontent.vue"]]);
+  const _sfc_main$9 = /* @__PURE__ */ vue.defineComponent({
     __name: "subscribeCompontent",
     props: {
       obj: { type: null, required: true }
@@ -4193,21 +4358,20 @@ This will fail in production.`);
         let res = await selectVideoById(vid);
         res.vodAddtime = changeDate(res.vodAddtime);
         items.value = res;
-        formatAppLog("log", "at compontents/user/subscribeCompontent/subscribeCompontent.vue:38", "sub这边的数据", items.value);
       }
       const defaultImage = vue.ref("../../../static/load.jpg");
       items.vodPic = picUtils(items.vodPic);
       function trunTo() {
-        uni.reLaunch({
-          url: "/pages/play/play?vodId=" + items.vodId
+        uni.navigateTo({
+          url: "/pages/play/play?vodId=" + items.value.vodId
         });
       }
       onLoad(() => {
         getVideoInfo(data.obj.userSubId);
       });
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
-        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$4);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
         return vue.openBlock(), vue.createElementBlock("view", { class: "subscribes" }, [
           vue.createVNode(_component_uni_row, { onClick: trunTo }, {
             default: vue.withCtx(() => [
@@ -4257,19 +4421,16 @@ This will fail in production.`);
       };
     }
   });
-  const CompontentsUserSubscribeCompontentSubscribeCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-41686da9"], ["__file", "E:/程序夹/emtanimation_app/compontents/user/subscribeCompontent/subscribeCompontent.vue"]]);
-  const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
+  const CompontentsUserSubscribeCompontentSubscribeCompontent = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-41686da9"], ["__file", "E:/程序夹/emtanimation_app/compontents/user/subscribeCompontent/subscribeCompontent.vue"]]);
+  const _sfc_main$8 = /* @__PURE__ */ vue.defineComponent({
     __name: "user",
     setup(__props) {
       const useSetting = useSettingStore();
       const theme = vue.computed(() => useSetting.theme);
-      uni.setTabBarStyle({
-        backgroundColor: theme.value == "dark" ? "#000000" : "#DCDFE6",
-        color: theme.value == "dark" ? "#ccc" : "#000000"
-      });
       const useUser = useUserStore();
       const name = vue.computed(() => useUser.userName);
       const userInformation = vue.computed(() => useUser.userInformation);
+      let loginTime = vue.computed(() => changeDate(useUser.userInformation.loginTime));
       const subInfo = vue.ref([]);
       async function getSub(userId) {
         let res = await getSubscribe(userId);
@@ -4279,23 +4440,32 @@ This will fail in production.`);
       async function getHis(userId) {
         let res = await getHistory(userId);
         hisInfo.value = res;
-        formatAppLog("log", "at pages/user/user.vue:95", "历史信息", hisInfo.value);
+        formatAppLog("log", "at pages/user/user.vue:98", "历史信息", hisInfo.value);
       }
       const items = vue.ref(["追番", "历史记录"]);
       const current = vue.ref(0);
       function onClickItem(e) {
         if (current.value != e.currentIndex) {
           current.value = e.currentIndex;
+          formatAppLog("log", "at pages/user/user.vue:107", "current的值", current.value);
           if (current.value == 0) {
             getSub(useUser.userId);
-            formatAppLog("log", "at pages/user/user.vue:106", "追番信息", subInfo.value);
+            formatAppLog("log", "at pages/user/user.vue:110", "追番信息", subInfo.value);
           } else {
             getHis(useUser.userId);
           }
         }
       }
       function setting() {
-        formatAppLog("log", "at pages/user/user.vue:114", "点击了系统");
+        uni.navigateTo({
+          url: "/pages/setting/setting"
+        });
+        formatAppLog("log", "at pages/user/user.vue:121", "点击了系统");
+      }
+      function login() {
+        uni.reLaunch({
+          url: "/pages/login/login"
+        });
       }
       onShow(() => {
         if (current.value == 0) {
@@ -4303,11 +4473,25 @@ This will fail in production.`);
         } else {
           getHis(useUser.userId);
         }
+        uni.setTabBarStyle({
+          backgroundColor: theme.value == "dark" ? "#000000" : "#DCDFE6",
+          color: theme.value == "dark" ? "#ccc" : "#000000"
+        });
+      });
+      onLoad((param) => {
+        if (param.current == 1)
+          current.value = 1;
+        else
+          current.value = 0;
+        useUser.getUserId;
+        useUser.getUserName;
+        useUser.getUserInformation;
+        formatAppLog("log", "at pages/user/user.vue:156", "用户界面这里获取到的数据为", useUser);
       });
       return (_ctx, _cache) => {
-        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$1);
-        const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_1);
-        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2);
+        const _component_uni_col = resolveEasycom(vue.resolveDynamicComponent("uni-col"), __easycom_0$4);
+        const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
+        const _component_uni_row = resolveEasycom(vue.resolveDynamicComponent("uni-row"), __easycom_2$1);
         const _component_uni_segmented_control = resolveEasycom(vue.resolveDynamicComponent("uni-segmented-control"), __easycom_3);
         return vue.openBlock(), vue.createElementBlock(
           vue.Fragment,
@@ -4327,8 +4511,20 @@ This will fail in production.`);
                     default: vue.withCtx(() => [
                       vue.createVNode(_component_uni_col, { span: 7 }, {
                         default: vue.withCtx(() => [
-                          vue.createElementVNode("view", { class: "user_img" }, [
+                          vue.createElementVNode("view", {
+                            class: "user_img",
+                            onClick: login
+                          }, [
                             vue.createElementVNode("image", { src: "/static/user/default_user.jpg" })
+                          ]),
+                          vue.withDirectives(vue.createElementVNode(
+                            "view",
+                            { class: "login" },
+                            " 点我登录 ",
+                            512
+                            /* NEED_PATCH */
+                          ), [
+                            [vue.vShow, name.value == ""]
                           ])
                         ]),
                         _: 1
@@ -4358,7 +4554,7 @@ This will fail in production.`);
                               userInformation.value.loginTime == null ? (vue.openBlock(), vue.createElementBlock("text", { key: 0 }, "上次登陆时间：先登录喵~")) : userInformation.value.loginTime != "" ? (vue.openBlock(), vue.createElementBlock(
                                 "text",
                                 { key: 1 },
-                                "上次登录时间：" + vue.toDisplayString(userInformation.value.loginTime),
+                                "上次登录时间：" + vue.toDisplayString(vue.unref(loginTime)),
                                 1
                                 /* TEXT */
                               )) : vue.createCommentVNode("v-if", true)
@@ -4442,7 +4638,2519 @@ This will fail in production.`);
       };
     }
   });
-  const PagesUserUser = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-0f7520f0"], ["__file", "E:/程序夹/emtanimation_app/pages/user/user.vue"]]);
+  const PagesUserUser = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-0f7520f0"], ["__file", "E:/程序夹/emtanimation_app/pages/user/user.vue"]]);
+  function obj2strClass(obj) {
+    let classess = "";
+    for (let key in obj) {
+      const val = obj[key];
+      if (val) {
+        classess += `${key} `;
+      }
+    }
+    return classess;
+  }
+  function obj2strStyle(obj) {
+    let style = "";
+    for (let key in obj) {
+      const val = obj[key];
+      style += `${key}:${val};`;
+    }
+    return style;
+  }
+  const _sfc_main$7 = {
+    name: "uni-easyinput",
+    emits: ["click", "iconClick", "update:modelValue", "input", "focus", "blur", "confirm", "clear", "eyes", "change", "keyboardheightchange"],
+    model: {
+      prop: "modelValue",
+      event: "update:modelValue"
+    },
+    options: {
+      virtualHost: true
+    },
+    inject: {
+      form: {
+        from: "uniForm",
+        default: null
+      },
+      formItem: {
+        from: "uniFormItem",
+        default: null
+      }
+    },
+    props: {
+      name: String,
+      value: [Number, String],
+      modelValue: [Number, String],
+      type: {
+        type: String,
+        default: "text"
+      },
+      clearable: {
+        type: Boolean,
+        default: true
+      },
+      autoHeight: {
+        type: Boolean,
+        default: false
+      },
+      placeholder: {
+        type: String,
+        default: " "
+      },
+      placeholderStyle: String,
+      focus: {
+        type: Boolean,
+        default: false
+      },
+      disabled: {
+        type: Boolean,
+        default: false
+      },
+      maxlength: {
+        type: [Number, String],
+        default: 140
+      },
+      confirmType: {
+        type: String,
+        default: "done"
+      },
+      clearSize: {
+        type: [Number, String],
+        default: 24
+      },
+      inputBorder: {
+        type: Boolean,
+        default: true
+      },
+      prefixIcon: {
+        type: String,
+        default: ""
+      },
+      suffixIcon: {
+        type: String,
+        default: ""
+      },
+      trim: {
+        type: [Boolean, String],
+        default: false
+      },
+      cursorSpacing: {
+        type: Number,
+        default: 0
+      },
+      passwordIcon: {
+        type: Boolean,
+        default: true
+      },
+      adjustPosition: {
+        type: Boolean,
+        default: true
+      },
+      primaryColor: {
+        type: String,
+        default: "#2979ff"
+      },
+      styles: {
+        type: Object,
+        default() {
+          return {
+            color: "#333",
+            backgroundColor: "#fff",
+            disableColor: "#F7F6F6",
+            borderColor: "#e5e5e5"
+          };
+        }
+      },
+      errorMessage: {
+        type: [String, Boolean],
+        default: ""
+      }
+    },
+    data() {
+      return {
+        focused: false,
+        val: "",
+        showMsg: "",
+        border: false,
+        isFirstBorder: false,
+        showClearIcon: false,
+        showPassword: false,
+        focusShow: false,
+        localMsg: "",
+        isEnter: false
+        // 用于判断当前是否是使用回车操作
+      };
+    },
+    computed: {
+      // 输入框内是否有值
+      isVal() {
+        const val = this.val;
+        if (val || val === 0) {
+          return true;
+        }
+        return false;
+      },
+      msg() {
+        return this.localMsg || this.errorMessage;
+      },
+      // 因为uniapp的input组件的maxlength组件必须要数值，这里转为数值，用户可以传入字符串数值
+      inputMaxlength() {
+        return Number(this.maxlength);
+      },
+      // 处理外层样式的style
+      boxStyle() {
+        return `color:${this.inputBorder && this.msg ? "#e43d33" : this.styles.color};`;
+      },
+      // input 内容的类和样式处理
+      inputContentClass() {
+        return obj2strClass({
+          "is-input-border": this.inputBorder,
+          "is-input-error-border": this.inputBorder && this.msg,
+          "is-textarea": this.type === "textarea",
+          "is-disabled": this.disabled,
+          "is-focused": this.focusShow
+        });
+      },
+      inputContentStyle() {
+        const focusColor = this.focusShow ? this.primaryColor : this.styles.borderColor;
+        const borderColor = this.inputBorder && this.msg ? "#dd524d" : focusColor;
+        return obj2strStyle({
+          "border-color": borderColor || "#e5e5e5",
+          "background-color": this.disabled ? this.styles.disableColor : this.styles.backgroundColor
+        });
+      },
+      // input右侧样式
+      inputStyle() {
+        const paddingRight = this.type === "password" || this.clearable || this.prefixIcon ? "" : "10px";
+        return obj2strStyle({
+          "padding-right": paddingRight,
+          "padding-left": this.prefixIcon ? "" : "10px"
+        });
+      }
+    },
+    watch: {
+      value(newVal) {
+        this.val = newVal;
+      },
+      modelValue(newVal) {
+        this.val = newVal;
+      },
+      focus(newVal) {
+        this.$nextTick(() => {
+          this.focused = this.focus;
+          this.focusShow = this.focus;
+        });
+      }
+    },
+    created() {
+      this.init();
+      if (this.form && this.formItem) {
+        this.$watch("formItem.errMsg", (newVal) => {
+          this.localMsg = newVal;
+        });
+      }
+    },
+    mounted() {
+      this.$nextTick(() => {
+        this.focused = this.focus;
+        this.focusShow = this.focus;
+      });
+    },
+    methods: {
+      /**
+       * 初始化变量值
+       */
+      init() {
+        if (this.value || this.value === 0) {
+          this.val = this.value;
+        } else if (this.modelValue || this.modelValue === 0 || this.modelValue === "") {
+          this.val = this.modelValue;
+        } else {
+          this.val = null;
+        }
+      },
+      /**
+       * 点击图标时触发
+       * @param {Object} type
+       */
+      onClickIcon(type) {
+        this.$emit("iconClick", type);
+      },
+      /**
+       * 显示隐藏内容，密码框时生效
+       */
+      onEyes() {
+        this.showPassword = !this.showPassword;
+        this.$emit("eyes", this.showPassword);
+      },
+      /**
+       * 输入时触发
+       * @param {Object} event
+       */
+      onInput(event) {
+        let value = event.detail.value;
+        if (this.trim) {
+          if (typeof this.trim === "boolean" && this.trim) {
+            value = this.trimStr(value);
+          }
+          if (typeof this.trim === "string") {
+            value = this.trimStr(value, this.trim);
+          }
+        }
+        if (this.errMsg)
+          this.errMsg = "";
+        this.val = value;
+        this.$emit("input", value);
+        this.$emit("update:modelValue", value);
+      },
+      /**
+       * 外部调用方法
+       * 获取焦点时触发
+       * @param {Object} event
+       */
+      onFocus() {
+        this.$nextTick(() => {
+          this.focused = true;
+        });
+        this.$emit("focus", null);
+      },
+      _Focus(event) {
+        this.focusShow = true;
+        this.$emit("focus", event);
+      },
+      /**
+       * 外部调用方法
+       * 失去焦点时触发
+       * @param {Object} event
+       */
+      onBlur() {
+        this.focused = false;
+        this.$emit("blur", null);
+      },
+      _Blur(event) {
+        event.detail.value;
+        this.focusShow = false;
+        this.$emit("blur", event);
+        if (this.isEnter === false) {
+          this.$emit("change", this.val);
+        }
+        if (this.form && this.formItem) {
+          const { validateTrigger } = this.form;
+          if (validateTrigger === "blur") {
+            this.formItem.onFieldChange();
+          }
+        }
+      },
+      /**
+       * 按下键盘的发送键
+       * @param {Object} e
+       */
+      onConfirm(e) {
+        this.$emit("confirm", this.val);
+        this.isEnter = true;
+        this.$emit("change", this.val);
+        this.$nextTick(() => {
+          this.isEnter = false;
+        });
+      },
+      /**
+       * 清理内容
+       * @param {Object} event
+       */
+      onClear(event) {
+        this.val = "";
+        this.$emit("input", "");
+        this.$emit("update:modelValue", "");
+        this.$emit("clear");
+      },
+      /**
+       * 键盘高度发生变化的时候触发此事件
+       * 兼容性：微信小程序2.7.0+、App 3.1.0+
+       * @param {Object} event
+       */
+      onkeyboardheightchange(event) {
+        this.$emit("keyboardheightchange", event);
+      },
+      /**
+       * 去除空格
+       */
+      trimStr(str, pos = "both") {
+        if (pos === "both") {
+          return str.trim();
+        } else if (pos === "left") {
+          return str.trimLeft();
+        } else if (pos === "right") {
+          return str.trimRight();
+        } else if (pos === "start") {
+          return str.trimStart();
+        } else if (pos === "end") {
+          return str.trimEnd();
+        } else if (pos === "all") {
+          return str.replace(/\s+/g, "");
+        } else if (pos === "none") {
+          return str;
+        }
+        return str;
+      }
+    }
+  };
+  function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
+    return vue.openBlock(), vue.createElementBlock(
+      "view",
+      {
+        class: vue.normalizeClass(["uni-easyinput", { "uni-easyinput-error": $options.msg }]),
+        style: vue.normalizeStyle($options.boxStyle)
+      },
+      [
+        vue.createElementVNode(
+          "view",
+          {
+            class: vue.normalizeClass(["uni-easyinput__content", $options.inputContentClass]),
+            style: vue.normalizeStyle($options.inputContentStyle)
+          },
+          [
+            $props.prefixIcon ? (vue.openBlock(), vue.createBlock(_component_uni_icons, {
+              key: 0,
+              class: "content-clear-icon",
+              type: $props.prefixIcon,
+              color: "#c0c4cc",
+              onClick: _cache[0] || (_cache[0] = ($event) => $options.onClickIcon("prefix")),
+              size: "22"
+            }, null, 8, ["type"])) : vue.createCommentVNode("v-if", true),
+            vue.renderSlot(_ctx.$slots, "left", {}, void 0, true),
+            $props.type === "textarea" ? (vue.openBlock(), vue.createElementBlock("textarea", {
+              key: 1,
+              class: vue.normalizeClass(["uni-easyinput__content-textarea", { "input-padding": $props.inputBorder }]),
+              name: $props.name,
+              value: $data.val,
+              placeholder: $props.placeholder,
+              placeholderStyle: $props.placeholderStyle,
+              disabled: $props.disabled,
+              "placeholder-class": "uni-easyinput__placeholder-class",
+              maxlength: $options.inputMaxlength,
+              focus: $data.focused,
+              autoHeight: $props.autoHeight,
+              "cursor-spacing": $props.cursorSpacing,
+              "adjust-position": $props.adjustPosition,
+              onInput: _cache[1] || (_cache[1] = (...args) => $options.onInput && $options.onInput(...args)),
+              onBlur: _cache[2] || (_cache[2] = (...args) => $options._Blur && $options._Blur(...args)),
+              onFocus: _cache[3] || (_cache[3] = (...args) => $options._Focus && $options._Focus(...args)),
+              onConfirm: _cache[4] || (_cache[4] = (...args) => $options.onConfirm && $options.onConfirm(...args)),
+              onKeyboardheightchange: _cache[5] || (_cache[5] = (...args) => $options.onkeyboardheightchange && $options.onkeyboardheightchange(...args))
+            }, null, 42, ["name", "value", "placeholder", "placeholderStyle", "disabled", "maxlength", "focus", "autoHeight", "cursor-spacing", "adjust-position"])) : (vue.openBlock(), vue.createElementBlock("input", {
+              key: 2,
+              type: $props.type === "password" ? "text" : $props.type,
+              class: "uni-easyinput__content-input",
+              style: vue.normalizeStyle($options.inputStyle),
+              name: $props.name,
+              value: $data.val,
+              password: !$data.showPassword && $props.type === "password",
+              placeholder: $props.placeholder,
+              placeholderStyle: $props.placeholderStyle,
+              "placeholder-class": "uni-easyinput__placeholder-class",
+              disabled: $props.disabled,
+              maxlength: $options.inputMaxlength,
+              focus: $data.focused,
+              confirmType: $props.confirmType,
+              "cursor-spacing": $props.cursorSpacing,
+              "adjust-position": $props.adjustPosition,
+              onFocus: _cache[6] || (_cache[6] = (...args) => $options._Focus && $options._Focus(...args)),
+              onBlur: _cache[7] || (_cache[7] = (...args) => $options._Blur && $options._Blur(...args)),
+              onInput: _cache[8] || (_cache[8] = (...args) => $options.onInput && $options.onInput(...args)),
+              onConfirm: _cache[9] || (_cache[9] = (...args) => $options.onConfirm && $options.onConfirm(...args)),
+              onKeyboardheightchange: _cache[10] || (_cache[10] = (...args) => $options.onkeyboardheightchange && $options.onkeyboardheightchange(...args))
+            }, null, 44, ["type", "name", "value", "password", "placeholder", "placeholderStyle", "disabled", "maxlength", "focus", "confirmType", "cursor-spacing", "adjust-position"])),
+            $props.type === "password" && $props.passwordIcon ? (vue.openBlock(), vue.createElementBlock(
+              vue.Fragment,
+              { key: 3 },
+              [
+                vue.createCommentVNode(" 开启密码时显示小眼睛 "),
+                $options.isVal ? (vue.openBlock(), vue.createBlock(_component_uni_icons, {
+                  key: 0,
+                  class: vue.normalizeClass(["content-clear-icon", { "is-textarea-icon": $props.type === "textarea" }]),
+                  type: $data.showPassword ? "eye-slash-filled" : "eye-filled",
+                  size: 22,
+                  color: $data.focusShow ? $props.primaryColor : "#c0c4cc",
+                  onClick: $options.onEyes
+                }, null, 8, ["class", "type", "color", "onClick"])) : vue.createCommentVNode("v-if", true)
+              ],
+              64
+              /* STABLE_FRAGMENT */
+            )) : $props.suffixIcon ? (vue.openBlock(), vue.createElementBlock(
+              vue.Fragment,
+              { key: 4 },
+              [
+                $props.suffixIcon ? (vue.openBlock(), vue.createBlock(_component_uni_icons, {
+                  key: 0,
+                  class: "content-clear-icon",
+                  type: $props.suffixIcon,
+                  color: "#c0c4cc",
+                  onClick: _cache[11] || (_cache[11] = ($event) => $options.onClickIcon("suffix")),
+                  size: "22"
+                }, null, 8, ["type"])) : vue.createCommentVNode("v-if", true)
+              ],
+              64
+              /* STABLE_FRAGMENT */
+            )) : (vue.openBlock(), vue.createElementBlock(
+              vue.Fragment,
+              { key: 5 },
+              [
+                $props.clearable && $options.isVal && !$props.disabled && $props.type !== "textarea" ? (vue.openBlock(), vue.createBlock(_component_uni_icons, {
+                  key: 0,
+                  class: vue.normalizeClass(["content-clear-icon", { "is-textarea-icon": $props.type === "textarea" }]),
+                  type: "clear",
+                  size: $props.clearSize,
+                  color: $options.msg ? "#dd524d" : $data.focusShow ? $props.primaryColor : "#c0c4cc",
+                  onClick: $options.onClear
+                }, null, 8, ["class", "size", "color", "onClick"])) : vue.createCommentVNode("v-if", true)
+              ],
+              64
+              /* STABLE_FRAGMENT */
+            )),
+            vue.renderSlot(_ctx.$slots, "right", {}, void 0, true)
+          ],
+          6
+          /* CLASS, STYLE */
+        )
+      ],
+      6
+      /* CLASS, STYLE */
+    );
+  }
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$4], ["__scopeId", "data-v-f7a14e66"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-easyinput/uni-easyinput.vue"]]);
+  const _sfc_main$6 = {
+    name: "uniFormsItem",
+    options: {
+      virtualHost: true
+    },
+    provide() {
+      return {
+        uniFormItem: this
+      };
+    },
+    inject: {
+      form: {
+        from: "uniForm",
+        default: null
+      }
+    },
+    props: {
+      // 表单校验规则
+      rules: {
+        type: Array,
+        default() {
+          return null;
+        }
+      },
+      // 表单域的属性名，在使用校验规则时必填
+      name: {
+        type: [String, Array],
+        default: ""
+      },
+      required: {
+        type: Boolean,
+        default: false
+      },
+      label: {
+        type: String,
+        default: ""
+      },
+      // label的宽度
+      labelWidth: {
+        type: [String, Number],
+        default: ""
+      },
+      // label 居中方式，默认 left 取值 left/center/right
+      labelAlign: {
+        type: String,
+        default: ""
+      },
+      // 强制显示错误信息
+      errorMessage: {
+        type: [String, Boolean],
+        default: ""
+      },
+      // 1.4.0 弃用，统一使用 form 的校验时机
+      // validateTrigger: {
+      // 	type: String,
+      // 	default: ''
+      // },
+      // 1.4.0 弃用，统一使用 form 的label 位置
+      // labelPosition: {
+      // 	type: String,
+      // 	default: ''
+      // },
+      // 1.4.0 以下属性已经废弃，请使用  #label 插槽代替
+      leftIcon: String,
+      iconColor: {
+        type: String,
+        default: "#606266"
+      }
+    },
+    data() {
+      return {
+        errMsg: "",
+        userRules: null,
+        localLabelAlign: "left",
+        localLabelWidth: "70px",
+        localLabelPos: "left",
+        border: false,
+        isFirstBorder: false
+      };
+    },
+    computed: {
+      // 处理错误信息
+      msg() {
+        return this.errorMessage || this.errMsg;
+      }
+    },
+    watch: {
+      // 规则发生变化通知子组件更新
+      "form.formRules"(val) {
+        this.init();
+      },
+      "form.labelWidth"(val) {
+        this.localLabelWidth = this._labelWidthUnit(val);
+      },
+      "form.labelPosition"(val) {
+        this.localLabelPos = this._labelPosition();
+      },
+      "form.labelAlign"(val) {
+      }
+    },
+    created() {
+      this.init(true);
+      if (this.name && this.form) {
+        this.$watch(
+          () => {
+            const val = this.form._getDataValue(this.name, this.form.localData);
+            return val;
+          },
+          (value, oldVal) => {
+            const isEqual2 = this.form._isEqual(value, oldVal);
+            if (!isEqual2) {
+              const val = this.itemSetValue(value);
+              this.onFieldChange(val, false);
+            }
+          },
+          {
+            immediate: false
+          }
+        );
+      }
+    },
+    unmounted() {
+      this.__isUnmounted = true;
+      this.unInit();
+    },
+    methods: {
+      /**
+       * 外部调用方法
+       * 设置规则 ，主要用于小程序自定义检验规则
+       * @param {Array} rules 规则源数据
+       */
+      setRules(rules = null) {
+        this.userRules = rules;
+        this.init(false);
+      },
+      // 兼容老版本表单组件
+      setValue() {
+      },
+      /**
+       * 外部调用方法
+       * 校验数据
+       * @param {any} value 需要校验的数据
+       * @param {boolean} 是否立即校验
+       * @return {Array|null} 校验内容
+       */
+      async onFieldChange(value, formtrigger = true) {
+        const {
+          formData,
+          localData,
+          errShowType,
+          validateCheck,
+          validateTrigger,
+          _isRequiredField,
+          _realName
+        } = this.form;
+        const name = _realName(this.name);
+        if (!value) {
+          value = this.form.formData[name];
+        }
+        const ruleLen = this.itemRules.rules && this.itemRules.rules.length;
+        if (!this.validator || !ruleLen || ruleLen === 0)
+          return;
+        const isRequiredField2 = _isRequiredField(this.itemRules.rules || []);
+        let result = null;
+        if (validateTrigger === "bind" || formtrigger) {
+          result = await this.validator.validateUpdate(
+            {
+              [name]: value
+            },
+            formData
+          );
+          if (!isRequiredField2 && (value === void 0 || value === "")) {
+            result = null;
+          }
+          if (result && result.errorMessage) {
+            if (errShowType === "undertext") {
+              this.errMsg = !result ? "" : result.errorMessage;
+            }
+            if (errShowType === "toast") {
+              uni.showToast({
+                title: result.errorMessage || "校验错误",
+                icon: "none"
+              });
+            }
+            if (errShowType === "modal") {
+              uni.showModal({
+                title: "提示",
+                content: result.errorMessage || "校验错误"
+              });
+            }
+          } else {
+            this.errMsg = "";
+          }
+          validateCheck(result ? result : null);
+        } else {
+          this.errMsg = "";
+        }
+        return result ? result : null;
+      },
+      /**
+       * 初始组件数据
+       */
+      init(type = false) {
+        const {
+          validator,
+          formRules,
+          childrens,
+          formData,
+          localData,
+          _realName,
+          labelWidth,
+          _getDataValue,
+          _setDataValue
+        } = this.form || {};
+        this.localLabelAlign = this._justifyContent();
+        this.localLabelWidth = this._labelWidthUnit(labelWidth);
+        this.localLabelPos = this._labelPosition();
+        this.form && type && childrens.push(this);
+        if (!validator || !formRules)
+          return;
+        if (!this.form.isFirstBorder) {
+          this.form.isFirstBorder = true;
+          this.isFirstBorder = true;
+        }
+        if (this.group) {
+          if (!this.group.isFirstBorder) {
+            this.group.isFirstBorder = true;
+            this.isFirstBorder = true;
+          }
+        }
+        this.border = this.form.border;
+        const name = _realName(this.name);
+        const itemRule = this.userRules || this.rules;
+        if (typeof formRules === "object" && itemRule) {
+          formRules[name] = {
+            rules: itemRule
+          };
+          validator.updateSchema(formRules);
+        }
+        const itemRules = formRules[name] || {};
+        this.itemRules = itemRules;
+        this.validator = validator;
+        this.itemSetValue(_getDataValue(this.name, localData));
+      },
+      unInit() {
+        if (this.form) {
+          const {
+            childrens,
+            formData,
+            _realName
+          } = this.form;
+          childrens.forEach((item, index) => {
+            if (item === this) {
+              this.form.childrens.splice(index, 1);
+              delete formData[_realName(item.name)];
+            }
+          });
+        }
+      },
+      // 设置item 的值
+      itemSetValue(value) {
+        const name = this.form._realName(this.name);
+        const rules = this.itemRules.rules || [];
+        const val = this.form._getValue(name, value, rules);
+        this.form._setDataValue(name, this.form.formData, val);
+        return val;
+      },
+      /**
+       * 移除该表单项的校验结果
+       */
+      clearValidate() {
+        this.errMsg = "";
+      },
+      // 是否显示星号
+      _isRequired() {
+        return this.required;
+      },
+      // 处理对齐方式
+      _justifyContent() {
+        if (this.form) {
+          const {
+            labelAlign
+          } = this.form;
+          let labelAli = this.labelAlign ? this.labelAlign : labelAlign;
+          if (labelAli === "left")
+            return "flex-start";
+          if (labelAli === "center")
+            return "center";
+          if (labelAli === "right")
+            return "flex-end";
+        }
+        return "flex-start";
+      },
+      // 处理 label宽度单位 ,继承父元素的值
+      _labelWidthUnit(labelWidth) {
+        return this.num2px(this.labelWidth ? this.labelWidth : labelWidth || (this.label ? 70 : "auto"));
+      },
+      // 处理 label 位置
+      _labelPosition() {
+        if (this.form)
+          return this.form.labelPosition || "left";
+        return "left";
+      },
+      /**
+       * 触发时机
+       * @param {Object} rule 当前规则内时机
+       * @param {Object} itemRlue 当前组件时机
+       * @param {Object} parentRule 父组件时机
+       */
+      isTrigger(rule, itemRlue, parentRule) {
+        if (rule === "submit" || !rule) {
+          if (rule === void 0) {
+            if (itemRlue !== "bind") {
+              if (!itemRlue) {
+                return parentRule === "" ? "bind" : "submit";
+              }
+              return "submit";
+            }
+            return "bind";
+          }
+          return "submit";
+        }
+        return "bind";
+      },
+      num2px(num) {
+        if (typeof num === "number") {
+          return `${num}px`;
+        }
+        return num;
+      }
+    }
+  };
+  function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock(
+      "view",
+      {
+        class: vue.normalizeClass(["uni-forms-item", ["is-direction-" + $data.localLabelPos, $data.border ? "uni-forms-item--border" : "", $data.border && $data.isFirstBorder ? "is-first-border" : ""]])
+      },
+      [
+        vue.renderSlot(_ctx.$slots, "label", {}, () => [
+          vue.createElementVNode(
+            "view",
+            {
+              class: vue.normalizeClass(["uni-forms-item__label", { "no-label": !$props.label && !$props.required }]),
+              style: vue.normalizeStyle({ width: $data.localLabelWidth, justifyContent: $data.localLabelAlign })
+            },
+            [
+              $props.required ? (vue.openBlock(), vue.createElementBlock("text", {
+                key: 0,
+                class: "is-required"
+              }, "*")) : vue.createCommentVNode("v-if", true),
+              vue.createElementVNode(
+                "text",
+                null,
+                vue.toDisplayString($props.label),
+                1
+                /* TEXT */
+              )
+            ],
+            6
+            /* CLASS, STYLE */
+          )
+        ], true),
+        vue.createElementVNode("view", { class: "uni-forms-item__content" }, [
+          vue.renderSlot(_ctx.$slots, "default", {}, void 0, true),
+          vue.createElementVNode(
+            "view",
+            {
+              class: vue.normalizeClass(["uni-forms-item__error", { "msg--active": $options.msg }])
+            },
+            [
+              vue.createElementVNode(
+                "text",
+                null,
+                vue.toDisplayString($options.msg),
+                1
+                /* TEXT */
+              )
+            ],
+            2
+            /* CLASS */
+          )
+        ])
+      ],
+      2
+      /* CLASS */
+    );
+  }
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$3], ["__scopeId", "data-v-3515f8e1"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-forms-item/uni-forms-item.vue"]]);
+  var pattern = {
+    email: /^\S+?@\S+?\.\S+?$/,
+    idcard: /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/,
+    url: new RegExp(
+      "^(?!mailto:)(?:(?:http|https|ftp)://|//)(?:\\S+(?::\\S*)?@)?(?:(?:(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[0-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]+-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]+-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,})))|localhost)(?::\\d{2,5})?(?:(/|\\?|#)[^\\s]*)?$",
+      "i"
+    )
+  };
+  const FORMAT_MAPPING = {
+    "int": "integer",
+    "bool": "boolean",
+    "double": "number",
+    "long": "number",
+    "password": "string"
+    // "fileurls": 'array'
+  };
+  function formatMessage(args, resources = "") {
+    var defaultMessage = ["label"];
+    defaultMessage.forEach((item) => {
+      if (args[item] === void 0) {
+        args[item] = "";
+      }
+    });
+    let str = resources;
+    for (let key in args) {
+      let reg = new RegExp("{" + key + "}");
+      str = str.replace(reg, args[key]);
+    }
+    return str;
+  }
+  function isEmptyValue(value, type) {
+    if (value === void 0 || value === null) {
+      return true;
+    }
+    if (typeof value === "string" && !value) {
+      return true;
+    }
+    if (Array.isArray(value) && !value.length) {
+      return true;
+    }
+    if (type === "object" && !Object.keys(value).length) {
+      return true;
+    }
+    return false;
+  }
+  const types = {
+    integer(value) {
+      return types.number(value) && parseInt(value, 10) === value;
+    },
+    string(value) {
+      return typeof value === "string";
+    },
+    number(value) {
+      if (isNaN(value)) {
+        return false;
+      }
+      return typeof value === "number";
+    },
+    "boolean": function(value) {
+      return typeof value === "boolean";
+    },
+    "float": function(value) {
+      return types.number(value) && !types.integer(value);
+    },
+    array(value) {
+      return Array.isArray(value);
+    },
+    object(value) {
+      return typeof value === "object" && !types.array(value);
+    },
+    date(value) {
+      return value instanceof Date;
+    },
+    timestamp(value) {
+      if (!this.integer(value) || Math.abs(value).toString().length > 16) {
+        return false;
+      }
+      return true;
+    },
+    file(value) {
+      return typeof value.url === "string";
+    },
+    email(value) {
+      return typeof value === "string" && !!value.match(pattern.email) && value.length < 255;
+    },
+    url(value) {
+      return typeof value === "string" && !!value.match(pattern.url);
+    },
+    pattern(reg, value) {
+      try {
+        return new RegExp(reg).test(value);
+      } catch (e) {
+        return false;
+      }
+    },
+    method(value) {
+      return typeof value === "function";
+    },
+    idcard(value) {
+      return typeof value === "string" && !!value.match(pattern.idcard);
+    },
+    "url-https"(value) {
+      return this.url(value) && value.startsWith("https://");
+    },
+    "url-scheme"(value) {
+      return value.startsWith("://");
+    },
+    "url-web"(value) {
+      return false;
+    }
+  };
+  class RuleValidator {
+    constructor(message) {
+      this._message = message;
+    }
+    async validateRule(fieldKey, fieldValue, value, data, allData) {
+      var result = null;
+      let rules = fieldValue.rules;
+      let hasRequired = rules.findIndex((item) => {
+        return item.required;
+      });
+      if (hasRequired < 0) {
+        if (value === null || value === void 0) {
+          return result;
+        }
+        if (typeof value === "string" && !value.length) {
+          return result;
+        }
+      }
+      var message = this._message;
+      if (rules === void 0) {
+        return message["default"];
+      }
+      for (var i = 0; i < rules.length; i++) {
+        let rule = rules[i];
+        let vt = this._getValidateType(rule);
+        Object.assign(rule, {
+          label: fieldValue.label || `["${fieldKey}"]`
+        });
+        if (RuleValidatorHelper[vt]) {
+          result = RuleValidatorHelper[vt](rule, value, message);
+          if (result != null) {
+            break;
+          }
+        }
+        if (rule.validateExpr) {
+          let now2 = Date.now();
+          let resultExpr = rule.validateExpr(value, allData, now2);
+          if (resultExpr === false) {
+            result = this._getMessage(rule, rule.errorMessage || this._message["default"]);
+            break;
+          }
+        }
+        if (rule.validateFunction) {
+          result = await this.validateFunction(rule, value, data, allData, vt);
+          if (result !== null) {
+            break;
+          }
+        }
+      }
+      if (result !== null) {
+        result = message.TAG + result;
+      }
+      return result;
+    }
+    async validateFunction(rule, value, data, allData, vt) {
+      let result = null;
+      try {
+        let callbackMessage = null;
+        const res = await rule.validateFunction(rule, value, allData || data, (message) => {
+          callbackMessage = message;
+        });
+        if (callbackMessage || typeof res === "string" && res || res === false) {
+          result = this._getMessage(rule, callbackMessage || res, vt);
+        }
+      } catch (e) {
+        result = this._getMessage(rule, e.message, vt);
+      }
+      return result;
+    }
+    _getMessage(rule, message, vt) {
+      return formatMessage(rule, message || rule.errorMessage || this._message[vt] || message["default"]);
+    }
+    _getValidateType(rule) {
+      var result = "";
+      if (rule.required) {
+        result = "required";
+      } else if (rule.format) {
+        result = "format";
+      } else if (rule.arrayType) {
+        result = "arrayTypeFormat";
+      } else if (rule.range) {
+        result = "range";
+      } else if (rule.maximum !== void 0 || rule.minimum !== void 0) {
+        result = "rangeNumber";
+      } else if (rule.maxLength !== void 0 || rule.minLength !== void 0) {
+        result = "rangeLength";
+      } else if (rule.pattern) {
+        result = "pattern";
+      } else if (rule.validateFunction) {
+        result = "validateFunction";
+      }
+      return result;
+    }
+  }
+  const RuleValidatorHelper = {
+    required(rule, value, message) {
+      if (rule.required && isEmptyValue(value, rule.format || typeof value)) {
+        return formatMessage(rule, rule.errorMessage || message.required);
+      }
+      return null;
+    },
+    range(rule, value, message) {
+      const {
+        range,
+        errorMessage
+      } = rule;
+      let list = new Array(range.length);
+      for (let i = 0; i < range.length; i++) {
+        const item = range[i];
+        if (types.object(item) && item.value !== void 0) {
+          list[i] = item.value;
+        } else {
+          list[i] = item;
+        }
+      }
+      let result = false;
+      if (Array.isArray(value)) {
+        result = new Set(value.concat(list)).size === list.length;
+      } else {
+        if (list.indexOf(value) > -1) {
+          result = true;
+        }
+      }
+      if (!result) {
+        return formatMessage(rule, errorMessage || message["enum"]);
+      }
+      return null;
+    },
+    rangeNumber(rule, value, message) {
+      if (!types.number(value)) {
+        return formatMessage(rule, rule.errorMessage || message.pattern.mismatch);
+      }
+      let {
+        minimum,
+        maximum,
+        exclusiveMinimum,
+        exclusiveMaximum
+      } = rule;
+      let min = exclusiveMinimum ? value <= minimum : value < minimum;
+      let max = exclusiveMaximum ? value >= maximum : value > maximum;
+      if (minimum !== void 0 && min) {
+        return formatMessage(rule, rule.errorMessage || message["number"][exclusiveMinimum ? "exclusiveMinimum" : "minimum"]);
+      } else if (maximum !== void 0 && max) {
+        return formatMessage(rule, rule.errorMessage || message["number"][exclusiveMaximum ? "exclusiveMaximum" : "maximum"]);
+      } else if (minimum !== void 0 && maximum !== void 0 && (min || max)) {
+        return formatMessage(rule, rule.errorMessage || message["number"].range);
+      }
+      return null;
+    },
+    rangeLength(rule, value, message) {
+      if (!types.string(value) && !types.array(value)) {
+        return formatMessage(rule, rule.errorMessage || message.pattern.mismatch);
+      }
+      let min = rule.minLength;
+      let max = rule.maxLength;
+      let val = value.length;
+      if (min !== void 0 && val < min) {
+        return formatMessage(rule, rule.errorMessage || message["length"].minLength);
+      } else if (max !== void 0 && val > max) {
+        return formatMessage(rule, rule.errorMessage || message["length"].maxLength);
+      } else if (min !== void 0 && max !== void 0 && (val < min || val > max)) {
+        return formatMessage(rule, rule.errorMessage || message["length"].range);
+      }
+      return null;
+    },
+    pattern(rule, value, message) {
+      if (!types["pattern"](rule.pattern, value)) {
+        return formatMessage(rule, rule.errorMessage || message.pattern.mismatch);
+      }
+      return null;
+    },
+    format(rule, value, message) {
+      var customTypes = Object.keys(types);
+      var format = FORMAT_MAPPING[rule.format] ? FORMAT_MAPPING[rule.format] : rule.format || rule.arrayType;
+      if (customTypes.indexOf(format) > -1) {
+        if (!types[format](value)) {
+          return formatMessage(rule, rule.errorMessage || message.typeError);
+        }
+      }
+      return null;
+    },
+    arrayTypeFormat(rule, value, message) {
+      if (!Array.isArray(value)) {
+        return formatMessage(rule, rule.errorMessage || message.typeError);
+      }
+      for (let i = 0; i < value.length; i++) {
+        const element = value[i];
+        let formatResult = this.format(rule, element, message);
+        if (formatResult !== null) {
+          return formatResult;
+        }
+      }
+      return null;
+    }
+  };
+  class SchemaValidator extends RuleValidator {
+    constructor(schema, options) {
+      super(SchemaValidator.message);
+      this._schema = schema;
+      this._options = options || null;
+    }
+    updateSchema(schema) {
+      this._schema = schema;
+    }
+    async validate(data, allData) {
+      let result = this._checkFieldInSchema(data);
+      if (!result) {
+        result = await this.invokeValidate(data, false, allData);
+      }
+      return result.length ? result[0] : null;
+    }
+    async validateAll(data, allData) {
+      let result = this._checkFieldInSchema(data);
+      if (!result) {
+        result = await this.invokeValidate(data, true, allData);
+      }
+      return result;
+    }
+    async validateUpdate(data, allData) {
+      let result = this._checkFieldInSchema(data);
+      if (!result) {
+        result = await this.invokeValidateUpdate(data, false, allData);
+      }
+      return result.length ? result[0] : null;
+    }
+    async invokeValidate(data, all, allData) {
+      let result = [];
+      let schema = this._schema;
+      for (let key in schema) {
+        let value = schema[key];
+        let errorMessage = await this.validateRule(key, value, data[key], data, allData);
+        if (errorMessage != null) {
+          result.push({
+            key,
+            errorMessage
+          });
+          if (!all)
+            break;
+        }
+      }
+      return result;
+    }
+    async invokeValidateUpdate(data, all, allData) {
+      let result = [];
+      for (let key in data) {
+        let errorMessage = await this.validateRule(key, this._schema[key], data[key], data, allData);
+        if (errorMessage != null) {
+          result.push({
+            key,
+            errorMessage
+          });
+          if (!all)
+            break;
+        }
+      }
+      return result;
+    }
+    _checkFieldInSchema(data) {
+      var keys = Object.keys(data);
+      var keys2 = Object.keys(this._schema);
+      if (new Set(keys.concat(keys2)).size === keys2.length) {
+        return "";
+      }
+      var noExistFields = keys.filter((key) => {
+        return keys2.indexOf(key) < 0;
+      });
+      var errorMessage = formatMessage({
+        field: JSON.stringify(noExistFields)
+      }, SchemaValidator.message.TAG + SchemaValidator.message["defaultInvalid"]);
+      return [{
+        key: "invalid",
+        errorMessage
+      }];
+    }
+  }
+  function Message() {
+    return {
+      TAG: "",
+      default: "验证错误",
+      defaultInvalid: "提交的字段{field}在数据库中并不存在",
+      validateFunction: "验证无效",
+      required: "{label}必填",
+      "enum": "{label}超出范围",
+      timestamp: "{label}格式无效",
+      whitespace: "{label}不能为空",
+      typeError: "{label}类型无效",
+      date: {
+        format: "{label}日期{value}格式无效",
+        parse: "{label}日期无法解析,{value}无效",
+        invalid: "{label}日期{value}无效"
+      },
+      length: {
+        minLength: "{label}长度不能少于{minLength}",
+        maxLength: "{label}长度不能超过{maxLength}",
+        range: "{label}必须介于{minLength}和{maxLength}之间"
+      },
+      number: {
+        minimum: "{label}不能小于{minimum}",
+        maximum: "{label}不能大于{maximum}",
+        exclusiveMinimum: "{label}不能小于等于{minimum}",
+        exclusiveMaximum: "{label}不能大于等于{maximum}",
+        range: "{label}必须介于{minimum}and{maximum}之间"
+      },
+      pattern: {
+        mismatch: "{label}格式不匹配"
+      }
+    };
+  }
+  SchemaValidator.message = new Message();
+  const deepCopy = (val) => {
+    return JSON.parse(JSON.stringify(val));
+  };
+  const typeFilter = (format) => {
+    return format === "int" || format === "double" || format === "number" || format === "timestamp";
+  };
+  const getValue = (key, value, rules) => {
+    const isRuleNumType = rules.find((val) => val.format && typeFilter(val.format));
+    const isRuleBoolType = rules.find((val) => val.format && val.format === "boolean" || val.format === "bool");
+    if (!!isRuleNumType) {
+      if (!value && value !== 0) {
+        value = null;
+      } else {
+        value = isNumber(Number(value)) ? Number(value) : value;
+      }
+    }
+    if (!!isRuleBoolType) {
+      value = isBoolean(value) ? value : false;
+    }
+    return value;
+  };
+  const setDataValue = (field, formdata, value) => {
+    formdata[field] = value;
+    return value || "";
+  };
+  const getDataValue = (field, data) => {
+    return objGet(data, field);
+  };
+  const realName = (name, data = {}) => {
+    const base_name = _basePath(name);
+    if (typeof base_name === "object" && Array.isArray(base_name) && base_name.length > 1) {
+      const realname = base_name.reduce((a, b) => a += `#${b}`, "_formdata_");
+      return realname;
+    }
+    return base_name[0] || name;
+  };
+  const isRealName = (name) => {
+    const reg = /^_formdata_#*/;
+    return reg.test(name);
+  };
+  const rawData = (object = {}, name) => {
+    let newData = JSON.parse(JSON.stringify(object));
+    let formData = {};
+    for (let i in newData) {
+      let path = name2arr(i);
+      objSet(formData, path, newData[i]);
+    }
+    return formData;
+  };
+  const name2arr = (name) => {
+    let field = name.replace("_formdata_#", "");
+    field = field.split("#").map((v) => isNumber(v) ? Number(v) : v);
+    return field;
+  };
+  const objSet = (object, path, value) => {
+    if (typeof object !== "object")
+      return object;
+    _basePath(path).reduce((o, k, i, _) => {
+      if (i === _.length - 1) {
+        o[k] = value;
+        return null;
+      } else if (k in o) {
+        return o[k];
+      } else {
+        o[k] = /^[0-9]{1,}$/.test(_[i + 1]) ? [] : {};
+        return o[k];
+      }
+    }, object);
+    return object;
+  };
+  function _basePath(path) {
+    if (Array.isArray(path))
+      return path;
+    return path.replace(/\[/g, ".").replace(/\]/g, "").split(".");
+  }
+  const objGet = (object, path, defaultVal = "undefined") => {
+    let newPath = _basePath(path);
+    let val = newPath.reduce((o, k) => {
+      return (o || {})[k];
+    }, object);
+    return !val || val !== void 0 ? val : defaultVal;
+  };
+  const isNumber = (num) => {
+    return !isNaN(Number(num));
+  };
+  const isBoolean = (bool) => {
+    return typeof bool === "boolean";
+  };
+  const isRequiredField = (rules) => {
+    let isNoField = false;
+    for (let i = 0; i < rules.length; i++) {
+      const ruleData = rules[i];
+      if (ruleData.required) {
+        isNoField = true;
+        break;
+      }
+    }
+    return isNoField;
+  };
+  const isEqual = (a, b) => {
+    if (a === b) {
+      return a !== 0 || 1 / a === 1 / b;
+    }
+    if (a == null || b == null) {
+      return a === b;
+    }
+    var classNameA = toString.call(a), classNameB = toString.call(b);
+    if (classNameA !== classNameB) {
+      return false;
+    }
+    switch (classNameA) {
+      case "[object RegExp]":
+      case "[object String]":
+        return "" + a === "" + b;
+      case "[object Number]":
+        if (+a !== +a) {
+          return +b !== +b;
+        }
+        return +a === 0 ? 1 / +a === 1 / b : +a === +b;
+      case "[object Date]":
+      case "[object Boolean]":
+        return +a === +b;
+    }
+    if (classNameA == "[object Object]") {
+      var propsA = Object.getOwnPropertyNames(a), propsB = Object.getOwnPropertyNames(b);
+      if (propsA.length != propsB.length) {
+        return false;
+      }
+      for (var i = 0; i < propsA.length; i++) {
+        var propName = propsA[i];
+        if (a[propName] !== b[propName]) {
+          return false;
+        }
+      }
+      return true;
+    }
+    if (classNameA == "[object Array]") {
+      if (a.toString() == b.toString()) {
+        return true;
+      }
+      return false;
+    }
+  };
+  const _sfc_main$5 = {
+    name: "uniForms",
+    emits: ["validate", "submit"],
+    options: {
+      virtualHost: true
+    },
+    props: {
+      // 即将弃用
+      value: {
+        type: Object,
+        default() {
+          return null;
+        }
+      },
+      // vue3 替换 value 属性
+      modelValue: {
+        type: Object,
+        default() {
+          return null;
+        }
+      },
+      // 1.4.0 开始将不支持 v-model ，且废弃 value 和 modelValue
+      model: {
+        type: Object,
+        default() {
+          return null;
+        }
+      },
+      // 表单校验规则
+      rules: {
+        type: Object,
+        default() {
+          return {};
+        }
+      },
+      //校验错误信息提示方式 默认 undertext 取值 [undertext|toast|modal]
+      errShowType: {
+        type: String,
+        default: "undertext"
+      },
+      // 校验触发器方式 默认 bind 取值 [bind|submit]
+      validateTrigger: {
+        type: String,
+        default: "submit"
+      },
+      // label 位置，默认 left 取值  top/left
+      labelPosition: {
+        type: String,
+        default: "left"
+      },
+      // label 宽度
+      labelWidth: {
+        type: [String, Number],
+        default: ""
+      },
+      // label 居中方式，默认 left 取值 left/center/right
+      labelAlign: {
+        type: String,
+        default: "left"
+      },
+      border: {
+        type: Boolean,
+        default: false
+      }
+    },
+    provide() {
+      return {
+        uniForm: this
+      };
+    },
+    data() {
+      return {
+        // 表单本地值的记录，不应该与传如的值进行关联
+        formData: {},
+        formRules: {}
+      };
+    },
+    computed: {
+      // 计算数据源变化的
+      localData() {
+        const localVal = this.model || this.modelValue || this.value;
+        if (localVal) {
+          return deepCopy(localVal);
+        }
+        return {};
+      }
+    },
+    watch: {
+      // 监听数据变化 ,暂时不使用，需要单独赋值
+      // localData: {},
+      // 监听规则变化
+      rules: {
+        handler: function(val, oldVal) {
+          this.setRules(val);
+        },
+        deep: true,
+        immediate: true
+      }
+    },
+    created() {
+      let getbinddata = getApp().$vm.$.appContext.config.globalProperties.binddata;
+      if (!getbinddata) {
+        getApp().$vm.$.appContext.config.globalProperties.binddata = function(name, value, formName) {
+          if (formName) {
+            this.$refs[formName].setValue(name, value);
+          } else {
+            let formVm;
+            for (let i in this.$refs) {
+              const vm = this.$refs[i];
+              if (vm && vm.$options && vm.$options.name === "uniForms") {
+                formVm = vm;
+                break;
+              }
+            }
+            if (!formVm)
+              return formatAppLog("error", "at node_modules/@dcloudio/uni-ui/lib/uni-forms/uni-forms.vue:182", "当前 uni-froms 组件缺少 ref 属性");
+            formVm.setValue(name, value);
+          }
+        };
+      }
+      this.childrens = [];
+      this.inputChildrens = [];
+      this.setRules(this.rules);
+    },
+    methods: {
+      /**
+       * 外部调用方法
+       * 设置规则 ，主要用于小程序自定义检验规则
+       * @param {Array} rules 规则源数据
+       */
+      setRules(rules) {
+        this.formRules = Object.assign({}, this.formRules, rules);
+        this.validator = new SchemaValidator(rules);
+      },
+      /**
+       * 外部调用方法
+       * 设置数据，用于设置表单数据，公开给用户使用 ， 不支持在动态表单中使用
+       * @param {Object} key
+       * @param {Object} value
+       */
+      setValue(key, value) {
+        let example = this.childrens.find((child) => child.name === key);
+        if (!example)
+          return null;
+        this.formData[key] = getValue(key, value, this.formRules[key] && this.formRules[key].rules || []);
+        return example.onFieldChange(this.formData[key]);
+      },
+      /**
+       * 外部调用方法
+       * 手动提交校验表单
+       * 对整个表单进行校验的方法，参数为一个回调函数。
+       * @param {Array} keepitem 保留不参与校验的字段
+       * @param {type} callback 方法回调
+       */
+      validate(keepitem, callback) {
+        return this.checkAll(this.formData, keepitem, callback);
+      },
+      /**
+       * 外部调用方法
+       * 部分表单校验
+       * @param {Array|String} props 需要校验的字段
+       * @param {Function} 回调函数
+       */
+      validateField(props = [], callback) {
+        props = [].concat(props);
+        let invalidFields = {};
+        this.childrens.forEach((item) => {
+          const name = realName(item.name);
+          if (props.indexOf(name) !== -1) {
+            invalidFields = Object.assign({}, invalidFields, {
+              [name]: this.formData[name]
+            });
+          }
+        });
+        return this.checkAll(invalidFields, [], callback);
+      },
+      /**
+       * 外部调用方法
+       * 移除表单项的校验结果。传入待移除的表单项的 prop 属性或者 prop 组成的数组，如不传则移除整个表单的校验结果
+       * @param {Array|String} props 需要移除校验的字段 ，不填为所有
+       */
+      clearValidate(props = []) {
+        props = [].concat(props);
+        this.childrens.forEach((item) => {
+          if (props.length === 0) {
+            item.errMsg = "";
+          } else {
+            const name = realName(item.name);
+            if (props.indexOf(name) !== -1) {
+              item.errMsg = "";
+            }
+          }
+        });
+      },
+      /**
+       * 外部调用方法 ，即将废弃
+       * 手动提交校验表单
+       * 对整个表单进行校验的方法，参数为一个回调函数。
+       * @param {Array} keepitem 保留不参与校验的字段
+       * @param {type} callback 方法回调
+       */
+      submit(keepitem, callback, type) {
+        for (let i in this.dataValue) {
+          const itemData = this.childrens.find((v) => v.name === i);
+          if (itemData) {
+            if (this.formData[i] === void 0) {
+              this.formData[i] = this._getValue(i, this.dataValue[i]);
+            }
+          }
+        }
+        if (!type) {
+          formatAppLog("warn", "at node_modules/@dcloudio/uni-ui/lib/uni-forms/uni-forms.vue:289", "submit 方法即将废弃，请使用validate方法代替！");
+        }
+        return this.checkAll(this.formData, keepitem, callback, "submit");
+      },
+      // 校验所有
+      async checkAll(invalidFields, keepitem, callback, type) {
+        if (!this.validator)
+          return;
+        let childrens = [];
+        for (let i in invalidFields) {
+          const item = this.childrens.find((v) => realName(v.name) === i);
+          if (item) {
+            childrens.push(item);
+          }
+        }
+        if (!callback && typeof keepitem === "function") {
+          callback = keepitem;
+        }
+        let promise;
+        if (!callback && typeof callback !== "function" && Promise) {
+          promise = new Promise((resolve, reject) => {
+            callback = function(valid, invalidFields2) {
+              !valid ? resolve(invalidFields2) : reject(valid);
+            };
+          });
+        }
+        let results = [];
+        let tempFormData = JSON.parse(JSON.stringify(invalidFields));
+        for (let i in childrens) {
+          const child = childrens[i];
+          let name = realName(child.name);
+          const result = await child.onFieldChange(tempFormData[name]);
+          if (result) {
+            results.push(result);
+            if (this.errShowType === "toast" || this.errShowType === "modal")
+              break;
+          }
+        }
+        if (Array.isArray(results)) {
+          if (results.length === 0)
+            results = null;
+        }
+        if (Array.isArray(keepitem)) {
+          keepitem.forEach((v) => {
+            let vName = realName(v);
+            let value = getDataValue(v, this.localData);
+            if (value !== void 0) {
+              tempFormData[vName] = value;
+            }
+          });
+        }
+        if (type === "submit") {
+          this.$emit("submit", {
+            detail: {
+              value: tempFormData,
+              errors: results
+            }
+          });
+        } else {
+          this.$emit("validate", results);
+        }
+        let resetFormData = {};
+        resetFormData = rawData(tempFormData, this.name);
+        callback && typeof callback === "function" && callback(results, resetFormData);
+        if (promise && callback) {
+          return promise;
+        } else {
+          return null;
+        }
+      },
+      /**
+       * 返回validate事件
+       * @param {Object} result
+       */
+      validateCheck(result) {
+        this.$emit("validate", result);
+      },
+      _getValue: getValue,
+      _isRequiredField: isRequiredField,
+      _setDataValue: setDataValue,
+      _getDataValue: getDataValue,
+      _realName: realName,
+      _isRealName: isRealName,
+      _isEqual: isEqual
+    }
+  };
+  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-forms" }, [
+      vue.createElementVNode("form", null, [
+        vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
+      ])
+    ]);
+  }
+  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$2], ["__scopeId", "data-v-13523fe0"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-forms/uni-forms.vue"]]);
+  const _sfc_main$4 = /* @__PURE__ */ vue.defineComponent({
+    __name: "login",
+    setup(__props) {
+      const loginData = vue.reactive({
+        userName: "",
+        password: ""
+      });
+      const isLogin = vue.ref(true);
+      let now2 = nowTime();
+      const change = vue.reactive({
+        userId: "",
+        loginTime: now2,
+        loginDevice: "",
+        loginIp: ""
+      });
+      async function getDevice() {
+        uni.getSystemInfo({
+          success: (device) => {
+            let res = device.deviceType + "-" + device.appVersionCode + "-" + device.ua;
+            change.loginDevice = res;
+            registerUser.loginDevice = res;
+          }
+        });
+      }
+      async function getIp() {
+        uni.request({
+          url: "https://api.ipify.org?format=json",
+          success: (res) => {
+            change.loginIp = res.data.ip;
+            registerUser.loginIp = res.data.ip;
+            formatAppLog("log", "at pages/login/login.vue:86", "登录地址", res.data.ip);
+          }
+        });
+      }
+      vue.ref();
+      async function login() {
+        if (loginData.userName == "")
+          uni.showToast({
+            title: "没有输入账号",
+            icon: "none"
+          });
+        else if (loginData.password == "")
+          uni.showToast({
+            title: "没有输入密码",
+            icon: "none"
+          });
+        else {
+          let res = await loginUser(loginData.userName, loginData.password);
+          if (res.userId == "" || res.userId == void 0) {
+            uni.showToast({
+              //特殊状况
+              title: "登录失败，请检查网络或联系管理员emt1731041348@outlook.com",
+              icon: "none",
+              duration: 3e3
+            });
+          } else if (res.loginPass == 0) {
+            uni.showToast({
+              title: "登录失败，请联系管理员emt1731041348@outlook.com",
+              icon: "none",
+              duration: 3e3
+            });
+          } else {
+            change.userId = res.userId;
+            changeUser(change);
+            uni.setStorageSync("userId", res.userId);
+            uni.setStorageSync("userName", res.userName);
+            uni.setStorageSync("userPassword", res.userPassword);
+            uni.setStorageSync("loginTime", now2);
+            uni.setStorageSync("loginDevice", res.loginDevice);
+            uni.setStorageSync("loginPass", res.loginPass);
+            uni.showLoading({
+              title: "登录成功!"
+            });
+            setTimeout(() => {
+              uni.hideLoading();
+              uni.reLaunch({
+                url: "../index/index"
+              });
+            }, 1e3);
+          }
+        }
+      }
+      const registerData = vue.reactive({
+        name: "",
+        password: "",
+        again: ""
+      });
+      let registerUser = {
+        userName: registerData.name,
+        userPassword: registerData.password,
+        loginTime: nowTime(),
+        loginIp: "",
+        loginDevice: ""
+      };
+      function registerClick() {
+        isLogin.value = false;
+        formatAppLog("log", "at pages/login/login.vue:160", "点击了注册");
+      }
+      async function onRegister() {
+        let res = await selectUserName(registerData.name);
+        if (res) {
+          uni.showToast({
+            title: "当前用户名已存在！",
+            icon: "none"
+          });
+          registerData.name = "";
+        } else {
+          if (registerData.name == "")
+            uni.showToast({
+              title: "none",
+              icon: "none"
+            });
+          if (registerData.password.length < 6)
+            uni.showToast({
+              title: "密码长度不得小于6位！",
+              icon: "none"
+            });
+          else if (registerData.password != registerData.again) {
+            uni.showToast({
+              title: "两次密码不一致！",
+              icon: "none"
+            });
+            registerData.again = "";
+          } else {
+            registerUser.loginTime = nowTime();
+            registerUser.userName = registerData.name;
+            registerUser.userPassword = registerData.password;
+            let res2 = register(registerUser);
+            if (res2)
+              uni.showToast({
+                title: "注册成功",
+                icon: "none",
+                duration: 1e3,
+                success() {
+                  isLogin.value = true;
+                  loginData.userName = registerUser.userName;
+                  loginData.password = registerUser.userPassword;
+                  formatAppLog("log", "at pages/login/login.vue:206", "看看到底有没有传过去", registerUser);
+                  login();
+                }
+              });
+          }
+        }
+      }
+      function forget() {
+        uni.showToast({
+          title: "暂不支持找回",
+          icon: "none"
+        });
+      }
+      onLoad(() => {
+        getDevice();
+        getIp();
+      });
+      return (_ctx, _cache) => {
+        const _component_uni_easyinput = resolveEasycom(vue.resolveDynamicComponent("uni-easyinput"), __easycom_0$1);
+        const _component_uni_forms_item = resolveEasycom(vue.resolveDynamicComponent("uni-forms-item"), __easycom_1$1);
+        const _component_uni_forms = resolveEasycom(vue.resolveDynamicComponent("uni-forms"), __easycom_2);
+        return vue.openBlock(), vue.createElementBlock("view", { class: "loginRegister" }, [
+          vue.createCommentVNode(" 登录 "),
+          isLogin.value ? (vue.openBlock(), vue.createElementBlock("view", {
+            key: 0,
+            class: "login_item"
+          }, [
+            vue.createVNode(_component_uni_forms, { modelValue: loginData }, {
+              default: vue.withCtx(() => [
+                vue.createVNode(_component_uni_forms_item, {
+                  label: "账号",
+                  required: "",
+                  name: "name"
+                }, {
+                  default: vue.withCtx(() => [
+                    vue.createVNode(_component_uni_easyinput, {
+                      modelValue: loginData.userName,
+                      "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => loginData.userName = $event),
+                      placeholder: "用户名/账号名"
+                    }, null, 8, ["modelValue"])
+                  ]),
+                  _: 1
+                  /* STABLE */
+                }),
+                vue.createVNode(_component_uni_forms_item, {
+                  label: "密码",
+                  required: "",
+                  name: "password"
+                }, {
+                  default: vue.withCtx(() => [
+                    vue.createVNode(_component_uni_easyinput, {
+                      type: "password",
+                      modelValue: loginData.password,
+                      "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => loginData.password = $event)
+                    }, null, 8, ["modelValue"])
+                  ]),
+                  _: 1
+                  /* STABLE */
+                }),
+                vue.createElementVNode("button", {
+                  type: "primary",
+                  onClick: login
+                }, "登录"),
+                vue.createElementVNode("button", {
+                  type: "primary",
+                  onClick: registerClick
+                }, "注册")
+              ]),
+              _: 1
+              /* STABLE */
+            }, 8, ["modelValue"]),
+            vue.createCommentVNode(" emmm忘记了 "),
+            vue.createElementVNode("view", {
+              class: "forget",
+              onClick: forget
+            }, " 我忘记密码了 ")
+          ])) : vue.createCommentVNode("v-if", true),
+          vue.createCommentVNode(" 注册 "),
+          !isLogin.value ? (vue.openBlock(), vue.createBlock(_component_uni_forms, {
+            key: 1,
+            class: "register_item",
+            modelValue: registerData
+          }, {
+            default: vue.withCtx(() => [
+              vue.createVNode(_component_uni_forms_item, {
+                label: "账号",
+                required: "",
+                name: "name"
+              }, {
+                default: vue.withCtx(() => [
+                  vue.createVNode(_component_uni_easyinput, {
+                    modelValue: registerData.name,
+                    "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => registerData.name = $event),
+                    placeholder: "用户名/账号名"
+                  }, null, 8, ["modelValue"])
+                ]),
+                _: 1
+                /* STABLE */
+              }),
+              vue.createVNode(_component_uni_forms_item, {
+                label: "密码",
+                required: "",
+                name: "password"
+              }, {
+                default: vue.withCtx(() => [
+                  vue.createVNode(_component_uni_easyinput, {
+                    type: "password",
+                    modelValue: registerData.password,
+                    "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => registerData.password = $event),
+                    placeholder: "请输入密码,不得少于6位"
+                  }, null, 8, ["modelValue"])
+                ]),
+                _: 1
+                /* STABLE */
+              }),
+              vue.createVNode(_component_uni_forms_item, {
+                label: "再次输入密码",
+                required: "",
+                name: "again"
+              }, {
+                default: vue.withCtx(() => [
+                  vue.createVNode(_component_uni_easyinput, {
+                    type: "password",
+                    modelValue: registerData.again,
+                    "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => registerData.again = $event)
+                  }, null, 8, ["modelValue"])
+                ]),
+                _: 1
+                /* STABLE */
+              }),
+              vue.createElementVNode("button", {
+                type: "primary",
+                onClick: onRegister
+              }, "注册")
+            ]),
+            _: 1
+            /* STABLE */
+          }, 8, ["modelValue"])) : vue.createCommentVNode("v-if", true)
+        ]);
+      };
+    }
+  });
+  const PagesLoginLogin = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-e4e4508d"], ["__file", "E:/程序夹/emtanimation_app/pages/login/login.vue"]]);
+  const _sfc_main$3 = {
+    name: "uniCollapseItem",
+    props: {
+      // 列表标题
+      title: {
+        type: String,
+        default: ""
+      },
+      name: {
+        type: [Number, String],
+        default: ""
+      },
+      // 是否禁用
+      disabled: {
+        type: Boolean,
+        default: false
+      },
+      // 是否显示动画,app 端默认不开启动画，卡顿严重
+      showAnimation: {
+        type: Boolean,
+        default: false
+      },
+      // 是否展开
+      open: {
+        type: Boolean,
+        default: false
+      },
+      // 缩略图
+      thumb: {
+        type: String,
+        default: ""
+      },
+      // 标题分隔线显示类型
+      titleBorder: {
+        type: String,
+        default: "auto"
+      },
+      border: {
+        type: Boolean,
+        default: true
+      },
+      showArrow: {
+        type: Boolean,
+        default: true
+      }
+    },
+    data() {
+      const elId = `Uni_${Math.ceil(Math.random() * 1e6).toString(36)}`;
+      return {
+        isOpen: false,
+        isheight: null,
+        height: 0,
+        elId,
+        nameSync: 0
+      };
+    },
+    watch: {
+      open(val) {
+        this.isOpen = val;
+        this.onClick(val, "init");
+      }
+    },
+    updated(e) {
+      this.$nextTick(() => {
+        this.init(true);
+      });
+    },
+    created() {
+      this.collapse = this.getCollapse();
+      this.oldHeight = 0;
+      this.onClick(this.open, "init");
+    },
+    // TODO vue3
+    unmounted() {
+      this.__isUnmounted = true;
+      this.uninstall();
+    },
+    mounted() {
+      if (!this.collapse)
+        return;
+      if (this.name !== "") {
+        this.nameSync = this.name;
+      } else {
+        this.nameSync = this.collapse.childrens.length + "";
+      }
+      if (this.collapse.names.indexOf(this.nameSync) === -1) {
+        this.collapse.names.push(this.nameSync);
+      } else {
+        formatAppLog("warn", "at node_modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item.vue:154", `name 值 ${this.nameSync} 重复`);
+      }
+      if (this.collapse.childrens.indexOf(this) === -1) {
+        this.collapse.childrens.push(this);
+      }
+      this.init();
+    },
+    methods: {
+      init(type) {
+        this.getCollapseHeight(type);
+      },
+      uninstall() {
+        if (this.collapse) {
+          this.collapse.childrens.forEach((item, index) => {
+            if (item === this) {
+              this.collapse.childrens.splice(index, 1);
+            }
+          });
+          this.collapse.names.forEach((item, index) => {
+            if (item === this.nameSync) {
+              this.collapse.names.splice(index, 1);
+            }
+          });
+        }
+      },
+      onClick(isOpen, type) {
+        if (this.disabled)
+          return;
+        this.isOpen = isOpen;
+        if (this.isOpen && this.collapse) {
+          this.collapse.setAccordion(this);
+        }
+        if (type !== "init") {
+          this.collapse.onChange(isOpen, this);
+        }
+      },
+      getCollapseHeight(type, index = 0) {
+        const views = uni.createSelectorQuery().in(this);
+        views.select(`#${this.elId}`).fields({
+          size: true
+        }, (data) => {
+          if (index >= 10)
+            return;
+          if (!data) {
+            index++;
+            this.getCollapseHeight(false, index);
+            return;
+          }
+          this.height = data.height;
+          this.isheight = true;
+          if (type)
+            return;
+          this.onClick(this.isOpen, "init");
+        }).exec();
+      },
+      getNvueHwight(type) {
+        dom.getComponentRect(this.$refs["collapse--hook"], (option) => {
+          if (option && option.result && option.size) {
+            this.height = option.size.height;
+            this.isheight = true;
+            if (type)
+              return;
+            this.onClick(this.open, "init");
+          }
+        });
+      },
+      /**
+       * 获取父元素实例
+       */
+      getCollapse(name = "uniCollapse") {
+        let parent = this.$parent;
+        let parentName = parent.$options.name;
+        while (parentName !== name) {
+          parent = parent.$parent;
+          if (!parent)
+            return false;
+          parentName = parent.$options.name;
+        }
+        return parent;
+      }
+    }
+  };
+  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_uni_icons = resolveEasycom(vue.resolveDynamicComponent("uni-icons"), __easycom_0$2);
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-collapse-item" }, [
+      vue.createCommentVNode(" onClick(!isOpen) "),
+      vue.createElementVNode(
+        "view",
+        {
+          onClick: _cache[0] || (_cache[0] = ($event) => $options.onClick(!$data.isOpen)),
+          class: vue.normalizeClass(["uni-collapse-item__title", { "is-open": $data.isOpen && $props.titleBorder === "auto", "uni-collapse-item-border": $props.titleBorder !== "none" }])
+        },
+        [
+          vue.createElementVNode("view", { class: "uni-collapse-item__title-wrap" }, [
+            vue.renderSlot(_ctx.$slots, "title", {}, () => [
+              vue.createElementVNode(
+                "view",
+                {
+                  class: vue.normalizeClass(["uni-collapse-item__title-box", { "is-disabled": $props.disabled }])
+                },
+                [
+                  $props.thumb ? (vue.openBlock(), vue.createElementBlock("image", {
+                    key: 0,
+                    src: $props.thumb,
+                    class: "uni-collapse-item__title-img"
+                  }, null, 8, ["src"])) : vue.createCommentVNode("v-if", true),
+                  vue.createElementVNode(
+                    "text",
+                    { class: "uni-collapse-item__title-text" },
+                    vue.toDisplayString($props.title),
+                    1
+                    /* TEXT */
+                  )
+                ],
+                2
+                /* CLASS */
+              )
+            ], true)
+          ]),
+          $props.showArrow ? (vue.openBlock(), vue.createElementBlock(
+            "view",
+            {
+              key: 0,
+              class: vue.normalizeClass([{ "uni-collapse-item__title-arrow-active": $data.isOpen, "uni-collapse-item--animation": $props.showAnimation === true }, "uni-collapse-item__title-arrow"])
+            },
+            [
+              vue.createVNode(_component_uni_icons, {
+                color: $props.disabled ? "#ddd" : "#bbb",
+                size: "14",
+                type: "bottom"
+              }, null, 8, ["color"])
+            ],
+            2
+            /* CLASS */
+          )) : vue.createCommentVNode("v-if", true)
+        ],
+        2
+        /* CLASS */
+      ),
+      vue.createElementVNode(
+        "view",
+        {
+          class: vue.normalizeClass(["uni-collapse-item__wrap", { "is--transition": $props.showAnimation }]),
+          style: vue.normalizeStyle({ height: ($data.isOpen ? $data.height : 0) + "px" })
+        },
+        [
+          vue.createElementVNode("view", {
+            id: $data.elId,
+            ref: "collapse--hook",
+            class: vue.normalizeClass(["uni-collapse-item__wrap-content", { open: $data.isheight, "uni-collapse-item--border": $props.border && $data.isOpen }])
+          }, [
+            vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
+          ], 10, ["id"])
+        ],
+        6
+        /* CLASS, STYLE */
+      )
+    ]);
+  }
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$1], ["__scopeId", "data-v-8f0af21a"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item.vue"]]);
+  const _sfc_main$2 = {
+    name: "uniCollapse",
+    emits: ["change", "activeItem", "input", "update:modelValue"],
+    props: {
+      value: {
+        type: [String, Array],
+        default: ""
+      },
+      modelValue: {
+        type: [String, Array],
+        default: ""
+      },
+      accordion: {
+        // 是否开启手风琴效果
+        type: [Boolean, String],
+        default: false
+      }
+    },
+    data() {
+      return {};
+    },
+    computed: {
+      // TODO 兼容 vue2 和 vue3
+      dataValue() {
+        let value = typeof this.value === "string" && this.value === "" || Array.isArray(this.value) && this.value.length === 0;
+        let modelValue = typeof this.modelValue === "string" && this.modelValue === "" || Array.isArray(this.modelValue) && this.modelValue.length === 0;
+        if (value) {
+          return this.modelValue;
+        }
+        if (modelValue) {
+          return this.value;
+        }
+        return this.value;
+      }
+    },
+    watch: {
+      dataValue(val) {
+        this.setOpen(val);
+      }
+    },
+    created() {
+      this.childrens = [];
+      this.names = [];
+    },
+    mounted() {
+      this.$nextTick(() => {
+        this.setOpen(this.dataValue);
+      });
+    },
+    methods: {
+      setOpen(val) {
+        let str = typeof val === "string";
+        let arr = Array.isArray(val);
+        this.childrens.forEach((vm, index) => {
+          if (str) {
+            if (val === vm.nameSync) {
+              if (!this.accordion) {
+                formatAppLog("warn", "at node_modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse.vue:75", "accordion 属性为 false ,v-model 类型应该为 array");
+                return;
+              }
+              vm.isOpen = true;
+            }
+          }
+          if (arr) {
+            val.forEach((v) => {
+              if (v === vm.nameSync) {
+                if (this.accordion) {
+                  formatAppLog("warn", "at node_modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse.vue:85", "accordion 属性为 true ,v-model 类型应该为 string");
+                  return;
+                }
+                vm.isOpen = true;
+              }
+            });
+          }
+        });
+        this.emit(val);
+      },
+      setAccordion(self2) {
+        if (!this.accordion)
+          return;
+        this.childrens.forEach((vm, index) => {
+          if (self2 !== vm) {
+            vm.isOpen = false;
+          }
+        });
+      },
+      resize() {
+        this.childrens.forEach((vm, index) => {
+          vm.getCollapseHeight();
+        });
+      },
+      onChange(isOpen, self2) {
+        let activeItem = [];
+        if (this.accordion) {
+          activeItem = isOpen ? self2.nameSync : "";
+        } else {
+          this.childrens.forEach((vm, index) => {
+            if (vm.isOpen) {
+              activeItem.push(vm.nameSync);
+            }
+          });
+        }
+        this.$emit("change", activeItem);
+        this.emit(activeItem);
+      },
+      emit(val) {
+        this.$emit("input", val);
+        this.$emit("update:modelValue", val);
+      }
+    }
+  };
+  function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", { class: "uni-collapse" }, [
+      vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
+    ]);
+  }
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render], ["__scopeId", "data-v-88f6e75f"], ["__file", "E:/程序夹/emtanimation_app/node_modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse.vue"]]);
+  const app = {
+    version: "1.0"
+  };
+  const _sfc_main$1 = /* @__PURE__ */ vue.defineComponent({
+    __name: "setting",
+    setup(__props) {
+      const useSetting = useSettingStore();
+      const theme = vue.computed(() => useSetting.theme);
+      function selectTheme(e) {
+        formatAppLog("log", "at pages/setting/setting.vue:41", "选择的主题", e.detail.value);
+        useSetting.changeTheme(e.detail.value);
+        uni.showToast({
+          title: "已经更换主题了",
+          icon: "none"
+        });
+      }
+      function showDialog() {
+        uni.showModal({
+          showCancel: false,
+          title: "emilia maji tenshi",
+          content: `	我是本软件的制作人，本人学艺不精，若有关于本软件的一些建议，可以向“emt1731041348@outlook.com”发送。
+	本人需要强调，本软件所有资源来源于网络，本软件绝不盈利，如果你对本软件提供的服务有所质疑，也请向如上邮箱发送你的想法。
+	如有冒犯，十分抱歉。`
+        });
+      }
+      function getApp2() {
+        uni.showModal({
+          showCancel: false,
+          title: "获取最新版本",
+          content: "当前版本" + app.version + `	最新版本为`
+        });
+        formatAppLog("log", "at pages/setting/setting.vue:65", app.version);
+      }
+      function unlogin() {
+        uni.showModal({
+          title: "退出登录",
+          content: "确认退出登录吗？",
+          success: (res) => {
+            if (res.confirm) {
+              uni.showToast({
+                title: "退出了！",
+                icon: "none",
+                duration: 1500,
+                success() {
+                  uni.removeStorageSync("userId");
+                  uni.removeStorageSync("userName");
+                  uni.removeStorageSync("loginTime");
+                  uni.removeStorageSync("loginIp");
+                  uni.removeStorageSync("loginDevice");
+                  formatAppLog("log", "at pages/setting/setting.vue:85", "看看删了没", uni.getStorageSync("userId"));
+                }
+              });
+            }
+          }
+        });
+      }
+      return (_ctx, _cache) => {
+        const _component_uni_collapse_item = resolveEasycom(vue.resolveDynamicComponent("uni-collapse-item"), __easycom_0);
+        const _component_uni_collapse = resolveEasycom(vue.resolveDynamicComponent("uni-collapse"), __easycom_1);
+        return vue.openBlock(), vue.createElementBlock("view", { class: "setting" }, [
+          vue.createVNode(_component_uni_collapse, null, {
+            default: vue.withCtx(() => [
+              vue.createCommentVNode(" 设置主题 "),
+              vue.createVNode(_component_uni_collapse_item, {
+                title: "设置主题",
+                open: false,
+                class: "selectTheme"
+              }, {
+                default: vue.withCtx(() => [
+                  vue.createElementVNode(
+                    "radio-group",
+                    {
+                      name: "",
+                      onChange: selectTheme
+                    },
+                    [
+                      vue.createElementVNode("label", null, [
+                        vue.createElementVNode("radio", {
+                          value: "light",
+                          checked: theme.value == "light",
+                          style: { "transform": "scale(0.7)" }
+                        }, null, 8, ["checked"]),
+                        vue.createElementVNode("text", null, "白昼")
+                      ]),
+                      vue.createElementVNode("label", null, [
+                        vue.createElementVNode("radio", {
+                          value: "dark",
+                          checked: theme.value == "dark",
+                          style: { "transform": "scale(0.7)" }
+                        }, null, 8, ["checked"]),
+                        vue.createElementVNode("text", null, "黑夜")
+                      ])
+                    ],
+                    32
+                    /* NEED_HYDRATION */
+                  )
+                ]),
+                _: 1
+                /* STABLE */
+              }),
+              vue.createCommentVNode(" 制作人有话说 "),
+              vue.createVNode(_component_uni_collapse_item, {
+                title: "制作人有话说",
+                onClick: showDialog,
+                open: false,
+                showArrow: false
+              }),
+              vue.createCommentVNode(" 获取最新版本 "),
+              vue.createVNode(_component_uni_collapse_item, {
+                title: "获取最新版本",
+                onClick: getApp2,
+                open: false,
+                showArrow: false
+              }),
+              vue.createCommentVNode(" 获取最新版本 "),
+              vue.createVNode(_component_uni_collapse_item, {
+                title: "退出登录",
+                onClick: unlogin,
+                open: false,
+                showArrow: false
+              })
+            ]),
+            _: 1
+            /* STABLE */
+          })
+        ]);
+      };
+    }
+  });
+  const PagesSettingSetting = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-018cdf56"], ["__file", "E:/程序夹/emtanimation_app/pages/setting/setting.vue"]]);
   __definePage("pages/index/index", PagesIndexIndex);
   __definePage("compontents/topCompontent/topCompontent", CompontentsTopCompontentTopCompontent);
   __definePage("compontents/footerCompontent/footerCompontent", CompontentsFooterCompontentFooterCompontent);
@@ -4462,6 +7170,8 @@ This will fail in production.`);
   __definePage("pages/user/user", PagesUserUser);
   __definePage("compontents/user/historyCompontent/historyCompontent", CompontentsUserHistoryCompontentHistoryCompontent);
   __definePage("compontents/user/subscribeCompontent/subscribeCompontent", CompontentsUserSubscribeCompontentSubscribeCompontent);
+  __definePage("pages/login/login", PagesLoginLogin);
+  __definePage("pages/setting/setting", PagesSettingSetting);
   const _sfc_main = {
     onLaunch: function() {
       formatAppLog("log", "at App.vue:4", "App Launch");
@@ -4475,11 +7185,11 @@ This will fail in production.`);
   };
   const App = /* @__PURE__ */ _export_sfc(_sfc_main, [["__file", "E:/程序夹/emtanimation_app/App.vue"]]);
   function createApp() {
-    const app = vue.createVueApp(App);
+    const app2 = vue.createVueApp(App);
     const pinia = createPinia();
-    app.use(pinia);
+    app2.use(pinia);
     return {
-      app
+      app: app2
     };
   }
   const { app: __app__, Vuex: __Vuex__, Pinia: __Pinia__ } = createApp();

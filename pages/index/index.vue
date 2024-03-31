@@ -25,7 +25,7 @@
 	import re0Compontent from '../../compontents/home/Re0Compontent/Re0Compontent.vue';
 	//获取系统设计参数
 	import { useSettingStore } from '../../pinia/setting';
-	import { onPullDownRefresh } from '@dcloudio/uni-app';
+	import { onPullDownRefresh ,onLoad,onShow} from '@dcloudio/uni-app';
 	
 	import { useUserStore } from '../../pinia/user';
 
@@ -38,13 +38,21 @@
 		color:theme.value=='dark'?'#ccc':'#000000'
 	})
 	
-	//模拟用户登录状态
-	const useUser=useUserStore();
-	useUser.userId=1;
-	useUser.userName="emilia";
-	useUser.userInformation={
-		loginTime:1710988243
-	}
+	//	调用user pinia 进行数据初始化
+	onLoad(()=>{
+		const useUser=useUserStore();
+		useUser.getUserId;
+		useUser.getUserName;
+		useUser.getUserInformation;
+	})
+	
+	//设置底部菜单栏样式
+	onShow(()=>{
+		uni.setTabBarStyle({
+			backgroundColor: theme.value == 'dark' ? '#000000' : '#DCDFE6',
+			color: theme.value == 'dark' ? '#ccc' : '#000000'
+		});
+	})
 
 	//允许下拉刷新
 	onPullDownRefresh(() => {

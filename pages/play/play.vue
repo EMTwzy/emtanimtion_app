@@ -6,7 +6,7 @@
 		<!-- 视频组件 -->
 		<videoCompontent></videoCompontent>
 		<!-- 集数组件 -->
-		<episodeCompontent style="margin-bottom: 40rpx;"></episodeCompontent>
+		<episodeCompontent style="margin-bottom: 50rpx;"></episodeCompontent>
 		<!-- 番剧信息组件 -->
 		<informationCompontent></informationCompontent>
 		
@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 	import {computed} from 'vue';
-	import {onLoad} from '@dcloudio/uni-app';
+	import {onLoad,onUnload,onBackPress} from '@dcloudio/uni-app';
 	//导入头部、尾部组件
 	import topCompontent from '../../compontents/topCompontent/topCompontent.vue';
 	import footerCompontent from '../../compontents/footerCompontent/footerCompontent.vue';
@@ -59,12 +59,30 @@
 		console.log("播放这边接收到的数据为",playStore.videoInfo,"\n播放数据为",playStore.videoList,"\n集数组为",playStore.episodeList);
 	}
 	
+	//页面挂载
 	onLoad((param)=>{
-		console.log("播放id",param);
 		getVideo(param.vodId).then(()=>{
 			playStore.initInformation(userStore.userId);
 		});
-	})
+	});
+	
+	//初始化数据，将数据进行格式化操作
+	function initPlayStore(){
+		playStore.episodeList=[];
+		playStore.videoInfo='';
+		playStore.videoList=[];
+		playStore.selectEpisode='';
+		playStore.selectVideo='';
+	}
+	
+	//页面卸载
+	onUnload(()=>{
+		initPlayStore();
+	});
+	//页面返回
+	onBackPress(()=>{
+		initPlayStore();
+	});
 	
 </script>
 

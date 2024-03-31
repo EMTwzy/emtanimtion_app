@@ -7,8 +7,11 @@
 			<!-- 用户头像 -->
 			<uni-row>
 				<uni-col :span="7">
-					<view class="user_img">
+					<view class="user_img" @click="login">
 						<image src="../../static/user/default_user.jpg"></image>
+					</view>
+					<view class="login" v-show="name==''">
+						点我登录
 					</view>
 				</uni-col>
 				<uni-col :span="17">
@@ -22,7 +25,7 @@
 						</p>
 						<p>
 							<text v-if="userInformation.loginTime==null">上次登陆时间：先登录喵~</text>
-							<text v-else-if="userInformation.loginTime!=''">上次登录时间：{{userInformation.loginTime}}</text>
+							<text v-else-if="userInformation.loginTime!=''">上次登录时间：{{loginTime}}</text>
 						</p>
 					</view>
 				</uni-col>
@@ -52,8 +55,8 @@
 </template>
 
 <script setup lang="ts">
-	import { computed, ref } from 'vue';
-	import { onLoad,onShow } from '@dcloudio/uni-app';
+	import { computed, ref, watch } from 'vue';
+	import { onLoad, onShow } from '@dcloudio/uni-app';
 	//导入设置pinia
 	import { useSettingStore } from '../../pinia/setting';
 	//导入用户pinia
@@ -66,19 +69,19 @@
 	//导入历史记录组件 追番记录组件
 	import historyCompontent from '../../compontents/user/historyCompontent/historyCompontent.vue';
 	import subscribeCompontent from '../../compontents/user/subscribeCompontent/subscribeCompontent.vue';
+	//导入时间处理
+	import { changeDate } from '../../utils/time';
+
 
 	//主题
 	const useSetting = useSettingStore();
 	const theme = computed(() => useSetting.theme);
-	uni.setTabBarStyle({
-		backgroundColor: theme.value == 'dark' ? '#000000' : '#DCDFE6',
-		color: theme.value == 'dark' ? '#ccc' : '#000000'
-	});
 
 	//用户信息
 	const useUser = useUserStore();
 	const name = computed(() => useUser.userName);   //名称
 	const userInformation = computed(() => useUser.userInformation);   //用户的其他信息
+	let loginTime = computed(() => changeDate(useUser.userInformation.loginTime));
 
 	//获取追番信息
 	const subInfo : subI = ref([]);
@@ -101,9 +104,10 @@
 	function onClickItem(e) {
 		if (current.value != e.currentIndex) {    //切换选项
 			current.value = e.currentIndex;
+			console.log("current的值", current.value);
 			if (current.value == 0) {
 				getSub(useUser.userId);		 //没有登陆那就是空
-				console.log("追番信息",subInfo.value);
+				console.log("追番信息", subInfo.value);
 			} else {
 				getHis(useUser.userId);      //没有登陆那就是空
 			}
@@ -111,16 +115,45 @@
 	}
 	/*****系统*****/
 	function setting() {
+		uni.navigateTo({
+			url:'/pages/setting/setting'
+		})
 		console.log("点击了系统");
 	}
+	/*****登录*****/
+	function login() {
+		uni.reLaunch({
+			url: '/pages/login/login'
+		})
+		//console.log("点击了登录");
+	}
 
-	//测试
+	//
 	onShow(() => {
+
 		if (current.value == 0) {
 			getSub(useUser.userId);		 //没有登陆那就是空
 		} else {
 			getHis(useUser.userId);      //没有登陆那就是空
 		}
+		
+		uni.setTabBarStyle({
+			backgroundColor: theme.value == 'dark' ? '#000000' : '#DCDFE6',
+			color: theme.value == 'dark' ? '#ccc' : '#000000'
+		});
+	});
+
+	//删除历史记录后会重新回到user.vue 届时改变current值以回到原界面
+	onLoad((param) => {
+		if (param.current == 1)
+			current.value = 1;
+		else
+			current.value = 0;
+		// 用户信息初始化
+		useUser.getUserId;
+		useUser.getUserName;
+		useUser.getUserInformation;
+		console.log("用户界面这里获取到的数据为",useUser);
 	})
 </script>
 
@@ -131,13 +164,24 @@
 
 		// 用户信息
 		.userInfor {
+
+			// 用户头像
 			.user_img {
 				width: 200rpx;
 
 				image {
 					width: 200rpx;
 					height: 200rpx;
+					border-radius: 50%;
 				}
+			}
+
+			// 登录提示
+			.login {
+				position: absolute;
+				top: 80rpx;
+				left: 50rpx;
+				color: purple;
 			}
 
 			.userInformation {
@@ -149,8 +193,8 @@
 		}
 
 		.control {
-			
-			.content{
+
+			.content {
 				height: 1100rpx;
 				overflow-y: auto;
 			}

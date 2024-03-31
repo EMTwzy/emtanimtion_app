@@ -4,7 +4,7 @@
     "iPhone",
     "iPad"
   ],
-  "id": "",
+  "id": "__UNI__308AF32",
   "name": "EMT动漫",
   "version": {
     "name": "1.0.0",
@@ -43,7 +43,34 @@
     "distribute": {
       "icons": {
         "android": {
-          "hdpi": "static/logo.png"
+          "hdpi": "unpackage/res/icons/72x72.png",
+          "xhdpi": "unpackage/res/icons/96x96.png",
+          "xxhdpi": "unpackage/res/icons/144x144.png",
+          "xxxhdpi": "unpackage/res/icons/192x192.png"
+        },
+        "ios": {
+          "appstore": "unpackage/res/icons/1024x1024.png",
+          "iphone": {
+            "app@2x": "unpackage/res/icons/120x120.png",
+            "app@3x": "unpackage/res/icons/180x180.png",
+            "notification@2x": "unpackage/res/icons/40x40.png",
+            "notification@3x": "unpackage/res/icons/60x60.png",
+            "settings@2x": "unpackage/res/icons/58x58.png",
+            "settings@3x": "unpackage/res/icons/87x87.png",
+            "spotlight@2x": "unpackage/res/icons/80x80.png",
+            "spotlight@3x": "unpackage/res/icons/120x120.png"
+          },
+          "ipad": {
+            "app": "unpackage/res/icons/76x76.png",
+            "app@2x": "unpackage/res/icons/152x152.png",
+            "notification": "unpackage/res/icons/20x20.png",
+            "notification@2x": "unpackage/res/icons/40x40.png",
+            "proapp@2x": "unpackage/res/icons/167x167.png",
+            "settings": "unpackage/res/icons/29x29.png",
+            "settings@2x": "unpackage/res/icons/58x58.png",
+            "spotlight": "unpackage/res/icons/40x40.png",
+            "spotlight@2x": "unpackage/res/icons/80x80.png"
+          }
         }
       },
       "google": {
@@ -79,7 +106,7 @@
       "style": "dark",
       "background": "@navigationBarBackgroundColor"
     },
-    "arguments": "{\"path\":\"pages/index/index\"}",
+    "arguments": "{\"path\":\"pages/setting/setting\"}",
     "uniStatistics": {
       "enable": false
     },
@@ -93,7 +120,7 @@
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
-      "compilerVersion": "4.06",
+      "compilerVersion": "4.07",
       "nvueCompiler": "uni-app",
       "renderer": "auto",
       "nvue": {
@@ -111,7 +138,7 @@
       "borderStyle": "rgba(0,0,0,0.4)",
       "blurEffect": "none",
       "fontSize": "16px",
-      "iconWidth": "28px",
+      "iconWidth": "24px",
       "spacing": "3px",
       "height": "50px",
       "backgroundColor": "#ccc",
@@ -136,12 +163,9 @@
         }
       ],
       "selectedIndex": 0,
-      "shown": true,
-      "child": [
-        "lauchwebview"
-      ],
-      "selected": 0
+      "shown": true
     }
   },
+  "locale": "zh-Hans",
   "launch_path": "__uniappview.html"
 }

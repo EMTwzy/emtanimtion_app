@@ -1,6 +1,6 @@
 <template>
 	<view class="historys">
-		<uni-row  @click="trunTo">
+		<uni-row  @longpress="longTap(items)">
 			<uni-col :span="5">
 				<image :src="items.vodPic!=''?items.vodPic:defaultImage" class="pic"></image>
 			</uni-col>
@@ -14,8 +14,10 @@
 				{{data.obj.vodWatchTime}}
 			</uni-col>
 		</uni-row>
-		
 	</view>
+	<!-- <uni-popup ref="popup" type="dialog">
+		<uni-popup-dialog mode="input" message="成功消息" :duration="2000" :before-close="true" @close="close" @confirm="confirm"></uni-popup-dialog>
+	</uni-popup> -->
 </template>
 
 <script setup lang="ts">
@@ -25,7 +27,7 @@
 	import hisI from '../../../interface/historyInterface';
 	import itemI from '../../../interface/itemInterface';
 	//根据id获取番剧信息
-	import {selectVideoById,picUtils} from '../../../api/index';
+	import {selectVideoById,picUtils, deleteHistory} from '../../../api/index';
 	//获取时间处理
 	import {changeDate} from '../../../utils/time';
 	
@@ -45,12 +47,35 @@
 	//验证图片是否可以访问 可以访问就会返回该数值 不可访问就直接返回空
 	items.vodPic = picUtils(items.vodPic);	
 	
-	/*******跳转播放*******/
-	function trunTo(){
-		uni.reLaunch({
-			url:'/pages/play/play?vodId='+items.vodId
-		})
+	async function delHistory(userId:number,vodPreId:number,vodEpisode:string){
+		let res=await deleteHistory(userId,vodPreId,vodEpisode);
+		return res;
 	}
+	/******长按 删除历史记录*****/
+	function longTap(e){
+		console.log("长按了",e);
+		uni.showModal({  
+		    title: '是否删除',  
+			cancelText:"取消",
+			confirmText:"确定",
+			confirmColor:"#ce3c39",
+		    content: '番剧:'+e.vodName+'\n观看记录:'+data.obj.vodEpisode,  
+		    success:res=> {  
+		      if (res.confirm) {  
+		        let res=delHistory(data.obj.userId,data.obj.vodPreId,data.obj.vodEpisode);
+				if(res){
+					uni.reLaunch({
+						url:'/pages/user/user?current=1'
+					})
+				}
+		      } else if (res.cancel) {  
+		        console.log('用户点击取消');  
+		      }  
+		    }  
+		  });  
+
+	}
+	
 	
 	onLoad(()=>{
 		getVideoInfo(data.obj.vodPreId);      //根据id获取番剧信息

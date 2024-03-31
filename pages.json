@@ -154,6 +154,22 @@
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/setting/setting",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
 		}
 		
 	],
@@ -191,7 +207,7 @@
 		"selectedColor": "#c662ff",
 		"fontSize":"16px",
 		//图标宽度
-		"iconWidth": "28px",
+		"iconWidth": "24px",
 		"list": [
 			//界面地址 标题 图标地址 选择时的图标
 			{"pagePath": "pages/index/index","text": "主页","iconPath": "/static/footer/emilia_Q.png","selectedIconPath": "/static/footer/emilia_Q2.png"},

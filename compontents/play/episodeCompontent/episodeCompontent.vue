@@ -37,7 +37,6 @@
 
 
 	const episodeList = computed(() => playStore.episodeList);  //集数组
-	console.log("episodeList",episodeList);
 	const selectEpisode = computed(() => playStore.selectEpisode);  //选择的集数
 	const index=computed(()=>playStore.episodeList.indexOf(playStore.selectEpisode));
 

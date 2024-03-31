@@ -27,6 +27,7 @@
 	const todayIs = ref<boolean>(IsToday(data.obj.vodAddtime));
 
 	function trunTo(vodId) {
+		console.log("番剧项目这边指定的id",vodId);
 		uni.navigateTo({
 			url:'/pages/play/play?vodId='+vodId
 		})

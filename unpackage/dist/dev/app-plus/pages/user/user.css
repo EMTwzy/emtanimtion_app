@@ -2867,6 +2867,13 @@
 .user .userInfor .user_img uni-image[data-v-0f7520f0] {
   width: 6.25rem;
   height: 6.25rem;
+  border-radius: 50%;
+}
+.user .userInfor .login[data-v-0f7520f0] {
+  position: absolute;
+  top: 2.5rem;
+  left: 1.5625rem;
+  color: purple;
 }
 .user .userInfor .userInformation p[data-v-0f7520f0] {
   margin-top: 0.625rem;

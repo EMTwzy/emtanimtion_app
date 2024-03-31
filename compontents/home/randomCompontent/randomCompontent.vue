@@ -9,7 +9,7 @@
 				&nbsp;
 			</uni-col>
 			<uni-col :span="5">
-				<text>more</text>
+				<text>&nbsp;</text>
 			</uni-col>
 		</uni-row>
 		<!-- 内容 -->

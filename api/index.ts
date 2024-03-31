@@ -99,6 +99,7 @@ export const selectVideo=async(lang:string,publishyear:number|string,publishare:
 /**********************************播放界面 play***********************************************/
 //获取视频播放数据
 export const getPlay=async(vodId:number,options:number)=>{
+	console.log("\n vodId:",vodId,"\n options:",options);
 	try{
 		const res=await http("/getPlay","get",{
 			vid:vodId,
@@ -160,10 +161,10 @@ export const deleteSubscribe=async(userId:number,userSubId:number)=>{
 }
 
 //查看当前视频历史记录是否存在
-export const selectHistory=async(userId:number,vodPerId:number,vodEpisode:string)=>{
+export const selectHistory=async(userId:number,vodPerId:number)=>{
 	try{
 		const res=await http("/selectHistory","get",{
-			userId,vodPerId,vodEpisode
+			userId,vodPreId:vodPerId
 		});
 		return res;
 	}catch(error){
@@ -175,14 +176,27 @@ export const selectHistory=async(userId:number,vodPerId:number,vodEpisode:string
 export const addHistory=async(userId:number,vodPerId:number,vodEpisode:string,vodWatchTime:number)=>{
 	try{
 		const res=await http("/addHistory","get",{
-			userId,vodPerId,vodEpisode,vodWatchTime
+			userId,vodPreId:vodPerId,vodEpisode,vodWatchTime
 		});
+		console.log(userId,vodPerId,vodEpisode,vodWatchTime,"历史记录添加成功",res)
 		return res;
 	}catch(error){
 		throw error;
 	}
 }
 
+//更新历史记录
+export const updateHistory=async(userId:number,vodPerId:number,vodEpisode:string,vodWatchTime:number)=>{
+	try{
+		const res=await http("/updateHistory","get",{
+			userId,vodPreId:vodPerId,vodEpisode,vodWatchTime
+		});
+		console.log("历史记录更新完成");
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
 
 /**********************************用户界面 user***********************************************/
 //获取历史记录
@@ -217,5 +231,52 @@ export const loginUser=async(userName:string,userPassword:string)=>{
 	}
 }
 
+//删除历史记录
+export const deleteHistory=async(userId:number,vodPreId:number,vodEpisode:string)=>{
+	try{
+		const res=await http("/deleteHistory","get",{
+			userId,vodPreId,vodEpisode
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
 
+/**********************************登录 login***********************************************/
+//更新用户信息
+export const changeUser=async(user)=>{
+	try{
+		const res=await http("/changeUser","get",{
+			userId:user.userId,userPassword:user.userPassword,
+			loginIp:user.loginIp,loginTime:user.loginTime,loginDevice:user.loginDevice
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
 
+//检测用户名是否已存在
+export const selectUserName=async(userName:string)=>{
+	try{
+		const res=await http("/selectUserName","get",{
+			userName
+		});
+		return res;
+	}catch(error){
+		throw error;
+	}
+}
+
+//注册用户
+export const register=async(user)=>{
+	try{
+		const res=await http("/register","get",{
+			userName:user.userName,userPassword:user.userPassword,
+			loginIp:user.loginIp,loginTime:user.loginTime,loginDevice:user.loginDevice
+		})
+	}catch(error){
+		throw error;
+	}
+}

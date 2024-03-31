@@ -35,7 +35,6 @@
 		let res= await selectVideoById(vid);
 		res.vodAddtime=changeDate(res.vodAddtime);
 		items.value=res;
-		console.log("sub这边的数据",items.value);
 	}
 	//定义默认图片为load加载图
 	const defaultImage = ref("../../../static/load.jpg");
@@ -45,15 +44,16 @@
 	
 	/*******跳转播放*******/
 	function trunTo(){
-		uni.reLaunch({
-			url:'/pages/play/play?vodId='+items.vodId
+		//需要使用的是items.value.vodId，定义的时候items是一个对象，对象里再套一对象
+		//console.log("sub这边的vodId到底有没有",items.value.vodId);
+		uni.navigateTo({
+			url:'/pages/play/play?vodId='+items.value.vodId
 		})
 	}
 	
 	
 	onLoad(()=>{
 		getVideoInfo(data.obj.userSubId);      //根据id获取番剧信息
-		//getVideoInfo(2664);      //根据id获取番剧信息
 	})
 </script>
 

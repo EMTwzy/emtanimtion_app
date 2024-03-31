@@ -14,7 +14,7 @@ export const useSettingStore = defineStore("setting",{
 	
 	actions:{
 		changeTheme(theme:string){
-			if (theme=='dark')
+			if (theme=='light')
 				this.theme='light';
 			else 
 				this.theme='dark';

@@ -26,8 +26,8 @@ export const IsToday=(vodAddtime:string)=>{
 //现在的时间戳
 export const nowTime=()=>{
 	let time=new Date();
-	console.log("现在时间为",time.getTime()/1000);
-	return time.getTime()/1000;
+	console.log("现在时间为",Math.floor(time.getTime()/1000));
+	return Math.floor(time.getTime()/1000);
 }
 
 //时间戳转换为具体日期
