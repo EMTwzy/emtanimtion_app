@@ -2223,6 +2223,7 @@
 }
 .episode[data-v-696d5f51] {
   width: 100%;
+  height: 1.875rem;
 }
 .episode .episodeTop[data-v-696d5f51] {
   text-align: center;
@@ -2231,10 +2232,11 @@
 .episode .episodeList[data-v-696d5f51] {
   margin-top: 0.3125rem;
   height: 1.5625rem;
+  padding: 0.3125rem;
+  border: 0.03125rem solid #ccc;
 }
 .episode .episodeList .episodeOne[data-v-696d5f51] {
-  height: 1.875rem;
-  border: 0.03125rem solid #ccc;
+  width: 20%;
   text-align: center;
 }
 .episode .episodeList .selected[data-v-696d5f51] {

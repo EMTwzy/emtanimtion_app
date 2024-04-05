@@ -142,8 +142,8 @@
 	
 	.information{
 		width: 100%;
-		height: 400rpx;
-
+		height: 500rpx;
+		padding: 10rpx;
 		//封面
 		.pic{
 			width: 25%;
@@ -171,7 +171,7 @@
 			}
 			// 简介
 			.content{
-				height: 100rpx;
+				height: 200rpx;
 				overflow-y: auto;
 			}
 		}

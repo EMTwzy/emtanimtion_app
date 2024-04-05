@@ -1,14 +1,17 @@
 <template>
+	<topBarCompontent></topBarCompontent>
 	<!-- 搜索界面 -->
 	<view class="search" :class="theme=='dark'?'dark':'light'">
 		<!-- 头部组件 -->
-		<topCompontent></topCompontent>
+		<topCompontent class="allTop"></topCompontent>
 		
 		<!-- 内容组件 -->
-		<searchCompontent style="margin-top: 110rpx;"></searchCompontent>
+		<view class="content allTop">
+		<searchCompontent></searchCompontent>
+		</view>
 		
 		<!-- 底部组件 -->
-		<footerCompontent style="margin-top: 55rpx;"></footerCompontent>
+		<footerCompontent class="allTop"></footerCompontent>
 	</view>
 </template>
 
@@ -18,6 +21,7 @@
 	import topCompontent from '../../compontents/topCompontent/topCompontent.vue';
 	import footerCompontent from '../../compontents/footerCompontent/footerCompontent.vue';
 	import searchCompontent from '../../compontents/search/searchCompontent/searchCompontent.vue';
+	import topBarCompontent from '../../compontents/topCompontent/topBarCompontent.vue';
 	import {useSettingStore}  from '../../pinia/setting';
 	
 	const setting=useSettingStore();
@@ -31,5 +35,14 @@
 
 <style lang="less" scoped>
 	@import '../../theme/theme.less';
+	.search{
+		
+		.allTop{
+			margin-top: 60rpx;
+		}
+		.content{
+			margin-top: 110rpx;
+		}
+	}
 
 </style>

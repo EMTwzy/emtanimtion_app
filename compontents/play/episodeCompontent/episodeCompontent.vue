@@ -16,7 +16,7 @@
 		</view>
 
 		<!-- 集数列表 -->
-		<swiper class="episodeList swiper" display-multiple-items="5" :current="index">
+		<swiper class="episodeList swiper" display-multiple-items="5" :current="index" :autoplay="false"  :circular="false">
 			<swiper-item v-for="item in episodeList" :key="item" class="episodeOne" 
 			:class="{selected:selectEpisode==item}"
 			@click="select(item)">
@@ -31,7 +31,6 @@
 	import { computed } from 'vue';
 
 	import { usePlayStore } from '../../../pinia/play';
-	import { useUserStore } from '../../../pinia/user';
 
 	const playStore = usePlayStore();
 
@@ -53,7 +52,7 @@
 <style lang="less" scoped>
 	.episode {
 		width: 100%;
-
+		height: 60rpx;
 		.episodeTop {
 			text-align: center;
 			margin-top: 10rpx;
@@ -63,9 +62,10 @@
 		.episodeList {
 			margin-top: 10rpx;
 			height: 50rpx;
+			padding: 10rpx;
+			border: 1rpx solid #ccc;
 			.episodeOne {
-				height: 60rpx;
-				border: 1rpx solid #ccc;
+				width: 20%;
 				text-align: center;
 			}
 			.selected{

@@ -44,7 +44,7 @@
 
 	.searchList {
 		width: 95%;
-		height: 1000rpx;
+		height: 1200rpx;
 		margin: 0 auto;
 		overflow: auto;
 		border:2rpx solid #ccc;

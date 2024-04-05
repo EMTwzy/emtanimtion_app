@@ -12,22 +12,25 @@ export const useUserStore=defineStore('user',{
 		}
 	}),
 	getters:{
-		getUserId:(state)=>{
+		
+	},
+	actions:{
+		initUserId(){
 			let userId=uni.getStorageSync('userId');
-			state.userId=userId!=null&&userId!=undefined?userId:0;
+			console.log("看看userid",userId);
+			this.userId=userId!=null&&userId!=undefined?userId:0;
 		},
-		getUserName:(state)=>{
+		initUserName(){
 			let userName=uni.getStorageSync("userName");
-			state.userName=userName!=null&&userName!=undefined?userName:'';
+			this.userName=userName!=null&&userName!=undefined?userName:'';
 		},
-		getUserInformation:(state)=>{
+		initUserInformation(){
 			let loginTime=uni.getStorageSync('loginTime');
 			let loginIp=uni.getStorageSync('loginIp');
 			let loginDevice=uni.getStorageSync('loginDevice');
-			state.userInformation.loginTime=loginTime;
-			state.userInformation.loginIp=loginIp;
-			state.userInformation.loginDevice=loginDevice;
+			this.userInformation.loginTime=loginTime;
+			this.userInformation.loginIp=loginIp;
+			this.userInformation.loginDevice=loginDevice;
 		}
-		
 	}
 })

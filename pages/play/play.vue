@@ -1,4 +1,5 @@
 <template>
+	<topBarCompontent></topBarCompontent>
 	<view class="play" :class="theme=='dark'?'dark':'light'">
 		<!-- 头部组件 -->
 		<topCompontent></topCompontent>
@@ -6,12 +7,12 @@
 		<!-- 视频组件 -->
 		<videoCompontent></videoCompontent>
 		<!-- 集数组件 -->
-		<episodeCompontent style="margin-bottom: 50rpx;"></episodeCompontent>
+		<episodeCompontent style="margin-top: 30rpx;"></episodeCompontent>
 		<!-- 番剧信息组件 -->
-		<informationCompontent></informationCompontent>
+		<informationCompontent style="margin-top: 150rpx;"></informationCompontent>
 		
 		<!-- 尾部组件 -->
-		<footerCompontent></footerCompontent>
+		<footerCompontent style="margin-top: 20rpx;"></footerCompontent>
 	</view>
 </template>
 
@@ -21,6 +22,7 @@
 	//导入头部、尾部组件
 	import topCompontent from '../../compontents/topCompontent/topCompontent.vue';
 	import footerCompontent from '../../compontents/footerCompontent/footerCompontent.vue';
+	import topBarCompontent from '../../compontents/topCompontent/topBarCompontent.vue';
 	//导入setting 设置主题
 	import {useSettingStore} from '../../pinia/setting';
 	import {usePlayStore} from '../../pinia/play';
@@ -89,5 +91,7 @@
 <style lang="less" scoped>
 	//导入主题样式
 	@import  '../../theme/theme.less';
-	
+	.play{
+		margin-top: 80rpx;
+	}
 </style>

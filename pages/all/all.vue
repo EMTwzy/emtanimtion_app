@@ -1,7 +1,8 @@
 <template>
+	<topBarCompontent></topBarCompontent>
 	<view class="all" :class="theme=='dark'?'dark':'light'">
 		<!-- 头部 -->
-		<topCompontent></topCompontent>
+		<topCompontent style="margin-top: 70rpx;"></topCompontent>
 		<!-- 内容区 -->
 		<!-- tags -->
 		<tagsCompontent class="alltop"></tagsCompontent>
@@ -18,6 +19,7 @@
 	// 导入头部和底部组件
 	import topCompontent from '../../compontents/topCompontent/topCompontent.vue';
 	import footerCompontent from '../../compontents/footerCompontent/footerCompontent.vue';
+	import topBarCompontent from '../../compontents/topCompontent/topBarCompontent.vue';
 	//导入tags模块、list模块
 	import tagsCompontent from '../../compontents/all/tagsCompontent/tagsCompontent.vue';
 	import listCompontent from '../../compontents/all/listCompontent/listCompontent.vue';

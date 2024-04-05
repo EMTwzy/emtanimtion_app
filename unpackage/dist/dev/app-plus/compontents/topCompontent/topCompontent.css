@@ -2226,6 +2226,9 @@
   width: 100%;
   overflow-block: none;
 }
+.topCompontent .topBar[data-v-ce76fffc] {
+  width: 100%;
+}
 .topCompontent .titleBar[data-v-ce76fffc] {
   height: 1.5625rem;
   display: flex;

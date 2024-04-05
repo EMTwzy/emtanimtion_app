@@ -1,4 +1,5 @@
 <template>
+	<topBarCompontent></topBarCompontent>
 	<view class="setting">
 		<uni-collapse>
 		<!-- 设置主题 -->
@@ -16,8 +17,8 @@
 			<uni-collapse-item title="制作人有话说"  @click="showDialog" :open="false"  :showArrow='false'>
 			</uni-collapse-item>
 		<!-- 获取最新版本 -->
-			<uni-collapse-item title="获取最新版本"  @click="getApp" :open="false"  :showArrow='false'>
-			</uni-collapse-item>
+			<!-- <uni-collapse-item title="获取最新版本"  @click="getApp" :open="false"  :showArrow='false'>
+			</uni-collapse-item> -->
 		<!-- 获取最新版本 -->
 				<uni-collapse-item title="退出登录"  @click="unlogin" :open="false"  :showArrow='false'>
 				</uni-collapse-item>
@@ -31,10 +32,14 @@
 <script setup lang="ts">
 	import { computed } from 'vue';
 	import { useSettingStore } from '../../pinia/setting';
+	import { useUserStore } from '../../pinia/user';
+	import topBarCompontent from '../../compontents/topCompontent/topBarCompontent.vue';
 	import app from '../../version';
 
 	const useSetting = useSettingStore();
 	const theme = computed(() => useSetting.theme);
+	
+	const useUser=useUserStore();
 	
 	// 选择主题
 	function selectTheme(e) {
@@ -56,14 +61,14 @@
 	};
 	
 	//获取最新版本
-	function getApp(){
-		uni.showModal({
-			showCancel:false,
-			title:"获取最新版本",
-			content:'当前版本'+app.version+`\t最新版本为`+''
-		})
-		console.log(app.version);
-	};
+	// function getApp(){
+	// 	uni.showModal({
+	// 		showCancel:false,
+	// 		title:"获取最新版本",
+	// 		content:'当前版本'+app.version+`\t最新版本为`+''
+	// 	})
+	// 	console.log(app.version);
+	// };
 	
 	//退出登录
 	function unlogin(){
@@ -77,12 +82,30 @@
 						icon:"none",
 						duration:1500,
 						success() {
-							uni.removeStorageSync('userId');
+							try{
+								uni.removeStorageSync('userId');
 							uni.removeStorageSync("userName");
 							uni.removeStorageSync("loginTime");
 							uni.removeStorageSync("loginIp");
 							uni.removeStorageSync("loginDevice");
-							console.log("看看删了没",uni.getStorageSync("userId"));
+							}catch(error){
+								throw error;
+							}
+							
+							
+							// 用户信息初始化
+							setTimeout(()=>{
+								useUser.initUserId();
+							useUser.initUserName();
+							useUser.initUserInformation();
+							
+							uni.reLaunch({
+								url:'/pages/index/index'
+							})
+							console.log("看看删了没",uni.getStorageSync("userId"),useUser.userId);
+							},1500);
+							
+							
 						}
 					})
 				}

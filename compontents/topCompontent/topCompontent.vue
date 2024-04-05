@@ -11,7 +11,6 @@
 </template>
 
 <script setup lang="ts">
-	import { ref } from 'vue';
 	// 查询
 	function search(e) {
 		uni.navigateTo({
@@ -32,6 +31,13 @@
 		padding: 50rpx 0;
 		width: 100%;
 		overflow-block: none;
+		
+		// 空出状态栏
+		.topBar{
+			width: 100%;
+			//height: var(--status-bar-height);
+		}
+		
 		.titleBar {
 			height: 50rpx;
 			display: flex;

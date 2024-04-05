@@ -1,4 +1,5 @@
 <template>
+	<topBarCompontent></topBarCompontent>
 	<!-- 用户界面 -->
 	<view class="user" :class="theme=='dark'?'dark':'light'">
 		<!-- 用户信息模块 -->
@@ -7,10 +8,10 @@
 			<!-- 用户头像 -->
 			<uni-row>
 				<uni-col :span="7">
-					<view class="user_img" @click="login">
-						<image src="../../static/user/default_user.jpg"></image>
+					<view class="user_img">
+						<image src="../../static/user/default_user.jpg" @click="login"></image>
 					</view>
-					<view class="login" v-show="name==''">
+					<view class="login" v-show="name==''" @click="login">
 						点我登录
 					</view>
 				</uni-col>
@@ -50,13 +51,17 @@
 				</view>
 			</view>
 		</view>
-
+		
+		<footerCompontent style="margin-top: 30rpx;"></footerCompontent>
 	</view>
 </template>
 
 <script setup lang="ts">
-	import { computed, ref, watch } from 'vue';
+	import { computed, ref } from 'vue';
 	import { onLoad, onShow } from '@dcloudio/uni-app';
+	import topBarCompontent from '../../compontents/topCompontent/topBarCompontent.vue';
+	import footerCompontent from '../../compontents/footerCompontent/footerCompontent.vue';
+	
 	//导入设置pinia
 	import { useSettingStore } from '../../pinia/setting';
 	//导入用户pinia
@@ -122,6 +127,7 @@
 	}
 	/*****登录*****/
 	function login() {
+		if(useUser.userId==0)
 		uni.reLaunch({
 			url: '/pages/login/login'
 		})
@@ -137,6 +143,7 @@
 			getHis(useUser.userId);      //没有登陆那就是空
 		}
 		
+		
 		uni.setTabBarStyle({
 			backgroundColor: theme.value == 'dark' ? '#000000' : '#DCDFE6',
 			color: theme.value == 'dark' ? '#ccc' : '#000000'
@@ -149,19 +156,17 @@
 			current.value = 1;
 		else
 			current.value = 0;
-		// 用户信息初始化
-		useUser.getUserId;
-		useUser.getUserName;
-		useUser.getUserInformation;
-		console.log("用户界面这里获取到的数据为",useUser);
-	})
+			
+		console.log("用户界面这里获取到的数据为",useUser.userName);
+	});
+
 </script>
 
 <style lang="less" scoped>
 	@import '../../theme/theme.less';
 
 	.user {
-
+		margin-top: 60rpx;
 		// 用户信息
 		.userInfor {
 
@@ -195,7 +200,7 @@
 		.control {
 
 			.content {
-				height: 1100rpx;
+				height: 1200rpx;
 				overflow-y: auto;
 			}
 		}

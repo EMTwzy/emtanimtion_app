@@ -1,4 +1,5 @@
 <template>
+	<topBarCompontent></topBarCompontent>
 	<view class="loginRegister">
 		<!-- 登录 -->
 		<view class="login_item" v-if="isLogin">
@@ -40,10 +41,12 @@
 <script setup lang="ts">
 	import { ref, reactive } from 'vue';
 	import { onLoad, onShow } from '@dcloudio/uni-app';
+	import topBarCompontent from '../../compontents/topCompontent/topBarCompontent.vue';
 	// 导入登录api  修改用户信息 查看当前用户名是否已存在 注册用户
 	import { loginUser, changeUser, selectUserName ,register} from '../../api/index';
 	// 导入userInterface
 	import userI from '../../interface/userInterface';
+	import { useUserStore } from '../../pinia/user';
 	//时间
 	import { nowTime } from '../../utils/time';
 
@@ -53,6 +56,8 @@
 		password: ''
 	});
 
+	const useUser=useUserStore();
+	
 	// 是否登录
 	const isLogin = ref(true);
 
@@ -69,7 +74,7 @@
 	async function getDevice() {
 		uni.getSystemInfo({
 			success: (device) => {
-				let res=device.deviceType + '-' + device.appVersionCode + '-' + device.ua;
+				let res=device.deviceType + '-' + device.appVersionCode + '-' + device.ua+'-'+device.screenWidth+"*"+device.screenHeight;
 				change.loginDevice = res;
 				registerUser.loginDevice=res;
 				//console.log(device.deviceType, device.appVersion, device.brand, device.deviceBrand, device.ua);
@@ -125,11 +130,18 @@
 				uni.setStorageSync('loginTime', now);
 				uni.setStorageSync('loginDevice', res.loginDevice);
 				uni.setStorageSync('loginPass', res.loginPass);
+				
+				
+				
 				uni.showLoading({
 					title: "登录成功!"
 				})
 				setTimeout(() => {
 					uni.hideLoading();
+					// 用户信息初始化
+				useUser.initUserId();
+				useUser.initUserName();
+				useUser.initUserInformation();
 					uni.reLaunch({
 						url: '../index/index'
 					})

@@ -1,9 +1,11 @@
 <template>
 	<view class="item">
 		<image :src="data.obj.vodPic!=''?data.obj.vodPic:defaultImage" @click="trunTo(data.obj.vodId)"></image>
-		<uni-badge size="small" :text="todayIs?'new':''" absolute="leftTop" type="primary">
-			<view class="vodName">{{data.obj.vodName}}</view>
-		</uni-badge>
+		<view class="newTag" v-if="todayIs?true:false">
+			new
+		</view>
+			<view class="vodName" :class="{today:todayIs?true:false}">{{data.obj.vodName}}</view>
+		
 	</view>
 </template>
 
@@ -49,6 +51,23 @@
 		height: 210rpx;
 		border: 1rpx solid #ccc;
 		box-sizing: border-box;
+		position: relative;
+		
+		//莫名奇妙手机端无法看到角标，那就使用颜色字体
+		.today{
+			color: red;
+		}
+		.newTag{
+			width: 50rpx;
+			background-color: rgba(255, 170, 255, 0.5);
+			color:red;
+			border-radius: 80%;
+			position: absolute;
+			top: 160rpx;
+			left: 0;
+			font-size: 16rpx;
+			text-align: center;
+		}
 
 		image {
 			flex: 1;

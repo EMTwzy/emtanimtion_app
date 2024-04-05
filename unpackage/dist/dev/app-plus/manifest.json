@@ -17,6 +17,7 @@
     "url": ""
   },
   "permissions": {
+    "VideoPlayer": {},
     "UniNView": {
       "description": "UniNView原生渲染"
     }
@@ -92,8 +93,11 @@
           "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
         ]
       },
-      "apple": {},
+      "apple": {
+        "dSYMs": false
+      },
       "plugins": {
+        "ad": {},
         "audio": {
           "mp3": {
             "description": "Android平台录音支持MP3格式文件"
@@ -106,7 +110,7 @@
       "style": "dark",
       "background": "@navigationBarBackgroundColor"
     },
-    "arguments": "{\"path\":\"pages/setting/setting\"}",
+    "arguments": "{\"path\":\"pages/index/index\"}",
     "uniStatistics": {
       "enable": false
     },
@@ -163,7 +167,11 @@
         }
       ],
       "selectedIndex": 0,
-      "shown": true
+      "shown": true,
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 0
     }
   },
   "locale": "zh-Hans",
